@@ -36,6 +36,7 @@ dev = [
     "pytest>=8",
     "pytest-httpx>=0.30",
     "pytest-cov>=5",
+    "coverage[toml]>=7",
     "ruff",
     "mypy",
     "pre-commit>=3.8",
@@ -68,4 +69,16 @@ addopts = [
     "--strict-markers",
     "--cov=src/rent_collector",
     "--cov-report=term-missing",
+]
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+source = ["src/rent_collector"]
+
+[tool.coverage.paths]
+rent_collector = [
+    "src/rent_collector",
+    "/home/runner/work/israel-rent-data-collector/israel-rent-data-collector/src/rent_collector",
+    "/Users/runner/work/israel-rent-data-collector/israel-rent-data-collector/src/rent_collector",
 ]

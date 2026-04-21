@@ -6,12 +6,15 @@
 
 ## Required Commands
 - Install: `pip install -e ".[dev]"`
+- Local CI parity: `pre-commit run --all-files`
 - CLI sanity check: `python scripts/collect.py --help`
 - Probe sources: `python scripts/collect.py --probe`
 - Dry run: `python scripts/collect.py --source nadlan --source cbs-table49 --source cbs-api --source boi-hedonic --dry-run`
 - Full validated run: `python scripts/collect.py --validate --expected-total-2022 131000000`
-- Tests: `pytest`
-- Lint: `ruff check src`
+- Unit tests: `pytest -m "not integration"`
+- Integration tests: `pytest -m integration`
+- Lint: `ruff check .`
+- Format check: `ruff format --check .`
 - Type check: `mypy src`
 
 ## Output Rules
