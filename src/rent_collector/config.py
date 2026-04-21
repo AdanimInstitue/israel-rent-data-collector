@@ -17,7 +17,28 @@ load_dotenv()
 # Paths
 # ---------------------------------------------------------------------------
 
-ROOT_DIR = Path(__file__).resolve().parents[2]  # repo root
+
+def _looks_like_repo_root(path: Path) -> bool:
+    return (
+        (path / "pyproject.toml").exists()
+        and (path / "src" / "rent_collector").exists()
+        and (path / "data" / "locality_codes_seed.csv").exists()
+    )
+
+
+def _detect_root_dir() -> Path:
+    configured = os.getenv("RENT_COLLECTOR_ROOT_DIR")
+    if configured:
+        return Path(configured).expanduser().resolve()
+
+    for candidate in [Path.cwd(), *Path.cwd().parents]:
+        if _looks_like_repo_root(candidate):
+            return candidate.resolve()
+
+    return Path(__file__).resolve().parents[2]
+
+
+ROOT_DIR = _detect_root_dir()
 DATA_DIR = ROOT_DIR / "data"
 OUTPUT_DIR = DATA_DIR / "output"
 RUN_ARTIFACTS_DIR = ROOT_DIR / "var" / "runs"

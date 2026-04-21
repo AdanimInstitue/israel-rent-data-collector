@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+import importlib
+from pathlib import Path
+
 import pytest
 
+from rent_collector import config as config_mod
 from rent_collector.collectors.base import BaseCollector
 from rent_collector.models import DataSource, RentObservation, RoomGroup
 
@@ -92,3 +96,22 @@ def test_base_probe_handles_empty_and_error() -> None:
 
 def test_base_collect_abstract_stub_is_reachable() -> None:
     assert _DelegatingCollector().collect() is None
+
+
+def test_config_detects_repo_root_from_cwd(monkeypatch, tmp_path: Path) -> None:
+    repo = tmp_path / "repo"
+    (repo / "src" / "rent_collector").mkdir(parents=True)
+    (repo / "data").mkdir(parents=True)
+    (repo / "pyproject.toml").write_text("[project]\nname='demo'\n", encoding="utf-8")
+    (repo / "data" / "locality_codes_seed.csv").write_text(
+        "locality_code,locality_name_he\n5000,תל אביב - יפו\n", encoding="utf-8"
+    )
+
+    monkeypatch.delenv("RENT_COLLECTOR_ROOT_DIR", raising=False)
+    monkeypatch.chdir(repo / "src" / "rent_collector")
+
+    reloaded = importlib.reload(config_mod)
+    try:
+        assert reloaded.ROOT_DIR == repo.resolve()
+    finally:
+        importlib.reload(config_mod)

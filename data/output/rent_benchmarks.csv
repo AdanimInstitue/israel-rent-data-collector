@@ -9,12 +9,12 @@
 10,תירוש,TIROSH,5.0,,,5018.0,boi_hedonic,,2025,,
 1015,מבשרת ציון,MEVASSERET ZIYYON,2.0,,,3130.0,boi_hedonic,,2025,,
 1015,מבשרת ציון,MEVASSERET ZIYYON,2.5,,,3386.0,boi_hedonic,,2025,,
-1015,מבשרת ציון,MEVASSERET ZIYYON,3.0,5100.0,5100.0,5100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1015,מבשרת ציון,MEVASSERET ZIYYON,3.0,,5100.0,5100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1015,מבשרת ציון,MEVASSERET ZIYYON,3.5,,,3963.0,boi_hedonic,,2025,,
-1015,מבשרת ציון,MEVASSERET ZIYYON,4.0,6750.0,6750.0,6750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1015,מבשרת ציון,MEVASSERET ZIYYON,4.0,,6750.0,6750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1015,מבשרת ציון,MEVASSERET ZIYYON,4.5,,,4639.0,boi_hedonic,,2025,,
 1015,מבשרת ציון,MEVASSERET ZIYYON,5+,,,5874.0,boi_hedonic,,2025,,
-1015,מבשרת ציון,MEVASSERET ZIYYON,5.0,7950.0,7950.0,7950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1015,מבשרת ציון,MEVASSERET ZIYYON,5.0,,7950.0,7950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 102,מאיר שפיה,ME'IR SHEFEYA,2.0,,,3130.0,boi_hedonic,,2025,,
 102,מאיר שפיה,ME'IR SHEFEYA,2.5,,,3386.0,boi_hedonic,,2025,,
 102,מאיר שפיה,ME'IR SHEFEYA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -25,12 +25,12 @@
 102,מאיר שפיה,ME'IR SHEFEYA,5.0,,,5018.0,boi_hedonic,,2025,,
 1020,אור עקיבא,OR AQIVA,2.0,,,3130.0,boi_hedonic,,2025,,
 1020,אור עקיבא,OR AQIVA,2.5,,,3386.0,boi_hedonic,,2025,,
-1020,אור עקיבא,OR AQIVA,3.0,3275.0,3275.0,3275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1020,אור עקיבא,OR AQIVA,3.0,,3275.0,3275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1020,אור עקיבא,OR AQIVA,3.5,,,3963.0,boi_hedonic,,2025,,
-1020,אור עקיבא,OR AQIVA,4.0,4550.0,4550.0,4550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1020,אור עקיבא,OR AQIVA,4.0,,4550.0,4550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1020,אור עקיבא,OR AQIVA,4.5,,,4639.0,boi_hedonic,,2025,,
 1020,אור עקיבא,OR AQIVA,5+,,,5874.0,boi_hedonic,,2025,,
-1020,אור עקיבא,OR AQIVA,5.0,5600.0,5600.0,5600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1020,אור עקיבא,OR AQIVA,5.0,,5600.0,5600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1024,חרוצים,HARUZIM,2.0,,,3130.0,boi_hedonic,,2025,,
 1024,חרוצים,HARUZIM,2.5,,,3386.0,boi_hedonic,,2025,,
 1024,חרוצים,HARUZIM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -49,20 +49,20 @@
 103,תל עדשים,TEL ADASHIM,5.0,,,5018.0,boi_hedonic,,2025,,
 1031,שדרות,SEDEROT,2.0,,,3130.0,boi_hedonic,,2025,,
 1031,שדרות,SEDEROT,2.5,,,3386.0,boi_hedonic,,2025,,
-1031,שדרות,SEDEROT,3.0,2550.0,2550.0,2550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1031,שדרות,SEDEROT,3.0,,2550.0,2550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1031,שדרות,SEDEROT,3.5,,,3963.0,boi_hedonic,,2025,,
-1031,שדרות,SEDEROT,4.0,2900.0,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1031,שדרות,SEDEROT,4.0,,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1031,שדרות,SEDEROT,4.5,,,4639.0,boi_hedonic,,2025,,
 1031,שדרות,SEDEROT,5+,,,5874.0,boi_hedonic,,2025,,
-1031,שדרות,SEDEROT,5.0,3000.0,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1031,שדרות,SEDEROT,5.0,,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1034,קרית מלאכי,QIRYAT MAL'AKHI,2.0,,,3130.0,boi_hedonic,,2025,,
 1034,קרית מלאכי,QIRYAT MAL'AKHI,2.5,,,3386.0,boi_hedonic,,2025,,
-1034,קרית מלאכי,QIRYAT MAL'AKHI,3.0,2800.0,2800.0,2800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1034,קרית מלאכי,QIRYAT MAL'AKHI,3.0,,2800.0,2800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1034,קרית מלאכי,QIRYAT MAL'AKHI,3.5,,,3963.0,boi_hedonic,,2025,,
-1034,קרית מלאכי,QIRYAT MAL'AKHI,4.0,4350.0,4350.0,4350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1034,קרית מלאכי,QIRYAT MAL'AKHI,4.0,,4350.0,4350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1034,קרית מלאכי,QIRYAT MAL'AKHI,4.5,,,4639.0,boi_hedonic,,2025,,
 1034,קרית מלאכי,QIRYAT MAL'AKHI,5+,,,5874.0,boi_hedonic,,2025,,
-1034,קרית מלאכי,QIRYAT MAL'AKHI,5.0,5125.0,5125.0,5125.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1034,קרית מלאכי,QIRYAT MAL'AKHI,5.0,,5125.0,5125.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 104,מזרע,MIZRA,2.0,,,3130.0,boi_hedonic,,2025,,
 104,מזרע,MIZRA,2.5,,,3386.0,boi_hedonic,,2025,,
 104,מזרע,MIZRA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -217,20 +217,20 @@
 1060,לקיה,LAQYE,5.0,,,5018.0,boi_hedonic,,2025,,
 1061,נוף הגליל,NOF HAGALIL,2.0,,,3130.0,boi_hedonic,,2025,,
 1061,נוף הגליל,NOF HAGALIL,2.5,,,3386.0,boi_hedonic,,2025,,
-1061,נוף הגליל,NOF HAGALIL,3.0,2500.0,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1061,נוף הגליל,NOF HAGALIL,3.0,,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1061,נוף הגליל,NOF HAGALIL,3.5,,,3963.0,boi_hedonic,,2025,,
-1061,נוף הגליל,NOF HAGALIL,4.0,3400.0,3400.0,3400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1061,נוף הגליל,NOF HAGALIL,4.0,,3400.0,3400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1061,נוף הגליל,NOF HAGALIL,4.5,,,4639.0,boi_hedonic,,2025,,
 1061,נוף הגליל,NOF HAGALIL,5+,,,5874.0,boi_hedonic,,2025,,
 1061,נוף הגליל,NOF HAGALIL,5.0,,,5018.0,boi_hedonic,,2025,,
 1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,2.0,,,3130.0,boi_hedonic,,2025,,
 1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,2.5,,,3386.0,boi_hedonic,,2025,,
-1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,3.0,2200.0,2200.0,2200.0,nadlan.gov.il,1.0,2025,,nadlan settlement rent page JSON
+1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,3.0,,2200.0,2200.0,nadlan.gov.il,1.0,2025,,nadlan settlement rent page JSON
 1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,3.5,,,3963.0,boi_hedonic,,2025,,
-1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,4.0,2650.0,2650.0,2650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,4.0,,2650.0,2650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,4.5,,,4639.0,boi_hedonic,,2025,,
 1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,5+,,,5874.0,boi_hedonic,,2025,,
-1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,5.0,4900.0,4900.0,4900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1063,מעלות-תרשיחא,MA'ALOT-TARSHIHA,5.0,,4900.0,4900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1064,אמירים,AMIRIM,2.0,,,3130.0,boi_hedonic,,2025,,
 1064,אמירים,AMIRIM,2.5,,,3386.0,boi_hedonic,,2025,,
 1064,אמירים,AMIRIM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -249,9 +249,9 @@
 1065,זמרת,ZIMRAT,5.0,,,5018.0,boi_hedonic,,2025,,
 1066,בני עיש,BENE AYISH,2.0,,,3130.0,boi_hedonic,,2025,,
 1066,בני עיש,BENE AYISH,2.5,,,3386.0,boi_hedonic,,2025,,
-1066,בני עיש,BENE AYISH,3.0,3500.0,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1066,בני עיש,BENE AYISH,3.0,,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1066,בני עיש,BENE AYISH,3.5,,,3963.0,boi_hedonic,,2025,,
-1066,בני עיש,BENE AYISH,4.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1066,בני עיש,BENE AYISH,4.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1066,בני עיש,BENE AYISH,4.5,,,4639.0,boi_hedonic,,2025,,
 1066,בני עיש,BENE AYISH,5+,,,5874.0,boi_hedonic,,2025,,
 1066,בני עיש,BENE AYISH,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -625,12 +625,12 @@
 1136,צוחר,ZOHAR,5.0,,,5018.0,boi_hedonic,,2025,,
 1137,קרית יערים,QIRYAT YE'ARIM,2.0,,,3130.0,boi_hedonic,,2025,,
 1137,קרית יערים,QIRYAT YE'ARIM,2.5,,,3386.0,boi_hedonic,,2025,,
-1137,קרית יערים,QIRYAT YE'ARIM,3.0,4050.0,4050.0,4050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1137,קרית יערים,QIRYAT YE'ARIM,3.0,,4050.0,4050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1137,קרית יערים,QIRYAT YE'ARIM,3.5,,,3963.0,boi_hedonic,,2025,,
-1137,קרית יערים,QIRYAT YE'ARIM,4.0,5750.0,5750.0,5750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1137,קרית יערים,QIRYAT YE'ARIM,4.0,,5750.0,5750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1137,קרית יערים,QIRYAT YE'ARIM,4.5,,,4639.0,boi_hedonic,,2025,,
 1137,קרית יערים,QIRYAT YE'ARIM,5+,,,5874.0,boi_hedonic,,2025,,
-1137,קרית יערים,QIRYAT YE'ARIM,5.0,7150.0,7150.0,7150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1137,קרית יערים,QIRYAT YE'ARIM,5.0,,7150.0,7150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1138,יעד,YA'AD,2.0,,,3130.0,boi_hedonic,,2025,,
 1138,יעד,YA'AD,2.5,,,3386.0,boi_hedonic,,2025,,
 1138,יעד,YA'AD,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -641,12 +641,12 @@
 1138,יעד,YA'AD,5.0,,,5018.0,boi_hedonic,,2025,,
 1139,כרמיאל,KARMI'EL,2.0,,,3130.0,boi_hedonic,,2025,,
 1139,כרמיאל,KARMI'EL,2.5,,,3386.0,boi_hedonic,,2025,,
-1139,כרמיאל,KARMI'EL,3.0,2900.0,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1139,כרמיאל,KARMI'EL,3.0,,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1139,כרמיאל,KARMI'EL,3.5,,,3963.0,boi_hedonic,,2025,,
-1139,כרמיאל,KARMI'EL,4.0,3650.0,3650.0,3650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1139,כרמיאל,KARMI'EL,4.0,,3650.0,3650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1139,כרמיאל,KARMI'EL,4.5,,,4639.0,boi_hedonic,,2025,,
 1139,כרמיאל,KARMI'EL,5+,,,5874.0,boi_hedonic,,2025,,
-1139,כרמיאל,KARMI'EL,5.0,5375.0,5375.0,5375.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1139,כרמיאל,KARMI'EL,5.0,,5375.0,5375.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1140,מדרשת בן גוריון,MIDRESHET BEN GURION,2.0,,,3130.0,boi_hedonic,,2025,,
 1140,מדרשת בן גוריון,MIDRESHET BEN GURION,2.5,,,3386.0,boi_hedonic,,2025,,
 1140,מדרשת בן גוריון,MIDRESHET BEN GURION,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -849,7 +849,7 @@
 1166,כפר רות,KEFAR RUT,5.0,,,5018.0,boi_hedonic,,2025,,
 1167,קיסריה,QESARIYYA,2.0,,,3130.0,boi_hedonic,,2025,,
 1167,קיסריה,QESARIYYA,2.5,,,3386.0,boi_hedonic,,2025,,
-1167,קיסריה,QESARIYYA,3.0,5700.0,5700.0,5700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1167,קיסריה,QESARIYYA,3.0,,5700.0,5700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1167,קיסריה,QESARIYYA,3.5,,,3963.0,boi_hedonic,,2025,,
 1167,קיסריה,QESARIYYA,4.0,,,4287.0,boi_hedonic,,2025,,
 1167,קיסריה,QESARIYYA,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -1081,12 +1081,12 @@
 1199,עדי,ADI,5.0,,,5018.0,boi_hedonic,,2025,,
 1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,2.0,,,3130.0,boi_hedonic,,2025,,
 1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,2.5,,,3386.0,boi_hedonic,,2025,,
-1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,3.0,5800.0,5800.0,5800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,3.0,,5800.0,5800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,3.5,,,3963.0,boi_hedonic,,2025,,
-1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,4.0,6600.0,6600.0,6600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,4.0,,6600.0,6600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,4.5,,,4639.0,boi_hedonic,,2025,,
 1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,5+,,,5874.0,boi_hedonic,,2025,,
-1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,5.0,8000.0,8000.0,8000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1200,מודיעין-מכבים-רעות,MODI'IN-MAKKABBIM-RE,5.0,,8000.0,8000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1201,כמון,KAMMON,2.0,,,3130.0,boi_hedonic,,2025,,
 1201,כמון,KAMMON,2.5,,,3386.0,boi_hedonic,,2025,,
 1201,כמון,KAMMON,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -1209,9 +1209,9 @@
 1219,גורנות הגליל,GORNOT HAGALIL,5.0,,,5018.0,boi_hedonic,,2025,,
 122,רמת ישי,RAMAT YISHAY,2.0,,,3130.0,boi_hedonic,,2025,,
 122,רמת ישי,RAMAT YISHAY,2.5,,,3386.0,boi_hedonic,,2025,,
-122,רמת ישי,RAMAT YISHAY,3.0,3100.0,3100.0,3100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+122,רמת ישי,RAMAT YISHAY,3.0,,3100.0,3100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 122,רמת ישי,RAMAT YISHAY,3.5,,,3963.0,boi_hedonic,,2025,,
-122,רמת ישי,RAMAT YISHAY,4.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+122,רמת ישי,RAMAT YISHAY,4.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 122,רמת ישי,RAMAT YISHAY,4.5,,,4639.0,boi_hedonic,,2025,,
 122,רמת ישי,RAMAT YISHAY,5+,,,5874.0,boi_hedonic,,2025,,
 122,רמת ישי,RAMAT YISHAY,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -1433,12 +1433,12 @@
 1246,עראמשה,ARAMSHA,5.0,,,5018.0,boi_hedonic,,2025,,
 1247,חריש,HARISH,2.0,,,3130.0,boi_hedonic,,2025,,
 1247,חריש,HARISH,2.5,,,3386.0,boi_hedonic,,2025,,
-1247,חריש,HARISH,3.0,3125.0,3125.0,3125.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1247,חריש,HARISH,3.0,,3125.0,3125.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1247,חריש,HARISH,3.5,,,3963.0,boi_hedonic,,2025,,
-1247,חריש,HARISH,4.0,3600.0,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1247,חריש,HARISH,4.0,,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1247,חריש,HARISH,4.5,,,4639.0,boi_hedonic,,2025,,
 1247,חריש,HARISH,5+,,,5874.0,boi_hedonic,,2025,,
-1247,חריש,HARISH,5.0,4000.0,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1247,חריש,HARISH,5.0,,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1248,אליפז,ELIFAZ,2.0,,,3130.0,boi_hedonic,,2025,,
 1248,אליפז,ELIFAZ,2.5,,,3386.0,boi_hedonic,,2025,,
 1248,אליפז,ELIFAZ,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -1841,20 +1841,20 @@
 1303,חורה,HURA,5.0,,,5018.0,boi_hedonic,,2025,,
 1304,שוהם,SHOHAM,2.0,,,3130.0,boi_hedonic,,2025,,
 1304,שוהם,SHOHAM,2.5,,,3386.0,boi_hedonic,,2025,,
-1304,שוהם,SHOHAM,3.0,5600.0,5600.0,5600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1304,שוהם,SHOHAM,3.0,,5600.0,5600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1304,שוהם,SHOHAM,3.5,,,3963.0,boi_hedonic,,2025,,
-1304,שוהם,SHOHAM,4.0,6800.0,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1304,שוהם,SHOHAM,4.0,,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1304,שוהם,SHOHAM,4.5,,,4639.0,boi_hedonic,,2025,,
 1304,שוהם,SHOHAM,5+,,,5874.0,boi_hedonic,,2025,,
-1304,שוהם,SHOHAM,5.0,7650.0,7650.0,7650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1304,שוהם,SHOHAM,5.0,,7650.0,7650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1309,אלעד,EL'AD,2.0,,,3130.0,boi_hedonic,,2025,,
 1309,אלעד,EL'AD,2.5,,,3386.0,boi_hedonic,,2025,,
-1309,אלעד,EL'AD,3.0,4700.0,4700.0,4700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1309,אלעד,EL'AD,3.0,,4700.0,4700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1309,אלעד,EL'AD,3.5,,,3963.0,boi_hedonic,,2025,,
-1309,אלעד,EL'AD,4.0,5875.0,5875.0,5875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1309,אלעד,EL'AD,4.0,,5875.0,5875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1309,אלעד,EL'AD,4.5,,,4639.0,boi_hedonic,,2025,,
 1309,אלעד,EL'AD,5+,,,5874.0,boi_hedonic,,2025,,
-1309,אלעד,EL'AD,5.0,6300.0,6300.0,6300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1309,אלעד,EL'AD,5.0,,6300.0,6300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1310,לפיד,LAPPID,2.0,,,3130.0,boi_hedonic,,2025,,
 1310,לפיד,LAPPID,2.5,,,3386.0,boi_hedonic,,2025,,
 1310,לפיד,LAPPID,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -2139,10 +2139,10 @@
 1345,צור יצחק,ZUR YIZHAQ,2.5,,,3386.0,boi_hedonic,,2025,,
 1345,צור יצחק,ZUR YIZHAQ,3.0,,,3663.0,boi_hedonic,,2025,,
 1345,צור יצחק,ZUR YIZHAQ,3.5,,,3963.0,boi_hedonic,,2025,,
-1345,צור יצחק,ZUR YIZHAQ,4.0,5425.0,5425.0,5425.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1345,צור יצחק,ZUR YIZHAQ,4.0,,5425.0,5425.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1345,צור יצחק,ZUR YIZHAQ,4.5,,,4639.0,boi_hedonic,,2025,,
 1345,צור יצחק,ZUR YIZHAQ,5+,,,5874.0,boi_hedonic,,2025,,
-1345,צור יצחק,ZUR YIZHAQ,5.0,5800.0,5800.0,5800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+1345,צור יצחק,ZUR YIZHAQ,5.0,,5800.0,5800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 1346,תראבין א-צאנע(ישוב),TARABIN AS-SANI,2.0,,,3130.0,boi_hedonic,,2025,,
 1346,תראבין א-צאנע(ישוב),TARABIN AS-SANI,2.5,,,3386.0,boi_hedonic,,2025,,
 1346,תראבין א-צאנע(ישוב),TARABIN AS-SANI,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -2497,12 +2497,12 @@
 15,נועם,NO'AM,5.0,,,5018.0,boi_hedonic,,2025,,
 154,תל מונד,TEL MOND,2.0,,,3130.0,boi_hedonic,,2025,,
 154,תל מונד,TEL MOND,2.5,,,3386.0,boi_hedonic,,2025,,
-154,תל מונד,TEL MOND,3.0,5325.0,5325.0,5325.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+154,תל מונד,TEL MOND,3.0,,5325.0,5325.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 154,תל מונד,TEL MOND,3.5,,,3963.0,boi_hedonic,,2025,,
-154,תל מונד,TEL MOND,4.0,5400.0,5400.0,5400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+154,תל מונד,TEL MOND,4.0,,5400.0,5400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 154,תל מונד,TEL MOND,4.5,,,4639.0,boi_hedonic,,2025,,
 154,תל מונד,TEL MOND,5+,,,5874.0,boi_hedonic,,2025,,
-154,תל מונד,TEL MOND,5.0,7600.0,7600.0,7600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+154,תל מונד,TEL MOND,5.0,,7600.0,7600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 155,באר טוביה,BE'ER TUVEYA,2.0,,,3130.0,boi_hedonic,,2025,,
 155,באר טוביה,BE'ER TUVEYA,2.5,,,3386.0,boi_hedonic,,2025,,
 155,באר טוביה,BE'ER TUVEYA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -2593,12 +2593,12 @@
 165,ניר יפה,NIR YAFE,5.0,,,5018.0,boi_hedonic,,2025,,
 166,גן יבנה,GAN YAVNE,2.0,,,3130.0,boi_hedonic,,2025,,
 166,גן יבנה,GAN YAVNE,2.5,,,3386.0,boi_hedonic,,2025,,
-166,גן יבנה,GAN YAVNE,3.0,3625.0,3625.0,3625.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+166,גן יבנה,GAN YAVNE,3.0,,3625.0,3625.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 166,גן יבנה,GAN YAVNE,3.5,,,3963.0,boi_hedonic,,2025,,
-166,גן יבנה,GAN YAVNE,4.0,5950.0,5950.0,5950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+166,גן יבנה,GAN YAVNE,4.0,,5950.0,5950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 166,גן יבנה,GAN YAVNE,4.5,,,4639.0,boi_hedonic,,2025,,
 166,גן יבנה,GAN YAVNE,5+,,,5874.0,boi_hedonic,,2025,,
-166,גן יבנה,GAN YAVNE,5.0,6650.0,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+166,גן יבנה,GAN YAVNE,5.0,,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 167,עין החורש,EN HAHORESH,2.0,,,3130.0,boi_hedonic,,2025,,
 167,עין החורש,EN HAHORESH,2.5,,,3386.0,boi_hedonic,,2025,,
 167,עין החורש,EN HAHORESH,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -2609,9 +2609,9 @@
 167,עין החורש,EN HAHORESH,5.0,,,5018.0,boi_hedonic,,2025,,
 168,כפר יונה,KEFAR YONA,2.0,,,3130.0,boi_hedonic,,2025,,
 168,כפר יונה,KEFAR YONA,2.5,,,3386.0,boi_hedonic,,2025,,
-168,כפר יונה,KEFAR YONA,3.0,3900.0,3900.0,3900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+168,כפר יונה,KEFAR YONA,3.0,,3900.0,3900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 168,כפר יונה,KEFAR YONA,3.5,,,3963.0,boi_hedonic,,2025,,
-168,כפר יונה,KEFAR YONA,4.0,5750.0,5750.0,5750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+168,כפר יונה,KEFAR YONA,4.0,,5750.0,5750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 168,כפר יונה,KEFAR YONA,4.5,,,4639.0,boi_hedonic,,2025,,
 168,כפר יונה,KEFAR YONA,5+,,,5874.0,boi_hedonic,,2025,,
 168,כפר יונה,KEFAR YONA,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -2625,7 +2625,7 @@
 170,כפר יעבץ,KEFAR YA'BEZ,5.0,,,5018.0,boi_hedonic,,2025,,
 171,פרדסיה,PARDESIYYA,2.0,,,3130.0,boi_hedonic,,2025,,
 171,פרדסיה,PARDESIYYA,2.5,,,3386.0,boi_hedonic,,2025,,
-171,פרדסיה,PARDESIYYA,3.0,4450.0,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+171,פרדסיה,PARDESIYYA,3.0,,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 171,פרדסיה,PARDESIYYA,3.5,,,3963.0,boi_hedonic,,2025,,
 171,פרדסיה,PARDESIYYA,4.0,,,4287.0,boi_hedonic,,2025,,
 171,פרדסיה,PARDESIYYA,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -2689,9 +2689,9 @@
 18,שדה משה,SEDE MOSHE,5.0,,,5018.0,boi_hedonic,,2025,,
 182,אבן יהודה,EVEN YEHUDA,2.0,,,3130.0,boi_hedonic,,2025,,
 182,אבן יהודה,EVEN YEHUDA,2.5,,,3386.0,boi_hedonic,,2025,,
-182,אבן יהודה,EVEN YEHUDA,3.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+182,אבן יהודה,EVEN YEHUDA,3.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 182,אבן יהודה,EVEN YEHUDA,3.5,,,3963.0,boi_hedonic,,2025,,
-182,אבן יהודה,EVEN YEHUDA,4.0,7900.0,7900.0,7900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+182,אבן יהודה,EVEN YEHUDA,4.0,,7900.0,7900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 182,אבן יהודה,EVEN YEHUDA,4.5,,,4639.0,boi_hedonic,,2025,,
 182,אבן יהודה,EVEN YEHUDA,5+,,,5874.0,boi_hedonic,,2025,,
 182,אבן יהודה,EVEN YEHUDA,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -2785,12 +2785,12 @@
 194,משמר השרון,MISHMAR HASHARON,5.0,,,5018.0,boi_hedonic,,2025,,
 195,קדימה-צורן,QADIMA-ZORAN,2.0,,,3130.0,boi_hedonic,,2025,,
 195,קדימה-צורן,QADIMA-ZORAN,2.5,,,3386.0,boi_hedonic,,2025,,
-195,קדימה-צורן,QADIMA-ZORAN,3.0,4650.0,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+195,קדימה-צורן,QADIMA-ZORAN,3.0,,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 195,קדימה-צורן,QADIMA-ZORAN,3.5,,,3963.0,boi_hedonic,,2025,,
-195,קדימה-צורן,QADIMA-ZORAN,4.0,6275.0,6275.0,6275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+195,קדימה-צורן,QADIMA-ZORAN,4.0,,6275.0,6275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 195,קדימה-צורן,QADIMA-ZORAN,4.5,,,4639.0,boi_hedonic,,2025,,
 195,קדימה-צורן,QADIMA-ZORAN,5+,,,5874.0,boi_hedonic,,2025,,
-195,קדימה-צורן,QADIMA-ZORAN,5.0,7700.0,7700.0,7700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+195,קדימה-צורן,QADIMA-ZORAN,5.0,,7700.0,7700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 196,גיבתון,GIBBETON,2.0,,,3130.0,boi_hedonic,,2025,,
 196,גיבתון,GIBBETON,2.5,,,3386.0,boi_hedonic,,2025,,
 196,גיבתון,GIBBETON,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3001,9 +3001,9 @@
 2033,בית חלקיה,BET HILQIYYA,5.0,,,5018.0,boi_hedonic,,2025,,
 2034,חצור הגלילית,HAZOR HAGELILIT,2.0,,,3130.0,boi_hedonic,,2025,,
 2034,חצור הגלילית,HAZOR HAGELILIT,2.5,,,3386.0,boi_hedonic,,2025,,
-2034,חצור הגלילית,HAZOR HAGELILIT,3.0,2700.0,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2034,חצור הגלילית,HAZOR HAGELILIT,3.0,,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2034,חצור הגלילית,HAZOR HAGELILIT,3.5,,,3963.0,boi_hedonic,,2025,,
-2034,חצור הגלילית,HAZOR HAGELILIT,4.0,3000.0,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2034,חצור הגלילית,HAZOR HAGELILIT,4.0,,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2034,חצור הגלילית,HAZOR HAGELILIT,4.5,,,4639.0,boi_hedonic,,2025,,
 2034,חצור הגלילית,HAZOR HAGELILIT,5+,,,5874.0,boi_hedonic,,2025,,
 2034,חצור הגלילית,HAZOR HAGELILIT,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -3249,12 +3249,12 @@
 21,באר אורה,BE'ER ORA,5.0,,,5018.0,boi_hedonic,,2025,,
 2100,טירת כרמל,TIRAT KARMEL,2.0,,,3130.0,boi_hedonic,,2025,,
 2100,טירת כרמל,TIRAT KARMEL,2.5,,,3386.0,boi_hedonic,,2025,,
-2100,טירת כרמל,TIRAT KARMEL,3.0,2900.0,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2100,טירת כרמל,TIRAT KARMEL,3.0,,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2100,טירת כרמל,TIRAT KARMEL,3.5,,,3963.0,boi_hedonic,,2025,,
-2100,טירת כרמל,TIRAT KARMEL,4.0,3975.0,3975.0,3975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2100,טירת כרמל,TIRAT KARMEL,4.0,,3975.0,3975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2100,טירת כרמל,TIRAT KARMEL,4.5,,,4639.0,boi_hedonic,,2025,,
 2100,טירת כרמל,TIRAT KARMEL,5+,,,5874.0,boi_hedonic,,2025,,
-2100,טירת כרמל,TIRAT KARMEL,5.0,5900.0,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2100,טירת כרמל,TIRAT KARMEL,5.0,,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 212,בית צבי,BET ZEVI,2.0,,,3130.0,boi_hedonic,,2025,,
 212,בית צבי,BET ZEVI,2.5,,,3386.0,boi_hedonic,,2025,,
 212,בית צבי,BET ZEVI,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3313,9 +3313,9 @@
 220,כפר ביאליק,KEFAR BIALIK,5.0,,,5018.0,boi_hedonic,,2025,,
 2200,דימונה,DIMONA,2.0,,,3130.0,boi_hedonic,,2025,,
 2200,דימונה,DIMONA,2.5,,,3386.0,boi_hedonic,,2025,,
-2200,דימונה,DIMONA,3.0,2300.0,2300.0,2300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2200,דימונה,DIMONA,3.0,,2300.0,2300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2200,דימונה,DIMONA,3.5,,,3963.0,boi_hedonic,,2025,,
-2200,דימונה,DIMONA,4.0,2500.0,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2200,דימונה,DIMONA,4.0,,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2200,דימונה,DIMONA,4.5,,,4639.0,boi_hedonic,,2025,,
 2200,דימונה,DIMONA,5+,,,5874.0,boi_hedonic,,2025,,
 2200,דימונה,DIMONA,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -3345,12 +3345,12 @@
 225,גן השומרון,GAN HASHOMERON,5.0,,,5018.0,boi_hedonic,,2025,,
 229,גני תקווה,GANNE TIQWA,2.0,,,3130.0,boi_hedonic,,2025,,
 229,גני תקווה,GANNE TIQWA,2.5,,,3386.0,boi_hedonic,,2025,,
-229,גני תקווה,GANNE TIQWA,3.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+229,גני תקווה,GANNE TIQWA,3.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 229,גני תקווה,GANNE TIQWA,3.5,,,3963.0,boi_hedonic,,2025,,
-229,גני תקווה,GANNE TIQWA,4.0,6650.0,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+229,גני תקווה,GANNE TIQWA,4.0,,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 229,גני תקווה,GANNE TIQWA,4.5,,,4639.0,boi_hedonic,,2025,,
 229,גני תקווה,GANNE TIQWA,5+,,,5874.0,boi_hedonic,,2025,,
-229,גני תקווה,GANNE TIQWA,5.0,8275.0,8275.0,8275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+229,גני תקווה,GANNE TIQWA,5.0,,8275.0,8275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 23,אמציה,AMAZYA,2.0,,,3130.0,boi_hedonic,,2025,,
 23,אמציה,AMAZYA,2.5,,,3386.0,boi_hedonic,,2025,,
 23,אמציה,AMAZYA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3369,12 +3369,12 @@
 230,מעש,MA'AS,5.0,,,5018.0,boi_hedonic,,2025,,
 2300,קרית טבעון,QIRYAT TIV'ON,2.0,,,3130.0,boi_hedonic,,2025,,
 2300,קרית טבעון,QIRYAT TIV'ON,2.5,,,3386.0,boi_hedonic,,2025,,
-2300,קרית טבעון,QIRYAT TIV'ON,3.0,3950.0,3950.0,3950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2300,קרית טבעון,QIRYAT TIV'ON,3.0,,3950.0,3950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2300,קרית טבעון,QIRYAT TIV'ON,3.5,,,3963.0,boi_hedonic,,2025,,
-2300,קרית טבעון,QIRYAT TIV'ON,4.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2300,קרית טבעון,QIRYAT TIV'ON,4.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2300,קרית טבעון,QIRYAT TIV'ON,4.5,,,4639.0,boi_hedonic,,2025,,
 2300,קרית טבעון,QIRYAT TIV'ON,5+,,,5874.0,boi_hedonic,,2025,,
-2300,קרית טבעון,QIRYAT TIV'ON,5.0,6550.0,6550.0,6550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2300,קרית טבעון,QIRYAT TIV'ON,5.0,,6550.0,6550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 232,שפיים,SHEFAYIM,2.0,,,3130.0,boi_hedonic,,2025,,
 232,שפיים,SHEFAYIM,2.5,,,3386.0,boi_hedonic,,2025,,
 232,שפיים,SHEFAYIM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3433,20 +3433,20 @@
 24,לכיש,LAKHISH,5.0,,,5018.0,boi_hedonic,,2025,,
 240,יקנעם עילית,YOQNE'AM ILLIT,2.0,,,3130.0,boi_hedonic,,2025,,
 240,יקנעם עילית,YOQNE'AM ILLIT,2.5,,,3386.0,boi_hedonic,,2025,,
-240,יקנעם עילית,YOQNE'AM ILLIT,3.0,3200.0,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+240,יקנעם עילית,YOQNE'AM ILLIT,3.0,,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 240,יקנעם עילית,YOQNE'AM ILLIT,3.5,,,3963.0,boi_hedonic,,2025,,
-240,יקנעם עילית,YOQNE'AM ILLIT,4.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+240,יקנעם עילית,YOQNE'AM ILLIT,4.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 240,יקנעם עילית,YOQNE'AM ILLIT,4.5,,,4639.0,boi_hedonic,,2025,,
 240,יקנעם עילית,YOQNE'AM ILLIT,5+,,,5874.0,boi_hedonic,,2025,,
-240,יקנעם עילית,YOQNE'AM ILLIT,5.0,5950.0,5950.0,5950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+240,יקנעם עילית,YOQNE'AM ILLIT,5.0,,5950.0,5950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2400,אור יהודה,OR YEHUDA,2.0,,,3130.0,boi_hedonic,,2025,,
 2400,אור יהודה,OR YEHUDA,2.5,,,3386.0,boi_hedonic,,2025,,
-2400,אור יהודה,OR YEHUDA,3.0,4725.0,4725.0,4725.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2400,אור יהודה,OR YEHUDA,3.0,,4725.0,4725.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2400,אור יהודה,OR YEHUDA,3.5,,,3963.0,boi_hedonic,,2025,,
-2400,אור יהודה,OR YEHUDA,4.0,6000.0,6000.0,6000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2400,אור יהודה,OR YEHUDA,4.0,,6000.0,6000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2400,אור יהודה,OR YEHUDA,4.5,,,4639.0,boi_hedonic,,2025,,
 2400,אור יהודה,OR YEHUDA,5+,,,5874.0,boi_hedonic,,2025,,
-2400,אור יהודה,OR YEHUDA,5.0,7213.0,7213.0,7213.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2400,אור יהודה,OR YEHUDA,5.0,,7213.0,7213.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 241,יקנעם (מושבה),YOQNE'AM(MOSHAVA),2.0,,,3130.0,boi_hedonic,,2025,,
 241,יקנעם (מושבה),YOQNE'AM(MOSHAVA),2.5,,,3386.0,boi_hedonic,,2025,,
 241,יקנעם (מושבה),YOQNE'AM(MOSHAVA),3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3465,12 +3465,12 @@
 242,בית השיטה,BET HASHITTA,5.0,,,5018.0,boi_hedonic,,2025,,
 246,נתיבות,NETIVOT,2.0,,,3130.0,boi_hedonic,,2025,,
 246,נתיבות,NETIVOT,2.5,,,3386.0,boi_hedonic,,2025,,
-246,נתיבות,NETIVOT,3.0,2325.0,2325.0,2325.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+246,נתיבות,NETIVOT,3.0,,2325.0,2325.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 246,נתיבות,NETIVOT,3.5,,,3963.0,boi_hedonic,,2025,,
-246,נתיבות,NETIVOT,4.0,3287.0,3287.0,3287.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+246,נתיבות,NETIVOT,4.0,,3287.0,3287.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 246,נתיבות,NETIVOT,4.5,,,4639.0,boi_hedonic,,2025,,
 246,נתיבות,NETIVOT,5+,,,5874.0,boi_hedonic,,2025,,
-246,נתיבות,NETIVOT,5.0,4225.0,4225.0,4225.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+246,נתיבות,NETIVOT,5.0,,4225.0,4225.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 247,רשפון,RISHPON,2.0,,,3130.0,boi_hedonic,,2025,,
 247,רשפון,RISHPON,2.5,,,3386.0,boi_hedonic,,2025,,
 247,רשפון,RISHPON,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3505,12 +3505,12 @@
 250,הזורע,HAZOREA,5.0,,,5018.0,boi_hedonic,,2025,,
 2500,נשר,NESHER,2.0,,,3130.0,boi_hedonic,,2025,,
 2500,נשר,NESHER,2.5,,,3386.0,boi_hedonic,,2025,,
-2500,נשר,NESHER,3.0,3000.0,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2500,נשר,NESHER,3.0,,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2500,נשר,NESHER,3.5,,,3963.0,boi_hedonic,,2025,,
-2500,נשר,NESHER,4.0,4000.0,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2500,נשר,NESHER,4.0,,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2500,נשר,NESHER,4.5,,,4639.0,boi_hedonic,,2025,,
 2500,נשר,NESHER,5+,,,5874.0,boi_hedonic,,2025,,
-2500,נשר,NESHER,5.0,5675.0,5675.0,5675.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2500,נשר,NESHER,5.0,,5675.0,5675.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 252,ביתן אהרן,BITAN AHARON,2.0,,,3130.0,boi_hedonic,,2025,,
 252,ביתן אהרן,BITAN AHARON,2.5,,,3386.0,boi_hedonic,,2025,,
 252,ביתן אהרן,BITAN AHARON,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3529,12 +3529,12 @@
 253,חולתה,HULATA,5.0,,,5018.0,boi_hedonic,,2025,,
 2530,באר יעקב,BE'ER YA'AQOV,2.0,,,3130.0,boi_hedonic,,2025,,
 2530,באר יעקב,BE'ER YA'AQOV,2.5,,,3386.0,boi_hedonic,,2025,,
-2530,באר יעקב,BE'ER YA'AQOV,3.0,5250.0,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2530,באר יעקב,BE'ER YA'AQOV,3.0,,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2530,באר יעקב,BE'ER YA'AQOV,3.5,,,3963.0,boi_hedonic,,2025,,
-2530,באר יעקב,BE'ER YA'AQOV,4.0,6800.0,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2530,באר יעקב,BE'ER YA'AQOV,4.0,,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2530,באר יעקב,BE'ER YA'AQOV,4.5,,,4639.0,boi_hedonic,,2025,,
 2530,באר יעקב,BE'ER YA'AQOV,5+,,,5874.0,boi_hedonic,,2025,,
-2530,באר יעקב,BE'ER YA'AQOV,5.0,7600.0,7600.0,7600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2530,באר יעקב,BE'ER YA'AQOV,5.0,,7600.0,7600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 254,כפר המכבי,KEFAR HAMAKKABI,2.0,,,3130.0,boi_hedonic,,2025,,
 254,כפר המכבי,KEFAR HAMAKKABI,2.5,,,3386.0,boi_hedonic,,2025,,
 254,כפר המכבי,KEFAR HAMAKKABI,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3553,12 +3553,12 @@
 255,כפר חיטים,KEFAR HITTIM,5.0,,,5018.0,boi_hedonic,,2025,,
 2550,גדרה,GEDERA,2.0,,,3130.0,boi_hedonic,,2025,,
 2550,גדרה,GEDERA,2.5,,,3386.0,boi_hedonic,,2025,,
-2550,גדרה,GEDERA,3.0,4725.0,4725.0,4725.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2550,גדרה,GEDERA,3.0,,4725.0,4725.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2550,גדרה,GEDERA,3.5,,,3963.0,boi_hedonic,,2025,,
-2550,גדרה,GEDERA,4.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2550,גדרה,GEDERA,4.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2550,גדרה,GEDERA,4.5,,,4639.0,boi_hedonic,,2025,,
 2550,גדרה,GEDERA,5+,,,5874.0,boi_hedonic,,2025,,
-2550,גדרה,GEDERA,5.0,6250.0,6250.0,6250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2550,גדרה,GEDERA,5.0,,6250.0,6250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 256,ניר דוד (תל עמל),NIR DAWID (TEL AMAL),2.0,,,3130.0,boi_hedonic,,2025,,
 256,ניר דוד (תל עמל),NIR DAWID (TEL AMAL),2.5,,,3386.0,boi_hedonic,,2025,,
 256,ניר דוד (תל עמל),NIR DAWID (TEL AMAL),3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3569,9 +3569,9 @@
 256,ניר דוד (תל עמל),NIR DAWID (TEL AMAL),5.0,,,5018.0,boi_hedonic,,2025,,
 2560,ערד,ARAD,2.0,,,3130.0,boi_hedonic,,2025,,
 2560,ערד,ARAD,2.5,,,3386.0,boi_hedonic,,2025,,
-2560,ערד,ARAD,3.0,2445.0,2445.0,2445.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2560,ערד,ARAD,3.0,,2445.0,2445.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2560,ערד,ARAD,3.5,,,3963.0,boi_hedonic,,2025,,
-2560,ערד,ARAD,4.0,2975.0,2975.0,2975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2560,ערד,ARAD,4.0,,2975.0,2975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2560,ערד,ARAD,4.5,,,4639.0,boi_hedonic,,2025,,
 2560,ערד,ARAD,5+,,,5874.0,boi_hedonic,,2025,,
 2560,ערד,ARAD,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -3601,20 +3601,20 @@
 26,ראש פינה,ROSH PINNA,5.0,,,5018.0,boi_hedonic,,2025,,
 2600,אילת,ELAT,2.0,,,3130.0,boi_hedonic,,2025,,
 2600,אילת,ELAT,2.5,,,3386.0,boi_hedonic,,2025,,
-2600,אילת,ELAT,3.0,3999.0,3999.0,3999.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2600,אילת,ELAT,3.0,,3999.0,3999.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2600,אילת,ELAT,3.5,,,3963.0,boi_hedonic,,2025,,
-2600,אילת,ELAT,4.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2600,אילת,ELAT,4.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2600,אילת,ELAT,4.5,,,4639.0,boi_hedonic,,2025,,
 2600,אילת,ELAT,5+,,,5874.0,boi_hedonic,,2025,,
-2600,אילת,ELAT,5.0,7350.0,7350.0,7350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2600,אילת,ELAT,5.0,,7350.0,7350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2610,בית שמש,BET SHEMESH,2.0,,,3130.0,boi_hedonic,,2025,,
 2610,בית שמש,BET SHEMESH,2.5,,,3386.0,boi_hedonic,,2025,,
-2610,בית שמש,BET SHEMESH,3.0,4300.0,4300.0,4300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2610,בית שמש,BET SHEMESH,3.0,,4300.0,4300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2610,בית שמש,BET SHEMESH,3.5,,,3963.0,boi_hedonic,,2025,,
-2610,בית שמש,BET SHEMESH,4.0,5500.0,5500.0,5500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2610,בית שמש,BET SHEMESH,4.0,,5500.0,5500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2610,בית שמש,BET SHEMESH,4.5,,,4639.0,boi_hedonic,,2025,,
-2610,בית שמש,BET SHEMESH,5+,,,5874.0,boi_hedonic,,2025,,
-2610,בית שמש,BET SHEMESH,5.0,6500.0,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2610,Bet Shemesh,BET SHEMESH,5+,,5972.2,5972.2,cbs_table49,2.0,2025,,
+2610,בית שמש,BET SHEMESH,5.0,,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 262,גינוסר,GINNOSAR,2.0,,,3130.0,boi_hedonic,,2025,,
 262,גינוסר,GINNOSAR,2.5,,,3386.0,boi_hedonic,,2025,,
 262,גינוסר,GINNOSAR,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3625,12 +3625,12 @@
 262,גינוסר,GINNOSAR,5.0,,,5018.0,boi_hedonic,,2025,,
 2620,קרית אונו,QIRYAT ONO,2.0,,,3130.0,boi_hedonic,,2025,,
 2620,קרית אונו,QIRYAT ONO,2.5,,,3386.0,boi_hedonic,,2025,,
-2620,קרית אונו,QIRYAT ONO,3.0,5437.0,5437.0,5437.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2620,קרית אונו,QIRYAT ONO,3.0,,5437.0,5437.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2620,קרית אונו,QIRYAT ONO,3.5,,,3963.0,boi_hedonic,,2025,,
-2620,קרית אונו,QIRYAT ONO,4.0,7225.0,7225.0,7225.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2620,קרית אונו,QIRYAT ONO,4.0,,7225.0,7225.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2620,קרית אונו,QIRYAT ONO,4.5,,,4639.0,boi_hedonic,,2025,,
 2620,קרית אונו,QIRYAT ONO,5+,,,5874.0,boi_hedonic,,2025,,
-2620,קרית אונו,QIRYAT ONO,5.0,7875.0,7875.0,7875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2620,קרית אונו,QIRYAT ONO,5.0,,7875.0,7875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 263,מסדה,MASSADA,2.0,,,3130.0,boi_hedonic,,2025,,
 263,מסדה,MASSADA,2.5,,,3386.0,boi_hedonic,,2025,,
 263,מסדה,MASSADA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3641,12 +3641,12 @@
 263,מסדה,MASSADA,5.0,,,5018.0,boi_hedonic,,2025,,
 2630,קרית גת,QIRYAT GAT,2.0,,,3130.0,boi_hedonic,,2025,,
 2630,קרית גת,QIRYAT GAT,2.5,,,3386.0,boi_hedonic,,2025,,
-2630,קרית גת,QIRYAT GAT,3.0,2695.0,2695.0,2695.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2630,קרית גת,QIRYAT GAT,3.0,,2695.0,2695.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2630,קרית גת,QIRYAT GAT,3.5,,,3963.0,boi_hedonic,,2025,,
-2630,קרית גת,QIRYAT GAT,4.0,3350.0,3350.0,3350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2630,קרית גת,QIRYAT GAT,4.0,,3350.0,3350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2630,קרית גת,QIRYAT GAT,4.5,,,4639.0,boi_hedonic,,2025,,
 2630,קרית גת,QIRYAT GAT,5+,,,5874.0,boi_hedonic,,2025,,
-2630,קרית גת,QIRYAT GAT,5.0,4400.0,4400.0,4400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2630,קרית גת,QIRYAT GAT,5.0,,4400.0,4400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 264,שער הגולן,SHA'AR HAGOLAN,2.0,,,3130.0,boi_hedonic,,2025,,
 264,שער הגולן,SHA'AR HAGOLAN,2.5,,,3386.0,boi_hedonic,,2025,,
 264,שער הגולן,SHA'AR HAGOLAN,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3657,12 +3657,12 @@
 264,שער הגולן,SHA'AR HAGOLAN,5.0,,,5018.0,boi_hedonic,,2025,,
 2640,ראש העין,ROSH HAAYIN,2.0,,,3130.0,boi_hedonic,,2025,,
 2640,ראש העין,ROSH HAAYIN,2.5,,,3386.0,boi_hedonic,,2025,,
-2640,ראש העין,ROSH HAAYIN,3.0,4700.0,4700.0,4700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2640,ראש העין,ROSH HAAYIN,3.0,,4700.0,4700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2640,ראש העין,ROSH HAAYIN,3.5,,,3963.0,boi_hedonic,,2025,,
-2640,ראש העין,ROSH HAAYIN,4.0,5850.0,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2640,ראש העין,ROSH HAAYIN,4.0,,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2640,ראש העין,ROSH HAAYIN,4.5,,,4639.0,boi_hedonic,,2025,,
 2640,ראש העין,ROSH HAAYIN,5+,,,5874.0,boi_hedonic,,2025,,
-2640,ראש העין,ROSH HAAYIN,5.0,6500.0,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2640,ראש העין,ROSH HAAYIN,5.0,,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 265,בית יוסף,BET YOSEF,2.0,,,3130.0,boi_hedonic,,2025,,
 265,בית יוסף,BET YOSEF,2.5,,,3386.0,boi_hedonic,,2025,,
 265,בית יוסף,BET YOSEF,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3673,20 +3673,20 @@
 265,בית יוסף,BET YOSEF,5.0,,,5018.0,boi_hedonic,,2025,,
 2650,רמת השרון,RAMAT HASHARON,2.0,,,3130.0,boi_hedonic,,2025,,
 2650,רמת השרון,RAMAT HASHARON,2.5,,,3386.0,boi_hedonic,,2025,,
-2650,רמת השרון,RAMAT HASHARON,3.0,6650.0,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2650,רמת השרון,RAMAT HASHARON,3.0,,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2650,רמת השרון,RAMAT HASHARON,3.5,,,3963.0,boi_hedonic,,2025,,
-2650,רמת השרון,RAMAT HASHARON,4.0,8500.0,8500.0,8500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2650,רמת השרון,RAMAT HASHARON,4.0,,8500.0,8500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2650,רמת השרון,RAMAT HASHARON,4.5,,,4639.0,boi_hedonic,,2025,,
 2650,רמת השרון,RAMAT HASHARON,5+,,,5874.0,boi_hedonic,,2025,,
-2650,רמת השרון,RAMAT HASHARON,5.0,10450.0,10450.0,10450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2650,רמת השרון,RAMAT HASHARON,5.0,,10450.0,10450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2660,יבנה,YAVNE,2.0,,,3130.0,boi_hedonic,,2025,,
 2660,יבנה,YAVNE,2.5,,,3386.0,boi_hedonic,,2025,,
-2660,יבנה,YAVNE,3.0,3900.0,3900.0,3900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2660,יבנה,YAVNE,3.0,,3900.0,3900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2660,יבנה,YAVNE,3.5,,,3963.0,boi_hedonic,,2025,,
-2660,יבנה,YAVNE,4.0,5275.0,5275.0,5275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2660,יבנה,YAVNE,4.0,,5275.0,5275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2660,יבנה,YAVNE,4.5,,,4639.0,boi_hedonic,,2025,,
 2660,יבנה,YAVNE,5+,,,5874.0,boi_hedonic,,2025,,
-2660,יבנה,YAVNE,5.0,7300.0,7300.0,7300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2660,יבנה,YAVNE,5.0,,7300.0,7300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 267,כפר שמריהו,KEFAR SHEMARYAHU,2.0,,,3130.0,boi_hedonic,,2025,,
 267,כפר שמריהו,KEFAR SHEMARYAHU,2.5,,,3386.0,boi_hedonic,,2025,,
 267,כפר שמריהו,KEFAR SHEMARYAHU,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3803,10 +3803,10 @@
 28,מזכרת בתיה,MAZKERET BATYA,2.5,,,3386.0,boi_hedonic,,2025,,
 28,מזכרת בתיה,MAZKERET BATYA,3.0,,,3663.0,boi_hedonic,,2025,,
 28,מזכרת בתיה,MAZKERET BATYA,3.5,,,3963.0,boi_hedonic,,2025,,
-28,מזכרת בתיה,MAZKERET BATYA,4.0,6425.0,6425.0,6425.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+28,מזכרת בתיה,MAZKERET BATYA,4.0,,6425.0,6425.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 28,מזכרת בתיה,MAZKERET BATYA,4.5,,,4639.0,boi_hedonic,,2025,,
 28,מזכרת בתיה,MAZKERET BATYA,5+,,,5874.0,boi_hedonic,,2025,,
-28,מזכרת בתיה,MAZKERET BATYA,5.0,8750.0,8750.0,8750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+28,מזכרת בתיה,MAZKERET BATYA,5.0,,8750.0,8750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 280,חניתה,HANITA,2.0,,,3130.0,boi_hedonic,,2025,,
 280,חניתה,HANITA,2.5,,,3386.0,boi_hedonic,,2025,,
 280,חניתה,HANITA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -3817,9 +3817,9 @@
 280,חניתה,HANITA,5.0,,,5018.0,boi_hedonic,,2025,,
 2800,קרית שמונה,QIRYAT SHEMONA,2.0,,,3130.0,boi_hedonic,,2025,,
 2800,קרית שמונה,QIRYAT SHEMONA,2.5,,,3386.0,boi_hedonic,,2025,,
-2800,קרית שמונה,QIRYAT SHEMONA,3.0,2500.0,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2800,קרית שמונה,QIRYAT SHEMONA,3.0,,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2800,קרית שמונה,QIRYAT SHEMONA,3.5,,,3963.0,boi_hedonic,,2025,,
-2800,קרית שמונה,QIRYAT SHEMONA,4.0,2850.0,2850.0,2850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+2800,קרית שמונה,QIRYAT SHEMONA,4.0,,2850.0,2850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 2800,קרית שמונה,QIRYAT SHEMONA,4.5,,,4639.0,boi_hedonic,,2025,,
 2800,קרית שמונה,QIRYAT SHEMONA,5+,,,5874.0,boi_hedonic,,2025,,
 2800,קרית שמונה,QIRYAT SHEMONA,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -3967,14 +3967,14 @@
 300,דליה,DALIYYA,4.5,,,4639.0,boi_hedonic,,2025,,
 300,דליה,DALIYYA,5+,,,5874.0,boi_hedonic,,2025,,
 300,דליה,DALIYYA,5.0,,,5018.0,boi_hedonic,,2025,,
-3000,ירושלים,JERUSALEM,2.0,,,4191.0,boi_hedonic,,2025,,
+3000,Jerusalem,JERUSALEM,2.0,,3776.8,3776.8,cbs_table49,2.0,2025,,
 3000,ירושלים,JERUSALEM,2.5,,,4534.0,boi_hedonic,,2025,,
-3000,ירושלים,JERUSALEM,3.0,5450.0,5450.0,5450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3000,ירושלים,JERUSALEM,3.0,,5450.0,5450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3000,ירושלים,JERUSALEM,3.5,,,5307.0,boi_hedonic,,2025,,
-3000,ירושלים,JERUSALEM,4.0,7380.0,7380.0,7380.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3000,ירושלים,JERUSALEM,4.0,,7380.0,7380.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3000,ירושלים,JERUSALEM,4.5,,,6212.0,boi_hedonic,,2025,,
-3000,ירושלים,JERUSALEM,5+,,,7866.0,boi_hedonic,,2025,,
-3000,ירושלים,JERUSALEM,5.0,8975.0,8975.0,8975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3000,Jerusalem,JERUSALEM,5+,,7574.5,7574.5,cbs_table49,2.0,2025,,
+3000,ירושלים,JERUSALEM,5.0,,8975.0,8975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 301,בית עוזיאל,BET UZZI'EL,2.0,,,3130.0,boi_hedonic,,2025,,
 301,בית עוזיאל,BET UZZI'EL,2.5,,,3386.0,boi_hedonic,,2025,,
 301,בית עוזיאל,BET UZZI'EL,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -4049,12 +4049,12 @@
 309,נהורה,NEHORA,5.0,,,5018.0,boi_hedonic,,2025,,
 31,אופקים,OFAQIM,2.0,,,3130.0,boi_hedonic,,2025,,
 31,אופקים,OFAQIM,2.5,,,3386.0,boi_hedonic,,2025,,
-31,אופקים,OFAQIM,3.0,2445.0,2445.0,2445.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+31,אופקים,OFAQIM,3.0,,2445.0,2445.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 31,אופקים,OFAQIM,3.5,,,3963.0,boi_hedonic,,2025,,
-31,אופקים,OFAQIM,4.0,2725.0,2725.0,2725.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+31,אופקים,OFAQIM,4.0,,2725.0,2725.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 31,אופקים,OFAQIM,4.5,,,4639.0,boi_hedonic,,2025,,
 31,אופקים,OFAQIM,5+,,,5874.0,boi_hedonic,,2025,,
-31,אופקים,OFAQIM,5.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+31,אופקים,OFAQIM,5.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 310,כפר גליקסון,KEFAR GLIKSON,2.0,,,3130.0,boi_hedonic,,2025,,
 310,כפר גליקסון,KEFAR GLIKSON,2.5,,,3386.0,boi_hedonic,,2025,,
 310,כפר גליקסון,KEFAR GLIKSON,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -4521,12 +4521,12 @@
 357,כפר בלום,KEFAR BLUM,5.0,,,5018.0,boi_hedonic,,2025,,
 3570,אריאל,ARI'EL,2.0,,,3130.0,boi_hedonic,,2025,,
 3570,אריאל,ARI'EL,2.5,,,3386.0,boi_hedonic,,2025,,
-3570,אריאל,ARI'EL,3.0,3500.0,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3570,אריאל,ARI'EL,3.0,,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3570,אריאל,ARI'EL,3.5,,,3963.0,boi_hedonic,,2025,,
-3570,אריאל,ARI'EL,4.0,4350.0,4350.0,4350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3570,אריאל,ARI'EL,4.0,,4350.0,4350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3570,אריאל,ARI'EL,4.5,,,4639.0,boi_hedonic,,2025,,
 3570,אריאל,ARI'EL,5+,,,5874.0,boi_hedonic,,2025,,
-3570,אריאל,ARI'EL,5.0,5100.0,5100.0,5100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3570,אריאל,ARI'EL,5.0,,5100.0,5100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3571,שבי שומרון,SHAVE SHOMERON,2.0,,,3130.0,boi_hedonic,,2025,,
 3571,שבי שומרון,SHAVE SHOMERON,2.5,,,3386.0,boi_hedonic,,2025,,
 3571,שבי שומרון,SHAVE SHOMERON,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -4555,10 +4555,10 @@
 3574,בית אל,BET EL,2.5,,,3386.0,boi_hedonic,,2025,,
 3574,בית אל,BET EL,3.0,,,3663.0,boi_hedonic,,2025,,
 3574,בית אל,BET EL,3.5,,,3963.0,boi_hedonic,,2025,,
-3574,בית אל,BET EL,4.0,2900.0,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3574,בית אל,BET EL,4.0,,2900.0,2900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3574,בית אל,BET EL,4.5,,,4639.0,boi_hedonic,,2025,,
 3574,בית אל,BET EL,5+,,,5874.0,boi_hedonic,,2025,,
-3574,בית אל,BET EL,5.0,3825.0,3825.0,3825.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3574,בית אל,BET EL,5.0,,3825.0,3825.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3575,בית חורון,BET HORON,2.0,,,3130.0,boi_hedonic,,2025,,
 3575,בית חורון,BET HORON,2.5,,,3386.0,boi_hedonic,,2025,,
 3575,בית חורון,BET HORON,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -4657,7 +4657,7 @@
 3602,ראש צורים,ROSH ZURIM,5.0,,,5018.0,boi_hedonic,,2025,,
 3603,הר גילה,HAR GILLO,2.0,,,3130.0,boi_hedonic,,2025,,
 3603,הר גילה,HAR GILLO,2.5,,,3386.0,boi_hedonic,,2025,,
-3603,הר גילה,HAR GILLO,3.0,4350.0,4350.0,4350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3603,הר גילה,HAR GILLO,3.0,,4350.0,4350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3603,הר גילה,HAR GILLO,3.5,,,3963.0,boi_hedonic,,2025,,
 3603,הר גילה,HAR GILLO,4.0,,,4287.0,boi_hedonic,,2025,,
 3603,הר גילה,HAR GILLO,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -4721,12 +4721,12 @@
 3610,מצפה שלם,MIZPE SHALEM,5.0,,,5018.0,boi_hedonic,,2025,,
 3611,קרית ארבע,QIRYAT ARBA,2.0,,,3130.0,boi_hedonic,,2025,,
 3611,קרית ארבע,QIRYAT ARBA,2.5,,,3386.0,boi_hedonic,,2025,,
-3611,קרית ארבע,QIRYAT ARBA,3.0,2200.0,2200.0,2200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3611,קרית ארבע,QIRYAT ARBA,3.0,,2200.0,2200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3611,קרית ארבע,QIRYAT ARBA,3.5,,,3963.0,boi_hedonic,,2025,,
-3611,קרית ארבע,QIRYAT ARBA,4.0,2400.0,2400.0,2400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3611,קרית ארבע,QIRYAT ARBA,4.0,,2400.0,2400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3611,קרית ארבע,QIRYAT ARBA,4.5,,,4639.0,boi_hedonic,,2025,,
 3611,קרית ארבע,QIRYAT ARBA,5+,,,5874.0,boi_hedonic,,2025,,
-3611,קרית ארבע,QIRYAT ARBA,5.0,3710.0,3710.0,3710.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3611,קרית ארבע,QIRYAT ARBA,5.0,,3710.0,3710.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3612,בקעות,BEQA'OT,2.0,,,3130.0,boi_hedonic,,2025,,
 3612,בקעות,BEQA'OT,2.5,,,3386.0,boi_hedonic,,2025,,
 3612,בקעות,BEQA'OT,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -4761,12 +4761,12 @@
 3615,פצאל,PEZA'EL,5.0,,,5018.0,boi_hedonic,,2025,,
 3616,מעלה אדומים,MA'ALE ADUMMIM,2.0,,,3130.0,boi_hedonic,,2025,,
 3616,מעלה אדומים,MA'ALE ADUMMIM,2.5,,,3386.0,boi_hedonic,,2025,,
-3616,מעלה אדומים,MA'ALE ADUMMIM,3.0,4000.0,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3616,מעלה אדומים,MA'ALE ADUMMIM,3.0,,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3616,מעלה אדומים,MA'ALE ADUMMIM,3.5,,,3963.0,boi_hedonic,,2025,,
-3616,מעלה אדומים,MA'ALE ADUMMIM,4.0,5625.0,5625.0,5625.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3616,מעלה אדומים,MA'ALE ADUMMIM,4.0,,5625.0,5625.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3616,מעלה אדומים,MA'ALE ADUMMIM,4.5,,,4639.0,boi_hedonic,,2025,,
 3616,מעלה אדומים,MA'ALE ADUMMIM,5+,,,5874.0,boi_hedonic,,2025,,
-3616,מעלה אדומים,MA'ALE ADUMMIM,5.0,6825.0,6825.0,6825.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3616,מעלה אדומים,MA'ALE ADUMMIM,5.0,,6825.0,6825.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3617,עופרה,OFRA,2.0,,,3130.0,boi_hedonic,,2025,,
 3617,עופרה,OFRA,2.5,,,3386.0,boi_hedonic,,2025,,
 3617,עופרה,OFRA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -4779,7 +4779,7 @@
 3618,אלעזר,EL'AZAR,2.5,,,3386.0,boi_hedonic,,2025,,
 3618,אלעזר,EL'AZAR,3.0,,,3663.0,boi_hedonic,,2025,,
 3618,אלעזר,EL'AZAR,3.5,,,3963.0,boi_hedonic,,2025,,
-3618,אלעזר,EL'AZAR,4.0,3900.0,3900.0,3900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3618,אלעזר,EL'AZAR,4.0,,3900.0,3900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3618,אלעזר,EL'AZAR,4.5,,,4639.0,boi_hedonic,,2025,,
 3618,אלעזר,EL'AZAR,5+,,,5874.0,boi_hedonic,,2025,,
 3618,אלעזר,EL'AZAR,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -4841,9 +4841,9 @@
 364,כפר אוריה,KEFAR URIYYA,5.0,,,5018.0,boi_hedonic,,2025,,
 3640,קרני שומרון,QARNE SHOMERON,2.0,,,3130.0,boi_hedonic,,2025,,
 3640,קרני שומרון,QARNE SHOMERON,2.5,,,3386.0,boi_hedonic,,2025,,
-3640,קרני שומרון,QARNE SHOMERON,3.0,3225.0,3225.0,3225.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3640,קרני שומרון,QARNE SHOMERON,3.0,,3225.0,3225.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3640,קרני שומרון,QARNE SHOMERON,3.5,,,3963.0,boi_hedonic,,2025,,
-3640,קרני שומרון,QARNE SHOMERON,4.0,4250.0,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3640,קרני שומרון,QARNE SHOMERON,4.0,,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3640,קרני שומרון,QARNE SHOMERON,4.5,,,4639.0,boi_hedonic,,2025,,
 3640,קרני שומרון,QARNE SHOMERON,5+,,,5874.0,boi_hedonic,,2025,,
 3640,קרני שומרון,QARNE SHOMERON,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -4929,9 +4929,9 @@
 365,בית קשת,BET QESHET,5.0,,,5018.0,boi_hedonic,,2025,,
 3650,אפרת,EFRAT,2.0,,,3130.0,boi_hedonic,,2025,,
 3650,אפרת,EFRAT,2.5,,,3386.0,boi_hedonic,,2025,,
-3650,אפרת,EFRAT,3.0,3875.0,3875.0,3875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3650,אפרת,EFRAT,3.0,,3875.0,3875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3650,אפרת,EFRAT,3.5,,,3963.0,boi_hedonic,,2025,,
-3650,אפרת,EFRAT,4.0,5250.0,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3650,אפרת,EFRAT,4.0,,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3650,אפרת,EFRAT,4.5,,,4639.0,boi_hedonic,,2025,,
 3650,אפרת,EFRAT,5+,,,5874.0,boi_hedonic,,2025,,
 3650,אפרת,EFRAT,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -4947,7 +4947,7 @@
 3652,בית אריה,BET ARYE,2.5,,,3386.0,boi_hedonic,,2025,,
 3652,בית אריה,BET ARYE,3.0,,,3663.0,boi_hedonic,,2025,,
 3652,בית אריה,BET ARYE,3.5,,,3963.0,boi_hedonic,,2025,,
-3652,בית אריה,BET ARYE,4.0,4750.0,4750.0,4750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3652,בית אריה,BET ARYE,4.0,,4750.0,4750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3652,בית אריה,BET ARYE,4.5,,,4639.0,boi_hedonic,,2025,,
 3652,בית אריה,BET ARYE,5+,,,5874.0,boi_hedonic,,2025,,
 3652,בית אריה,BET ARYE,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -5017,12 +5017,12 @@
 366,שמיר,SHAMIR,5.0,,,5018.0,boi_hedonic,,2025,,
 3660,עמנואל,IMMANU'EL,2.0,,,3130.0,boi_hedonic,,2025,,
 3660,עמנואל,IMMANU'EL,2.5,,,3386.0,boi_hedonic,,2025,,
-3660,עמנואל,IMMANU'EL,3.0,2150.0,2150.0,2150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3660,עמנואל,IMMANU'EL,3.0,,2150.0,2150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3660,עמנואל,IMMANU'EL,3.5,,,3963.0,boi_hedonic,,2025,,
-3660,עמנואל,IMMANU'EL,4.0,2500.0,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3660,עמנואל,IMMANU'EL,4.0,,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3660,עמנואל,IMMANU'EL,4.5,,,4639.0,boi_hedonic,,2025,,
 3660,עמנואל,IMMANU'EL,5+,,,5874.0,boi_hedonic,,2025,,
-3660,עמנואל,IMMANU'EL,5.0,3200.0,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3660,עמנואל,IMMANU'EL,5.0,,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 367,עין העמק,EN HAEMEQ,2.0,,,3130.0,boi_hedonic,,2025,,
 367,עין העמק,EN HAEMEQ,2.5,,,3386.0,boi_hedonic,,2025,,
 367,עין העמק,EN HAEMEQ,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -5209,12 +5209,12 @@
 373,בית הלוי,BET HALEVI,5.0,,,5018.0,boi_hedonic,,2025,,
 3730,גבעת זאב,GIV'AT ZE'EV,2.0,,,3130.0,boi_hedonic,,2025,,
 3730,גבעת זאב,GIV'AT ZE'EV,2.5,,,3386.0,boi_hedonic,,2025,,
-3730,גבעת זאב,GIV'AT ZE'EV,3.0,4650.0,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3730,גבעת זאב,GIV'AT ZE'EV,3.0,,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3730,גבעת זאב,GIV'AT ZE'EV,3.5,,,3963.0,boi_hedonic,,2025,,
-3730,גבעת זאב,GIV'AT ZE'EV,4.0,6550.0,6550.0,6550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3730,גבעת זאב,GIV'AT ZE'EV,4.0,,6550.0,6550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3730,גבעת זאב,GIV'AT ZE'EV,4.5,,,4639.0,boi_hedonic,,2025,,
 3730,גבעת זאב,GIV'AT ZE'EV,5+,,,5874.0,boi_hedonic,,2025,,
-3730,גבעת זאב,GIV'AT ZE'EV,5.0,7375.0,7375.0,7375.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3730,גבעת זאב,GIV'AT ZE'EV,5.0,,7375.0,7375.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 374,חוקוק,HUQOQ,2.0,,,3130.0,boi_hedonic,,2025,,
 374,חוקוק,HUQOQ,2.5,,,3386.0,boi_hedonic,,2025,,
 374,חוקוק,HUQOQ,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -5289,12 +5289,12 @@
 375,מגל,MAGGAL,5.0,,,5018.0,boi_hedonic,,2025,,
 3750,אלפי מנשה,ALFE MENASHE,2.0,,,3130.0,boi_hedonic,,2025,,
 3750,אלפי מנשה,ALFE MENASHE,2.5,,,3386.0,boi_hedonic,,2025,,
-3750,אלפי מנשה,ALFE MENASHE,3.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3750,אלפי מנשה,ALFE MENASHE,3.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3750,אלפי מנשה,ALFE MENASHE,3.5,,,3963.0,boi_hedonic,,2025,,
-3750,אלפי מנשה,ALFE MENASHE,4.0,5700.0,5700.0,5700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3750,אלפי מנשה,ALFE MENASHE,4.0,,5700.0,5700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3750,אלפי מנשה,ALFE MENASHE,4.5,,,4639.0,boi_hedonic,,2025,,
 3750,אלפי מנשה,ALFE MENASHE,5+,,,5874.0,boi_hedonic,,2025,,
-3750,אלפי מנשה,ALFE MENASHE,5.0,6350.0,6350.0,6350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3750,אלפי מנשה,ALFE MENASHE,5.0,,6350.0,6350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3751,מגדלים,MIGDALIM,2.0,,,3130.0,boi_hedonic,,2025,,
 3751,מגדלים,MIGDALIM,2.5,,,3386.0,boi_hedonic,,2025,,
 3751,מגדלים,MIGDALIM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -5361,7 +5361,7 @@
 376,עברון,EVRON,5.0,,,5018.0,boi_hedonic,,2025,,
 3760,אורנית,ORANIT,2.0,,,3130.0,boi_hedonic,,2025,,
 3760,אורנית,ORANIT,2.5,,,3386.0,boi_hedonic,,2025,,
-3760,אורנית,ORANIT,3.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3760,אורנית,ORANIT,3.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3760,אורנית,ORANIT,3.5,,,3963.0,boi_hedonic,,2025,,
 3760,אורנית,ORANIT,4.0,,,4287.0,boi_hedonic,,2025,,
 3760,אורנית,ORANIT,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -5377,7 +5377,7 @@
 3762,איתמר,ITAMAR,5.0,,,5018.0,boi_hedonic,,2025,,
 3763,גבע בנימין,GEVA BINYAMIN,2.0,,,3130.0,boi_hedonic,,2025,,
 3763,גבע בנימין,GEVA BINYAMIN,2.5,,,3386.0,boi_hedonic,,2025,,
-3763,גבע בנימין,GEVA BINYAMIN,3.0,3300.0,3300.0,3300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3763,גבע בנימין,GEVA BINYAMIN,3.0,,3300.0,3300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3763,גבע בנימין,GEVA BINYAMIN,3.5,,,3963.0,boi_hedonic,,2025,,
 3763,גבע בנימין,GEVA BINYAMIN,4.0,,,4287.0,boi_hedonic,,2025,,
 3763,גבע בנימין,GEVA BINYAMIN,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -5425,7 +5425,7 @@
 3768,פדואל,PEDU'EL,5.0,,,5018.0,boi_hedonic,,2025,,
 3769,הר אדר,HAR ADAR,2.0,,,3130.0,boi_hedonic,,2025,,
 3769,הר אדר,HAR ADAR,2.5,,,3386.0,boi_hedonic,,2025,,
-3769,הר אדר,HAR ADAR,3.0,4250.0,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3769,הר אדר,HAR ADAR,3.0,,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3769,הר אדר,HAR ADAR,3.5,,,3963.0,boi_hedonic,,2025,,
 3769,הר אדר,HAR ADAR,4.0,,,4287.0,boi_hedonic,,2025,,
 3769,הר אדר,HAR ADAR,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -5441,7 +5441,7 @@
 377,המעפיל,HAMA'PIL,5.0,,,5018.0,boi_hedonic,,2025,,
 3770,חשמונאים,HASHMONA'IM,2.0,,,3130.0,boi_hedonic,,2025,,
 3770,חשמונאים,HASHMONA'IM,2.5,,,3386.0,boi_hedonic,,2025,,
-3770,חשמונאים,HASHMONA'IM,3.0,3300.0,3300.0,3300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3770,חשמונאים,HASHMONA'IM,3.0,,3300.0,3300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3770,חשמונאים,HASHMONA'IM,3.5,,,3963.0,boi_hedonic,,2025,,
 3770,חשמונאים,HASHMONA'IM,4.0,,,4287.0,boi_hedonic,,2025,,
 3770,חשמונאים,HASHMONA'IM,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -5457,9 +5457,9 @@
 3777,סנסנה,,5.0,,,5018.0,boi_hedonic,,2025,,
 3779,כוכב יעקב,KOKHAV YA'AQOV,2.0,,,3130.0,boi_hedonic,,2025,,
 3779,כוכב יעקב,KOKHAV YA'AQOV,2.5,,,3386.0,boi_hedonic,,2025,,
-3779,כוכב יעקב,KOKHAV YA'AQOV,3.0,2750.0,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3779,כוכב יעקב,KOKHAV YA'AQOV,3.0,,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3779,כוכב יעקב,KOKHAV YA'AQOV,3.5,,,3963.0,boi_hedonic,,2025,,
-3779,כוכב יעקב,KOKHAV YA'AQOV,4.0,3750.0,3750.0,3750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3779,כוכב יעקב,KOKHAV YA'AQOV,4.0,,3750.0,3750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3779,כוכב יעקב,KOKHAV YA'AQOV,4.5,,,4639.0,boi_hedonic,,2025,,
 3779,כוכב יעקב,KOKHAV YA'AQOV,5+,,,5874.0,boi_hedonic,,2025,,
 3779,כוכב יעקב,KOKHAV YA'AQOV,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -5473,12 +5473,12 @@
 378,משגב עם,MISGAV AM,5.0,,,5018.0,boi_hedonic,,2025,,
 3780,ביתר עילית,BETAR ILLIT,2.0,,,3130.0,boi_hedonic,,2025,,
 3780,ביתר עילית,BETAR ILLIT,2.5,,,3386.0,boi_hedonic,,2025,,
-3780,ביתר עילית,BETAR ILLIT,3.0,3600.0,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3780,ביתר עילית,BETAR ILLIT,3.0,,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3780,ביתר עילית,BETAR ILLIT,3.5,,,3963.0,boi_hedonic,,2025,,
-3780,ביתר עילית,BETAR ILLIT,4.0,4900.0,4900.0,4900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3780,ביתר עילית,BETAR ILLIT,4.0,,4900.0,4900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3780,ביתר עילית,BETAR ILLIT,4.5,,,4639.0,boi_hedonic,,2025,,
 3780,ביתר עילית,BETAR ILLIT,5+,,,5874.0,boi_hedonic,,2025,,
-3780,ביתר עילית,BETAR ILLIT,5.0,5475.0,5475.0,5475.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3780,ביתר עילית,BETAR ILLIT,5.0,,5475.0,5475.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3781,קדר,QEDAR,2.0,,,3130.0,boi_hedonic,,2025,,
 3781,קדר,QEDAR,2.5,,,3386.0,boi_hedonic,,2025,,
 3781,קדר,QEDAR,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -5531,7 +5531,7 @@
 3787,נעלה,NA'ALE,2.5,,,3386.0,boi_hedonic,,2025,,
 3787,נעלה,NA'ALE,3.0,,,3663.0,boi_hedonic,,2025,,
 3787,נעלה,NA'ALE,3.5,,,3963.0,boi_hedonic,,2025,,
-3787,נעלה,NA'ALE,4.0,4700.0,4700.0,4700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3787,נעלה,NA'ALE,4.0,,4700.0,4700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3787,נעלה,NA'ALE,4.5,,,4639.0,boi_hedonic,,2025,,
 3787,נעלה,NA'ALE,5+,,,5874.0,boi_hedonic,,2025,,
 3787,נעלה,NA'ALE,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -5569,12 +5569,12 @@
 3791,צופים,ZUFIN,5.0,,,5018.0,boi_hedonic,,2025,,
 3793,אבני חפץ,AVNE HEFEZ,2.0,,,3130.0,boi_hedonic,,2025,,
 3793,אבני חפץ,AVNE HEFEZ,2.5,,,3386.0,boi_hedonic,,2025,,
-3793,אבני חפץ,AVNE HEFEZ,3.0,2100.0,2100.0,2100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3793,אבני חפץ,AVNE HEFEZ,3.0,,2100.0,2100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3793,אבני חפץ,AVNE HEFEZ,3.5,,,3963.0,boi_hedonic,,2025,,
-3793,אבני חפץ,AVNE HEFEZ,4.0,2675.0,2675.0,2675.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3793,אבני חפץ,AVNE HEFEZ,4.0,,2675.0,2675.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3793,אבני חפץ,AVNE HEFEZ,4.5,,,4639.0,boi_hedonic,,2025,,
 3793,אבני חפץ,AVNE HEFEZ,5+,,,5874.0,boi_hedonic,,2025,,
-3793,אבני חפץ,AVNE HEFEZ,5.0,2650.0,2650.0,2650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3793,אבני חפץ,AVNE HEFEZ,5.0,,2650.0,2650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3794,בת עין,BAT AYIN,2.0,,,3130.0,boi_hedonic,,2025,,
 3794,בת עין,BAT AYIN,2.5,,,3386.0,boi_hedonic,,2025,,
 3794,בת עין,BAT AYIN,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -5601,12 +5601,12 @@
 3796,כפר האורנים,KEFAR HAORANIM,5.0,,,5018.0,boi_hedonic,,2025,,
 3797,מודיעין עילית,MODI'IN ILLIT,2.0,,,3130.0,boi_hedonic,,2025,,
 3797,מודיעין עילית,MODI'IN ILLIT,2.5,,,3386.0,boi_hedonic,,2025,,
-3797,מודיעין עילית,MODI'IN ILLIT,3.0,4100.0,4100.0,4100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3797,מודיעין עילית,MODI'IN ILLIT,3.0,,4100.0,4100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3797,מודיעין עילית,MODI'IN ILLIT,3.5,,,3963.0,boi_hedonic,,2025,,
-3797,מודיעין עילית,MODI'IN ILLIT,4.0,4250.0,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3797,מודיעין עילית,MODI'IN ILLIT,4.0,,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 3797,מודיעין עילית,MODI'IN ILLIT,4.5,,,4639.0,boi_hedonic,,2025,,
 3797,מודיעין עילית,MODI'IN ILLIT,5+,,,5874.0,boi_hedonic,,2025,,
-3797,מודיעין עילית,MODI'IN ILLIT,5.0,5200.0,5200.0,5200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+3797,מודיעין עילית,MODI'IN ILLIT,5.0,,5200.0,5200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 380,להבות הבשן,LAHAVOT HABASHAN,2.0,,,3130.0,boi_hedonic,,2025,,
 380,להבות הבשן,LAHAVOT HABASHAN,2.5,,,3386.0,boi_hedonic,,2025,,
 380,להבות הבשן,LAHAVOT HABASHAN,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -6071,14 +6071,14 @@
 400,אבן שמואל,EVEN SHEMU'EL,4.5,,,4639.0,boi_hedonic,,2025,,
 400,אבן שמואל,EVEN SHEMU'EL,5+,,,5874.0,boi_hedonic,,2025,,
 400,אבן שמואל,EVEN SHEMU'EL,5.0,,,5018.0,boi_hedonic,,2025,,
-4000,חיפה,HAIFA,2.0,,,2538.0,boi_hedonic,,2025,,
+4000,Haifa,HAIFA,2.0,,2427.9,2427.9,cbs_table49,2.0,2025,,
 4000,חיפה,HAIFA,2.5,,,2746.0,boi_hedonic,,2025,,
-4000,חיפה,HAIFA,3.0,3300.0,3300.0,3300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+4000,חיפה,HAIFA,3.0,,3300.0,3300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 4000,חיפה,HAIFA,3.5,,,3214.0,boi_hedonic,,2025,,
-4000,חיפה,HAIFA,4.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+4000,חיפה,HAIFA,4.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 4000,חיפה,HAIFA,4.5,,,3761.0,boi_hedonic,,2025,,
-4000,חיפה,HAIFA,5+,,,4763.0,boi_hedonic,,2025,,
-4000,חיפה,HAIFA,5.0,5650.0,5650.0,5650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+4000,Haifa,HAIFA,5+,,5301.4,5301.4,cbs_table49,2.0,2025,,
+4000,חיפה,HAIFA,5.0,,5650.0,5650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 4001,בוקעאתא,BUQ'ATA,2.0,,,3130.0,boi_hedonic,,2025,,
 4001,בוקעאתא,BUQ'ATA,2.5,,,3386.0,boi_hedonic,,2025,,
 4001,בוקעאתא,BUQ'ATA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -6345,9 +6345,9 @@
 41,אליכין,ELYAKHIN,5.0,,,5018.0,boi_hedonic,,2025,,
 4100,קצרין,QAZRIN,2.0,,,3130.0,boi_hedonic,,2025,,
 4100,קצרין,QAZRIN,2.5,,,3386.0,boi_hedonic,,2025,,
-4100,קצרין,QAZRIN,3.0,2750.0,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+4100,קצרין,QAZRIN,3.0,,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 4100,קצרין,QAZRIN,3.5,,,3963.0,boi_hedonic,,2025,,
-4100,קצרין,QAZRIN,4.0,3600.0,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+4100,קצרין,QAZRIN,4.0,,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 4100,קצרין,QAZRIN,4.5,,,4639.0,boi_hedonic,,2025,,
 4100,קצרין,QAZRIN,5+,,,5874.0,boi_hedonic,,2025,,
 4100,קצרין,QAZRIN,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -6833,17 +6833,17 @@
 465,צובה,ZOVA,5.0,,,5018.0,boi_hedonic,,2025,,
 466,בית דגן,BET DAGAN,2.0,,,3130.0,boi_hedonic,,2025,,
 466,בית דגן,BET DAGAN,2.5,,,3386.0,boi_hedonic,,2025,,
-466,בית דגן,BET DAGAN,3.0,4550.0,4550.0,4550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+466,בית דגן,BET DAGAN,3.0,,4550.0,4550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 466,בית דגן,BET DAGAN,3.5,,,3963.0,boi_hedonic,,2025,,
 466,בית דגן,BET DAGAN,4.0,,,4287.0,boi_hedonic,,2025,,
 466,בית דגן,BET DAGAN,4.5,,,4639.0,boi_hedonic,,2025,,
 466,בית דגן,BET DAGAN,5+,,,5874.0,boi_hedonic,,2025,,
-466,בית דגן,BET DAGAN,5.0,6785.0,6785.0,6785.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+466,בית דגן,BET DAGAN,5.0,,6785.0,6785.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 469,קרית עקרון,QIRYAT EQRON,2.0,,,3130.0,boi_hedonic,,2025,,
 469,קרית עקרון,QIRYAT EQRON,2.5,,,3386.0,boi_hedonic,,2025,,
-469,קרית עקרון,QIRYAT EQRON,3.0,3700.0,3700.0,3700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+469,קרית עקרון,QIRYAT EQRON,3.0,,3700.0,3700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 469,קרית עקרון,QIRYAT EQRON,3.5,,,3963.0,boi_hedonic,,2025,,
-469,קרית עקרון,QIRYAT EQRON,4.0,4050.0,4050.0,4050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+469,קרית עקרון,QIRYAT EQRON,4.0,,4050.0,4050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 469,קרית עקרון,QIRYAT EQRON,4.5,,,4639.0,boi_hedonic,,2025,,
 469,קרית עקרון,QIRYAT EQRON,5+,,,5874.0,boi_hedonic,,2025,,
 469,קרית עקרון,QIRYAT EQRON,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -6873,7 +6873,7 @@
 4702,רמות,RAMOT,5.0,,,5018.0,boi_hedonic,,2025,,
 472,אבו גוש,ABU GHOSH,2.0,,,3130.0,boi_hedonic,,2025,,
 472,אבו גוש,ABU GHOSH,2.5,,,3386.0,boi_hedonic,,2025,,
-472,אבו גוש,ABU GHOSH,3.0,4000.0,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+472,אבו גוש,ABU GHOSH,3.0,,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 472,אבו גוש,ABU GHOSH,3.5,,,3963.0,boi_hedonic,,2025,,
 472,אבו גוש,ABU GHOSH,4.0,,,4287.0,boi_hedonic,,2025,,
 472,אבו גוש,ABU GHOSH,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -7039,14 +7039,14 @@
 499,יפיע,YAFI,4.5,,,4639.0,boi_hedonic,,2025,,
 499,יפיע,YAFI,5+,,,5874.0,boi_hedonic,,2025,,
 499,יפיע,YAFI,5.0,,,5018.0,boi_hedonic,,2025,,
-5000,תל אביב - יפו,TEL AVIV - YAFO,2.0,,,6151.0,boi_hedonic,,2025,,
+5000,Tel Aviv,TEL AVIV - YAFO,2.0,,5363.9,5363.9,cbs_table49,2.0,2025,,
 5000,תל אביב - יפו,TEL AVIV - YAFO,2.5,,,6655.0,boi_hedonic,,2025,,
-5000,תל אביב - יפו,TEL AVIV - YAFO,3.0,7999.0,7999.0,7999.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+5000,תל אביב - יפו,TEL AVIV - YAFO,3.0,,7999.0,7999.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 5000,תל אביב - יפו,TEL AVIV - YAFO,3.5,,,7790.0,boi_hedonic,,2025,,
-5000,תל אביב - יפו,TEL AVIV - YAFO,4.0,9950.0,9950.0,9950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+5000,תל אביב - יפו,TEL AVIV - YAFO,4.0,,9950.0,9950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 5000,תל אביב - יפו,TEL AVIV - YAFO,4.5,,,9117.0,boi_hedonic,,2025,,
-5000,תל אביב - יפו,TEL AVIV - YAFO,5+,,,11545.0,boi_hedonic,,2025,,
-5000,תל אביב - יפו,TEL AVIV - YAFO,5.0,13650.0,13650.0,13650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+5000,Tel Aviv,TEL AVIV - YAFO,5+,,10953.0,10953.0,cbs_table49,2.0,2025,,
+5000,תל אביב - יפו,TEL AVIV - YAFO,5.0,,13650.0,13650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 502,ירכא,YIRKA,2.0,,,3130.0,boi_hedonic,,2025,,
 502,ירכא,YIRKA,2.5,,,3386.0,boi_hedonic,,2025,,
 502,ירכא,YIRKA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -7241,9 +7241,9 @@
 529,אעבלין,I'BILLIN,5.0,,,5018.0,boi_hedonic,,2025,,
 53,עתלית,ATLIT,2.0,,,3130.0,boi_hedonic,,2025,,
 53,עתלית,ATLIT,2.5,,,3386.0,boi_hedonic,,2025,,
-53,עתלית,ATLIT,3.0,3050.0,3050.0,3050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+53,עתלית,ATLIT,3.0,,3050.0,3050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 53,עתלית,ATLIT,3.5,,,3963.0,boi_hedonic,,2025,,
-53,עתלית,ATLIT,4.0,5250.0,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+53,עתלית,ATLIT,4.0,,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 53,עתלית,ATLIT,4.5,,,4639.0,boi_hedonic,,2025,,
 53,עתלית,ATLIT,5+,,,5874.0,boi_hedonic,,2025,,
 53,עתלית,ATLIT,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -7273,9 +7273,9 @@
 532,עין מאהל,EIN MAHEL,5.0,,,5018.0,boi_hedonic,,2025,,
 534,עספיא,ISIFYA,2.0,,,3130.0,boi_hedonic,,2025,,
 534,עספיא,ISIFYA,2.5,,,3386.0,boi_hedonic,,2025,,
-534,עספיא,ISIFYA,3.0,2550.0,2550.0,2550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+534,עספיא,ISIFYA,3.0,,2550.0,2550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 534,עספיא,ISIFYA,3.5,,,3963.0,boi_hedonic,,2025,,
-534,עספיא,ISIFYA,4.0,2750.0,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+534,עספיא,ISIFYA,4.0,,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 534,עספיא,ISIFYA,4.5,,,4639.0,boi_hedonic,,2025,,
 534,עספיא,ISIFYA,5+,,,5874.0,boi_hedonic,,2025,,
 534,עספיא,ISIFYA,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -7433,12 +7433,12 @@
 564,רבדים,REVADIM,5.0,,,5018.0,boi_hedonic,,2025,,
 565,אזור,AZOR,2.0,,,3130.0,boi_hedonic,,2025,,
 565,אזור,AZOR,2.5,,,3386.0,boi_hedonic,,2025,,
-565,אזור,AZOR,3.0,4150.0,4150.0,4150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+565,אזור,AZOR,3.0,,4150.0,4150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 565,אזור,AZOR,3.5,,,3963.0,boi_hedonic,,2025,,
-565,אזור,AZOR,4.0,5500.0,5500.0,5500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+565,אזור,AZOR,4.0,,5500.0,5500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 565,אזור,AZOR,4.5,,,4639.0,boi_hedonic,,2025,,
 565,אזור,AZOR,5+,,,5874.0,boi_hedonic,,2025,,
-565,אזור,AZOR,5.0,6650.0,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+565,אזור,AZOR,5.0,,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 566,גבעת שמש,GIV'AT SHEMESH,2.0,,,3130.0,boi_hedonic,,2025,,
 566,גבעת שמש,GIV'AT SHEMESH,2.5,,,3386.0,boi_hedonic,,2025,,
 566,גבעת שמש,GIV'AT SHEMESH,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -7775,14 +7775,14 @@
 610,סתריה,SITRIYYA,4.5,,,4639.0,boi_hedonic,,2025,,
 610,סתריה,SITRIYYA,5+,,,5874.0,boi_hedonic,,2025,,
 610,סתריה,SITRIYYA,5.0,,,5018.0,boi_hedonic,,2025,,
-6100,בני ברק,BENE BERAQ,2.0,,,3537.0,boi_hedonic,,2025,,
+6100,Bnei Brak,BENE BERAQ,2.0,,3205.5,3205.5,cbs_table49,2.0,2025,,
 6100,בני ברק,BENE BERAQ,2.5,,,3827.0,boi_hedonic,,2025,,
-6100,בני ברק,BENE BERAQ,3.0,4600.0,4600.0,4600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6100,בני ברק,BENE BERAQ,3.0,,4600.0,4600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6100,בני ברק,BENE BERAQ,3.5,,,4479.0,boi_hedonic,,2025,,
-6100,בני ברק,BENE BERAQ,4.0,5700.0,5700.0,5700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6100,בני ברק,BENE BERAQ,4.0,,5700.0,5700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6100,בני ברק,BENE BERAQ,4.5,,,5243.0,boi_hedonic,,2025,,
-6100,בני ברק,BENE BERAQ,5+,,,6639.0,boi_hedonic,,2025,,
-6100,בני ברק,BENE BERAQ,5.0,6500.0,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6100,Bnei Brak,BENE BERAQ,5+,,6129.7,6129.7,cbs_table49,2.0,2025,,
+6100,בני ברק,BENE BERAQ,5.0,,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 612,צרופה,ZERUFA,2.0,,,3130.0,boi_hedonic,,2025,,
 612,צרופה,ZERUFA,2.5,,,3386.0,boi_hedonic,,2025,,
 612,צרופה,ZERUFA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -7863,14 +7863,14 @@
 620,משואות יצחק,MASSUOT YIZHAQ,4.5,,,4639.0,boi_hedonic,,2025,,
 620,משואות יצחק,MASSUOT YIZHAQ,5+,,,5874.0,boi_hedonic,,2025,,
 620,משואות יצחק,MASSUOT YIZHAQ,5.0,,,5018.0,boi_hedonic,,2025,,
-6200,בת ים,BAT YAM,2.0,,,3499.0,boi_hedonic,,2025,,
+6200,Bat Yam,BAT YAM,2.0,,3494.3,3494.3,cbs_table49,2.0,2025,,
 6200,בת ים,BAT YAM,2.5,,,3786.0,boi_hedonic,,2025,,
-6200,בת ים,BAT YAM,3.0,4550.0,4550.0,4550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6200,בת ים,BAT YAM,3.0,,4550.0,4550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6200,בת ים,BAT YAM,3.5,,,4431.0,boi_hedonic,,2025,,
-6200,בת ים,BAT YAM,4.0,6500.0,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6200,בת ים,BAT YAM,4.0,,6500.0,6500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6200,בת ים,BAT YAM,4.5,,,5186.0,boi_hedonic,,2025,,
-6200,בת ים,BAT YAM,5+,,,6567.0,boi_hedonic,,2025,,
-6200,בת ים,BAT YAM,5.0,8400.0,8400.0,8400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6200,Bat Yam,BAT YAM,5+,,6750.0,6750.0,cbs_table49,2.0,2025,,
+6200,בת ים,BAT YAM,5.0,,8400.0,8400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 622,עין צורים,EN ZURIM,2.0,,,3130.0,boi_hedonic,,2025,,
 622,עין צורים,EN ZURIM,2.5,,,3386.0,boi_hedonic,,2025,,
 622,עין צורים,EN ZURIM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -7913,12 +7913,12 @@
 63,כנרת (מושבה),KINNERET(MOSHAVA),5.0,,,5018.0,boi_hedonic,,2025,,
 6300,גבעתיים,GIV'ATAYIM,2.0,,,4807.0,boi_hedonic,,2025,,
 6300,גבעתיים,GIV'ATAYIM,2.5,,,5200.0,boi_hedonic,,2025,,
-6300,גבעתיים,GIV'ATAYIM,3.0,6250.0,6250.0,6250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6300,גבעתיים,GIV'ATAYIM,3.0,,6250.0,6250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6300,גבעתיים,GIV'ATAYIM,3.5,,,6087.0,boi_hedonic,,2025,,
-6300,גבעתיים,GIV'ATAYIM,4.0,7500.0,7500.0,7500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6300,גבעתיים,GIV'ATAYIM,4.0,,7500.0,7500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6300,גבעתיים,GIV'ATAYIM,4.5,,,7124.0,boi_hedonic,,2025,,
 6300,גבעתיים,GIV'ATAYIM,5+,,,9021.0,boi_hedonic,,2025,,
-6300,גבעתיים,GIV'ATAYIM,5.0,10250.0,10250.0,10250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6300,גבעתיים,GIV'ATAYIM,5.0,,10250.0,10250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 633,כפר ברא,KAFAR BARA,2.0,,,3130.0,boi_hedonic,,2025,,
 633,כפר ברא,KAFAR BARA,2.5,,,3386.0,boi_hedonic,,2025,,
 633,כפר ברא,KAFAR BARA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -7975,14 +7975,14 @@
 64,יד רמבם,YAD RAMBAM,4.5,,,4639.0,boi_hedonic,,2025,,
 64,יד רמבם,YAD RAMBAM,5+,,,5874.0,boi_hedonic,,2025,,
 64,יד רמבם,YAD RAMBAM,5.0,,,5018.0,boi_hedonic,,2025,,
-6400,הרצליה,HERZELIYYA,2.0,,,3130.0,boi_hedonic,,2025,,
+6400,Herzlliya,HERZELIYYA,2.0,,4586.3,4586.3,cbs_table49,2.0,2025,,
 6400,הרצליה,HERZELIYYA,2.5,,,3386.0,boi_hedonic,,2025,,
-6400,הרצליה,HERZELIYYA,3.0,6000.0,6000.0,6000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6400,הרצליה,HERZELIYYA,3.0,,6000.0,6000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6400,הרצליה,HERZELIYYA,3.5,,,3963.0,boi_hedonic,,2025,,
-6400,הרצליה,HERZELIYYA,4.0,8000.0,8000.0,8000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6400,הרצליה,HERZELIYYA,4.0,,8000.0,8000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6400,הרצליה,HERZELIYYA,4.5,,,4639.0,boi_hedonic,,2025,,
-6400,הרצליה,HERZELIYYA,5+,,,5874.0,boi_hedonic,,2025,,
-6400,הרצליה,HERZELIYYA,5.0,10000.0,10000.0,10000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6400,Herzlliya,HERZELIYYA,5+,,8890.5,8890.5,cbs_table49,2.0,2025,,
+6400,הרצליה,HERZELIYYA,5.0,,10000.0,10000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 648,מצר,MEZER,2.0,,,3130.0,boi_hedonic,,2025,,
 648,מצר,MEZER,2.5,,,3386.0,boi_hedonic,,2025,,
 648,מצר,MEZER,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8001,20 +8001,20 @@
 649,מייסר,MEISER,5.0,,,5018.0,boi_hedonic,,2025,,
 65,מגדל,MIGDAL,2.0,,,3130.0,boi_hedonic,,2025,,
 65,מגדל,MIGDAL,2.5,,,3386.0,boi_hedonic,,2025,,
-65,מגדל,MIGDAL,3.0,3025.0,3025.0,3025.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+65,מגדל,MIGDAL,3.0,,3025.0,3025.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 65,מגדל,MIGDAL,3.5,,,3963.0,boi_hedonic,,2025,,
 65,מגדל,MIGDAL,4.0,,,4287.0,boi_hedonic,,2025,,
 65,מגדל,MIGDAL,4.5,,,4639.0,boi_hedonic,,2025,,
 65,מגדל,MIGDAL,5+,,,5874.0,boi_hedonic,,2025,,
 65,מגדל,MIGDAL,5.0,,,5018.0,boi_hedonic,,2025,,
-6500,חדרה,HADERA,2.0,,,2691.0,boi_hedonic,,2025,,
+6500,Hadera,HADERA,2.0,,2647.9,2647.9,cbs_table49,2.0,2025,,
 6500,חדרה,HADERA,2.5,,,2912.0,boi_hedonic,,2025,,
-6500,חדרה,HADERA,3.0,3500.0,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6500,חדרה,HADERA,3.0,,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6500,חדרה,HADERA,3.5,,,3408.0,boi_hedonic,,2025,,
-6500,חדרה,HADERA,4.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6500,חדרה,HADERA,4.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6500,חדרה,HADERA,4.5,,,3989.0,boi_hedonic,,2025,,
-6500,חדרה,HADERA,5+,,,5051.0,boi_hedonic,,2025,,
-6500,חדרה,HADERA,5.0,5850.0,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6500,Hadera,HADERA,5+,,5024.8,5024.8,cbs_table49,2.0,2025,,
+6500,חדרה,HADERA,5.0,,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 652,אבטין,IBTIN,2.0,,,3130.0,boi_hedonic,,2025,,
 652,אבטין,IBTIN,2.5,,,3386.0,boi_hedonic,,2025,,
 652,אבטין,IBTIN,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8047,14 +8047,14 @@
 66,מרחביה (קיבוץ),MERHAVYA(QIBBUZ),4.5,,,4639.0,boi_hedonic,,2025,,
 66,מרחביה (קיבוץ),MERHAVYA(QIBBUZ),5+,,,5874.0,boi_hedonic,,2025,,
 66,מרחביה (קיבוץ),MERHAVYA(QIBBUZ),5.0,,,5018.0,boi_hedonic,,2025,,
-6600,חולון,HOLON,2.0,,,3130.0,boi_hedonic,,2025,,
+6600,Holon,HOLON,2.0,,3532.9,3532.9,cbs_table49,2.0,2025,,
 6600,חולון,HOLON,2.5,,,3386.0,boi_hedonic,,2025,,
-6600,חולון,HOLON,3.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6600,חולון,HOLON,3.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6600,חולון,HOLON,3.5,,,3963.0,boi_hedonic,,2025,,
-6600,חולון,HOLON,4.0,5950.0,5950.0,5950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6600,חולון,HOLON,4.0,,5950.0,5950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6600,חולון,HOLON,4.5,,,4639.0,boi_hedonic,,2025,,
-6600,חולון,HOLON,5+,,,5874.0,boi_hedonic,,2025,,
-6600,חולון,HOLON,5.0,7400.0,7400.0,7400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6600,Holon,HOLON,5+,,6838.3,6838.3,cbs_table49,2.0,2025,,
+6600,חולון,HOLON,5.0,,7400.0,7400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 661,שער אפרים,SHA'AR EFRAYIM,2.0,,,3130.0,boi_hedonic,,2025,,
 661,שער אפרים,SHA'AR EFRAYIM,2.5,,,3386.0,boi_hedonic,,2025,,
 661,שער אפרים,SHA'AR EFRAYIM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8137,12 +8137,12 @@
 670,משמר איילון,MISHMAR AYYALON,5.0,,,5018.0,boi_hedonic,,2025,,
 6700,טבריה,TIBERIAS,2.0,,,1999.0,boi_hedonic,,2025,,
 6700,טבריה,TIBERIAS,2.5,,,2163.0,boi_hedonic,,2025,,
-6700,טבריה,TIBERIAS,3.0,2600.0,2600.0,2600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6700,טבריה,TIBERIAS,3.0,,2600.0,2600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6700,טבריה,TIBERIAS,3.5,,,2532.0,boi_hedonic,,2025,,
-6700,טבריה,TIBERIAS,4.0,3650.0,3650.0,3650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6700,טבריה,TIBERIAS,4.0,,3650.0,3650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6700,טבריה,TIBERIAS,4.5,,,2964.0,boi_hedonic,,2025,,
 6700,טבריה,TIBERIAS,5+,,,3753.0,boi_hedonic,,2025,,
-6700,טבריה,TIBERIAS,5.0,5250.0,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6700,טבריה,TIBERIAS,5.0,,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 672,בית נקופה,BET NEQOFA,2.0,,,3130.0,boi_hedonic,,2025,,
 672,בית נקופה,BET NEQOFA,2.5,,,3386.0,boi_hedonic,,2025,,
 672,בית נקופה,BET NEQOFA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8217,20 +8217,20 @@
 680,אומץ,OMEZ,5.0,,,5018.0,boi_hedonic,,2025,,
 6800,קרית אתא,QIRYAT ATTA,2.0,,,3130.0,boi_hedonic,,2025,,
 6800,קרית אתא,QIRYAT ATTA,2.5,,,3386.0,boi_hedonic,,2025,,
-6800,קרית אתא,QIRYAT ATTA,3.0,2750.0,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6800,קרית אתא,QIRYAT ATTA,3.0,,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6800,קרית אתא,QIRYAT ATTA,3.5,,,3963.0,boi_hedonic,,2025,,
-6800,קרית אתא,QIRYAT ATTA,4.0,3850.0,3850.0,3850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6800,קרית אתא,QIRYAT ATTA,4.0,,3850.0,3850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6800,קרית אתא,QIRYAT ATTA,4.5,,,4639.0,boi_hedonic,,2025,,
 6800,קרית אתא,QIRYAT ATTA,5+,,,5874.0,boi_hedonic,,2025,,
-6800,קרית אתא,QIRYAT ATTA,5.0,5250.0,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6800,קרית אתא,QIRYAT ATTA,5.0,,5250.0,5250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 681,גבעת שמואל,GIV'AT SHEMU'EL,2.0,,,3130.0,boi_hedonic,,2025,,
 681,גבעת שמואל,GIV'AT SHEMU'EL,2.5,,,3386.0,boi_hedonic,,2025,,
-681,גבעת שמואל,GIV'AT SHEMU'EL,3.0,4650.0,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+681,גבעת שמואל,GIV'AT SHEMU'EL,3.0,,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 681,גבעת שמואל,GIV'AT SHEMU'EL,3.5,,,3963.0,boi_hedonic,,2025,,
-681,גבעת שמואל,GIV'AT SHEMU'EL,4.0,6800.0,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+681,גבעת שמואל,GIV'AT SHEMU'EL,4.0,,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 681,גבעת שמואל,GIV'AT SHEMU'EL,4.5,,,4639.0,boi_hedonic,,2025,,
 681,גבעת שמואל,GIV'AT SHEMU'EL,5+,,,5874.0,boi_hedonic,,2025,,
-681,גבעת שמואל,GIV'AT SHEMU'EL,5.0,8000.0,8000.0,8000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+681,גבעת שמואל,GIV'AT SHEMU'EL,5.0,,8000.0,8000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 682,אליקים,ELYAQIM,2.0,,,3130.0,boi_hedonic,,2025,,
 682,אליקים,ELYAQIM,2.5,,,3386.0,boi_hedonic,,2025,,
 682,אליקים,ELYAQIM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8313,12 +8313,12 @@
 690,כפר אחים,KEFAR AHIM,5.0,,,5018.0,boi_hedonic,,2025,,
 6900,כפר סבא,KEFAR SAVA,2.0,,,3845.0,boi_hedonic,,2025,,
 6900,כפר סבא,KEFAR SAVA,2.5,,,4160.0,boi_hedonic,,2025,,
-6900,כפר סבא,KEFAR SAVA,3.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6900,כפר סבא,KEFAR SAVA,3.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6900,כפר סבא,KEFAR SAVA,3.5,,,4869.0,boi_hedonic,,2025,,
-6900,כפר סבא,KEFAR SAVA,4.0,6800.0,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6900,כפר סבא,KEFAR SAVA,4.0,,6800.0,6800.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 6900,כפר סבא,KEFAR SAVA,4.5,,,5699.0,boi_hedonic,,2025,,
-6900,כפר סבא,KEFAR SAVA,5+,,,7217.0,boi_hedonic,,2025,,
-6900,כפר סבא,KEFAR SAVA,5.0,8350.0,8350.0,8350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+6900,Kfar Saba,KEFAR SAVA,5+,,7277.2,7277.2,cbs_table49,2.0,2025,,
+6900,כפר סבא,KEFAR SAVA,5.0,,8350.0,8350.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 692,שפיר,SHAFIR,2.0,,,3130.0,boi_hedonic,,2025,,
 692,שפיר,SHAFIR,2.5,,,3386.0,boi_hedonic,,2025,,
 692,שפיר,SHAFIR,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8391,14 +8391,14 @@
 7,שחר,SHAHAR,4.5,,,4639.0,boi_hedonic,,2025,,
 7,שחר,SHAHAR,5+,,,5874.0,boi_hedonic,,2025,,
 7,שחר,SHAHAR,5.0,,,5018.0,boi_hedonic,,2025,,
-70,אשדוד,ASHDOD,2.0,,,3130.0,boi_hedonic,,2025,,
+70,Ashdod,ASHDOD,2.0,,3036.7,3036.7,cbs_table49,2.0,2025,,
 70,אשדוד,ASHDOD,2.5,,,3386.0,boi_hedonic,,2025,,
-70,אשדוד,ASHDOD,3.0,4050.0,4050.0,4050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+70,אשדוד,ASHDOD,3.0,,4050.0,4050.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 70,אשדוד,ASHDOD,3.5,,,3963.0,boi_hedonic,,2025,,
-70,אשדוד,ASHDOD,4.0,5375.0,5375.0,5375.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+70,אשדוד,ASHDOD,4.0,,5375.0,5375.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 70,אשדוד,ASHDOD,4.5,,,4639.0,boi_hedonic,,2025,,
-70,אשדוד,ASHDOD,5+,,,5874.0,boi_hedonic,,2025,,
-70,אשדוד,ASHDOD,5.0,6650.0,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+70,Ashdod,ASHDOD,5+,,6025.0,6025.0,cbs_table49,2.0,2025,,
+70,אשדוד,ASHDOD,5.0,,6650.0,6650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 700,חצב,HAZAV,2.0,,,3130.0,boi_hedonic,,2025,,
 700,חצב,HAZAV,2.5,,,3386.0,boi_hedonic,,2025,,
 700,חצב,HAZAV,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8409,12 +8409,12 @@
 700,חצב,HAZAV,5.0,,,5018.0,boi_hedonic,,2025,,
 7000,לוד,LOD,2.0,,,3130.0,boi_hedonic,,2025,,
 7000,לוד,LOD,2.5,,,3386.0,boi_hedonic,,2025,,
-7000,לוד,LOD,3.0,3445.0,3445.0,3445.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7000,לוד,LOD,3.0,,3445.0,3445.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7000,לוד,LOD,3.5,,,3963.0,boi_hedonic,,2025,,
-7000,לוד,LOD,4.0,4650.0,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7000,לוד,LOD,4.0,,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7000,לוד,LOD,4.5,,,4639.0,boi_hedonic,,2025,,
 7000,לוד,LOD,5+,,,5874.0,boi_hedonic,,2025,,
-7000,לוד,LOD,5.0,5850.0,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7000,לוד,LOD,5.0,,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 701,ארבל,ARBEL,2.0,,,3130.0,boi_hedonic,,2025,,
 701,ארבל,ARBEL,2.5,,,3386.0,boi_hedonic,,2025,,
 701,ארבל,ARBEL,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8495,14 +8495,14 @@
 710,בית זית,BET ZAYIT,4.5,,,4639.0,boi_hedonic,,2025,,
 710,בית זית,BET ZAYIT,5+,,,5874.0,boi_hedonic,,2025,,
 710,בית זית,BET ZAYIT,5.0,,,5018.0,boi_hedonic,,2025,,
-7100,אשקלון,ASHQELON,2.0,,,3130.0,boi_hedonic,,2025,,
+7100,Ashkelon,ASHQELON,2.0,,2627.8,2627.8,cbs_table49,2.0,2025,,
 7100,אשקלון,ASHQELON,2.5,,,3386.0,boi_hedonic,,2025,,
-7100,אשקלון,ASHQELON,3.0,3000.0,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7100,אשקלון,ASHQELON,3.0,,3000.0,3000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7100,אשקלון,ASHQELON,3.5,,,3963.0,boi_hedonic,,2025,,
-7100,אשקלון,ASHQELON,4.0,4000.0,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7100,אשקלון,ASHQELON,4.0,,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7100,אשקלון,ASHQELON,4.5,,,4639.0,boi_hedonic,,2025,,
-7100,אשקלון,ASHQELON,5+,,,5874.0,boi_hedonic,,2025,,
-7100,אשקלון,ASHQELON,5.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7100,Ashkelon,ASHQELON,5+,,4675.4,4675.4,cbs_table49,2.0,2025,,
+7100,אשקלון,ASHQELON,5.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 711,עזריה,AZARYA,2.0,,,3130.0,boi_hedonic,,2025,,
 711,עזריה,AZARYA,2.5,,,3386.0,boi_hedonic,,2025,,
 711,עזריה,AZARYA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8593,12 +8593,12 @@
 720,ניר גלים,NIR GALLIM,5.0,,,5018.0,boi_hedonic,,2025,,
 7200,נס ציונה,NES ZIYYONA,2.0,,,3130.0,boi_hedonic,,2025,,
 7200,נס ציונה,NES ZIYYONA,2.5,,,3386.0,boi_hedonic,,2025,,
-7200,נס ציונה,NES ZIYYONA,3.0,4250.0,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7200,נס ציונה,NES ZIYYONA,3.0,,4250.0,4250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7200,נס ציונה,NES ZIYYONA,3.5,,,3963.0,boi_hedonic,,2025,,
-7200,נס ציונה,NES ZIYYONA,4.0,6000.0,6000.0,6000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7200,נס ציונה,NES ZIYYONA,4.0,,6000.0,6000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7200,נס ציונה,NES ZIYYONA,4.5,,,4639.0,boi_hedonic,,2025,,
 7200,נס ציונה,NES ZIYYONA,5+,,,5874.0,boi_hedonic,,2025,,
-7200,נס ציונה,NES ZIYYONA,5.0,8500.0,8500.0,8500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7200,נס ציונה,NES ZIYYONA,5.0,,8500.0,8500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 721,שדה אילן,SEDE ILAN,2.0,,,3130.0,boi_hedonic,,2025,,
 721,שדה אילן,SEDE ILAN,2.5,,,3386.0,boi_hedonic,,2025,,
 721,שדה אילן,SEDE ILAN,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8659,7 +8659,7 @@
 7300,נצרת,NAZARETH,2.5,,,3386.0,boi_hedonic,,2025,,
 7300,נצרת,NAZARETH,3.0,,,3663.0,boi_hedonic,,2025,,
 7300,נצרת,NAZARETH,3.5,,,3963.0,boi_hedonic,,2025,,
-7300,נצרת,NAZARETH,4.0,3850.0,3850.0,3850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7300,נצרת,NAZARETH,4.0,,3850.0,3850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7300,נצרת,NAZARETH,4.5,,,4639.0,boi_hedonic,,2025,,
 7300,נצרת,NAZARETH,5+,,,5874.0,boi_hedonic,,2025,,
 7300,נצרת,NAZARETH,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -8743,14 +8743,14 @@
 740,אשתאול,ESHTA'OL,4.5,,,4639.0,boi_hedonic,,2025,,
 740,אשתאול,ESHTA'OL,5+,,,5874.0,boi_hedonic,,2025,,
 740,אשתאול,ESHTA'OL,5.0,,,5018.0,boi_hedonic,,2025,,
-7400,נתניה,NETANYA,2.0,,,3422.0,boi_hedonic,,2025,,
+7400,Netanya,NETANYA,2.0,,3097.2,3097.2,cbs_table49,2.0,2025,,
 7400,נתניה,NETANYA,2.5,,,3702.0,boi_hedonic,,2025,,
-7400,נתניה,NETANYA,3.0,4450.0,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7400,נתניה,NETANYA,3.0,,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7400,נתניה,NETANYA,3.5,,,4334.0,boi_hedonic,,2025,,
-7400,נתניה,NETANYA,4.0,6400.0,6400.0,6400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7400,נתניה,NETANYA,4.0,,6400.0,6400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7400,נתניה,NETANYA,4.5,,,5072.0,boi_hedonic,,2025,,
-7400,נתניה,NETANYA,5+,,,6423.0,boi_hedonic,,2025,,
-7400,נתניה,NETANYA,5.0,7750.0,7750.0,7750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7400,Netanya,NETANYA,5+,,6222.7,6222.7,cbs_table49,2.0,2025,,
+7400,נתניה,NETANYA,5.0,,7750.0,7750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 741,שואבה,SHO'EVA,2.0,,,3130.0,boi_hedonic,,2025,,
 741,שואבה,SHO'EVA,2.5,,,3386.0,boi_hedonic,,2025,,
 741,שואבה,SHO'EVA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -8921,12 +8921,12 @@
 760,בן זכאי,BEN ZAKKAY,5.0,,,5018.0,boi_hedonic,,2025,,
 7600,עכו,AKKO,2.0,,,3130.0,boi_hedonic,,2025,,
 7600,עכו,AKKO,2.5,,,3386.0,boi_hedonic,,2025,,
-7600,עכו,AKKO,3.0,2700.0,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7600,עכו,AKKO,3.0,,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7600,עכו,AKKO,3.5,,,3963.0,boi_hedonic,,2025,,
-7600,עכו,AKKO,4.0,3550.0,3550.0,3550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7600,עכו,AKKO,4.0,,3550.0,3550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7600,עכו,AKKO,4.5,,,4639.0,boi_hedonic,,2025,,
 7600,עכו,AKKO,5+,,,5874.0,boi_hedonic,,2025,,
-7600,עכו,AKKO,5.0,5000.0,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7600,עכו,AKKO,5.0,,5000.0,5000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 761,שובה,SHUVA,2.0,,,3130.0,boi_hedonic,,2025,,
 761,שובה,SHUVA,2.5,,,3386.0,boi_hedonic,,2025,,
 761,שובה,SHUVA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9009,12 +9009,12 @@
 77,איילת השחר,AYYELET HASHAHAR,5.0,,,5018.0,boi_hedonic,,2025,,
 7700,עפולה,AFULA,2.0,,,3130.0,boi_hedonic,,2025,,
 7700,עפולה,AFULA,2.5,,,3386.0,boi_hedonic,,2025,,
-7700,עפולה,AFULA,3.0,2500.0,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7700,עפולה,AFULA,3.0,,2500.0,2500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7700,עפולה,AFULA,3.5,,,3963.0,boi_hedonic,,2025,,
-7700,עפולה,AFULA,4.0,3550.0,3550.0,3550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7700,עפולה,AFULA,4.0,,3550.0,3550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7700,עפולה,AFULA,4.5,,,4639.0,boi_hedonic,,2025,,
 7700,עפולה,AFULA,5+,,,5874.0,boi_hedonic,,2025,,
-7700,עפולה,AFULA,5.0,4450.0,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7700,עפולה,AFULA,5.0,,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 771,מבוא ביתר,MEVO BETAR,2.0,,,3130.0,boi_hedonic,,2025,,
 771,מבוא ביתר,MEVO BETAR,2.5,,,3386.0,boi_hedonic,,2025,,
 771,מבוא ביתר,MEVO BETAR,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9097,7 +9097,7 @@
 78,קרית ענבים,QIRYAT ANAVIM,5.0,,,5018.0,boi_hedonic,,2025,,
 780,אורה,ORA,2.0,,,3130.0,boi_hedonic,,2025,,
 780,אורה,ORA,2.5,,,3386.0,boi_hedonic,,2025,,
-780,אורה,ORA,3.0,5200.0,5200.0,5200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+780,אורה,ORA,3.0,,5200.0,5200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 780,אורה,ORA,3.5,,,3963.0,boi_hedonic,,2025,,
 780,אורה,ORA,4.0,,,4287.0,boi_hedonic,,2025,,
 780,אורה,ORA,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -9105,12 +9105,12 @@
 780,אורה,ORA,5.0,,,5018.0,boi_hedonic,,2025,,
 7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,2.0,,,3130.0,boi_hedonic,,2025,,
 7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,2.5,,,3386.0,boi_hedonic,,2025,,
-7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,3.0,3450.0,3450.0,3450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,3.0,,3450.0,3450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,3.5,,,3963.0,boi_hedonic,,2025,,
-7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,4.0,5175.0,5175.0,5175.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,4.0,,5175.0,5175.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,4.5,,,4639.0,boi_hedonic,,2025,,
 7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,5+,,,5874.0,boi_hedonic,,2025,,
-7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,5.0,6200.0,6200.0,6200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7800,פרדס חנה-כרכור,PARDES HANNA-KARKUR,5.0,,6200.0,6200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 783,אבן ספיר,EVEN SAPPIR,2.0,,,3130.0,boi_hedonic,,2025,,
 783,אבן ספיר,EVEN SAPPIR,2.5,,,3386.0,boi_hedonic,,2025,,
 783,אבן ספיר,EVEN SAPPIR,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9175,14 +9175,14 @@
 79,דגניה ב',DEGANYA BET,4.5,,,4639.0,boi_hedonic,,2025,,
 79,דגניה ב',DEGANYA BET,5+,,,5874.0,boi_hedonic,,2025,,
 79,דגניה ב',DEGANYA BET,5.0,,,5018.0,boi_hedonic,,2025,,
-7900,פתח תקווה,PETAH TIQWA,2.0,,,3384.0,boi_hedonic,,2025,,
+7900,Petah Tiqwa,PETAH TIQWA,2.0,,3360.0,3360.0,cbs_table49,2.0,2025,,
 7900,פתח תקווה,PETAH TIQWA,2.5,,,3661.0,boi_hedonic,,2025,,
-7900,פתח תקווה,PETAH TIQWA,3.0,4400.0,4400.0,4400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7900,פתח תקווה,PETAH TIQWA,3.0,,4400.0,4400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7900,פתח תקווה,PETAH TIQWA,3.5,,,4285.0,boi_hedonic,,2025,,
-7900,פתח תקווה,PETAH TIQWA,4.0,5900.0,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7900,פתח תקווה,PETAH TIQWA,4.0,,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 7900,פתח תקווה,PETAH TIQWA,4.5,,,5015.0,boi_hedonic,,2025,,
-7900,פתח תקווה,PETAH TIQWA,5+,,,6351.0,boi_hedonic,,2025,,
-7900,פתח תקווה,PETAH TIQWA,5.0,7250.0,7250.0,7250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+7900,Petah Tiqwa,PETAH TIQWA,5+,,6815.0,6815.0,cbs_table49,2.0,2025,,
+7900,פתח תקווה,PETAH TIQWA,5.0,,7250.0,7250.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 791,משען,MASH'EN,2.0,,,3130.0,boi_hedonic,,2025,,
 791,משען,MASH'EN,2.5,,,3386.0,boi_hedonic,,2025,,
 791,משען,MASH'EN,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9273,9 +9273,9 @@
 800,בית חנניה,BET HANANYA,5.0,,,5018.0,boi_hedonic,,2025,,
 8000,צפת,ZEFAT,2.0,,,3130.0,boi_hedonic,,2025,,
 8000,צפת,ZEFAT,2.5,,,3386.0,boi_hedonic,,2025,,
-8000,צפת,ZEFAT,3.0,2550.0,2550.0,2550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8000,צפת,ZEFAT,3.0,,2550.0,2550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8000,צפת,ZEFAT,3.5,,,3963.0,boi_hedonic,,2025,,
-8000,צפת,ZEFAT,4.0,3700.0,3700.0,3700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8000,צפת,ZEFAT,4.0,,3700.0,3700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8000,צפת,ZEFAT,4.5,,,4639.0,boi_hedonic,,2025,,
 8000,צפת,ZEFAT,5+,,,5874.0,boi_hedonic,,2025,,
 8000,צפת,ZEFAT,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -9369,9 +9369,9 @@
 811,יכיני,YAKHINI,5.0,,,5018.0,boi_hedonic,,2025,,
 812,שלומי,SHELOMI,2.0,,,3130.0,boi_hedonic,,2025,,
 812,שלומי,SHELOMI,2.5,,,3386.0,boi_hedonic,,2025,,
-812,שלומי,SHELOMI,3.0,2750.0,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+812,שלומי,SHELOMI,3.0,,2750.0,2750.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 812,שלומי,SHELOMI,3.5,,,3963.0,boi_hedonic,,2025,,
-812,שלומי,SHELOMI,4.0,3150.0,3150.0,3150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+812,שלומי,SHELOMI,4.0,,3150.0,3150.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 812,שלומי,SHELOMI,4.5,,,4639.0,boi_hedonic,,2025,,
 812,שלומי,SHELOMI,5+,,,5874.0,boi_hedonic,,2025,,
 812,שלומי,SHELOMI,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -9449,12 +9449,12 @@
 820,חלץ,HELEZ,5.0,,,5018.0,boi_hedonic,,2025,,
 8200,קרית מוצקין,QIRYAT MOTZKIN,2.0,,,2461.0,boi_hedonic,,2025,,
 8200,קרית מוצקין,QIRYAT MOTZKIN,2.5,,,2662.0,boi_hedonic,,2025,,
-8200,קרית מוצקין,QIRYAT MOTZKIN,3.0,3200.0,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8200,קרית מוצקין,QIRYAT MOTZKIN,3.0,,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8200,קרית מוצקין,QIRYAT MOTZKIN,3.5,,,3116.0,boi_hedonic,,2025,,
-8200,קרית מוצקין,QIRYAT MOTZKIN,4.0,4175.0,4175.0,4175.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8200,קרית מוצקין,QIRYAT MOTZKIN,4.0,,4175.0,4175.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8200,קרית מוצקין,QIRYAT MOTZKIN,4.5,,,3647.0,boi_hedonic,,2025,,
 8200,קרית מוצקין,QIRYAT MOTZKIN,5+,,,4619.0,boi_hedonic,,2025,,
-8200,קרית מוצקין,QIRYAT MOTZKIN,5.0,5575.0,5575.0,5575.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8200,קרית מוצקין,QIRYAT MOTZKIN,5.0,,5575.0,5575.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 821,אחוזם,AHUZZAM,2.0,,,3130.0,boi_hedonic,,2025,,
 821,אחוזם,AHUZZAM,2.5,,,3386.0,boi_hedonic,,2025,,
 821,אחוזם,AHUZZAM,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9527,19 +9527,19 @@
 829,מבטחים,MIVTAHIM,4.5,,,4639.0,boi_hedonic,,2025,,
 829,מבטחים,MIVTAHIM,5+,,,5874.0,boi_hedonic,,2025,,
 829,מבטחים,MIVTAHIM,5.0,,,5018.0,boi_hedonic,,2025,,
-8300,ראשון לציון,RISHON LEZIYYON,2.0,,,3730.0,boi_hedonic,,2025,,
+8300,Rishon Lezion,RISHON LEZIYYON,2.0,,3586.6,3586.6,cbs_table49,2.0,2025,,
 8300,ראשון לציון,RISHON LEZIYYON,2.5,,,4035.0,boi_hedonic,,2025,,
-8300,ראשון לציון,RISHON LEZIYYON,3.0,4850.0,4850.0,4850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8300,ראשון לציון,RISHON LEZIYYON,3.0,,4850.0,4850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8300,ראשון לציון,RISHON LEZIYYON,3.5,,,4723.0,boi_hedonic,,2025,,
-8300,ראשון לציון,RISHON LEZIYYON,4.0,6100.0,6100.0,6100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8300,ראשון לציון,RISHON LEZIYYON,4.0,,6100.0,6100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8300,ראשון לציון,RISHON LEZIYYON,4.5,,,5528.0,boi_hedonic,,2025,,
-8300,ראשון לציון,RISHON LEZIYYON,5+,,,7000.0,boi_hedonic,,2025,,
-8300,ראשון לציון,RISHON LEZIYYON,5.0,7550.0,7550.0,7550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8300,Rishon Lezion,RISHON LEZIYYON,5+,,7057.0,7057.0,cbs_table49,2.0,2025,,
+8300,ראשון לציון,RISHON LEZIYYON,5.0,,7550.0,7550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 831,ירוחם,YEROHAM,2.0,,,3130.0,boi_hedonic,,2025,,
 831,ירוחם,YEROHAM,2.5,,,3386.0,boi_hedonic,,2025,,
-831,ירוחם,YEROHAM,3.0,1950.0,1950.0,1950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+831,ירוחם,YEROHAM,3.0,,1950.0,1950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 831,ירוחם,YEROHAM,3.5,,,3963.0,boi_hedonic,,2025,,
-831,ירוחם,YEROHAM,4.0,3600.0,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+831,ירוחם,YEROHAM,4.0,,3600.0,3600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 831,ירוחם,YEROHAM,4.5,,,4639.0,boi_hedonic,,2025,,
 831,ירוחם,YEROHAM,5+,,,5874.0,boi_hedonic,,2025,,
 831,ירוחם,YEROHAM,5.0,,,5018.0,boi_hedonic,,2025,,
@@ -9599,14 +9599,14 @@
 840,כיסופים,KISSUFIM,4.5,,,4639.0,boi_hedonic,,2025,,
 840,כיסופים,KISSUFIM,5+,,,5874.0,boi_hedonic,,2025,,
 840,כיסופים,KISSUFIM,5.0,,,5018.0,boi_hedonic,,2025,,
-8400,רחובות,REHOVOT,2.0,,,3130.0,boi_hedonic,,2025,,
+8400,Rehovot,REHOVOT,2.0,,3108.3,3108.3,cbs_table49,2.0,2025,,
 8400,רחובות,REHOVOT,2.5,,,3386.0,boi_hedonic,,2025,,
-8400,רחובות,REHOVOT,3.0,4400.0,4400.0,4400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8400,רחובות,REHOVOT,3.0,,4400.0,4400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8400,רחובות,REHOVOT,3.5,,,3963.0,boi_hedonic,,2025,,
-8400,רחובות,REHOVOT,4.0,5850.0,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8400,רחובות,REHOVOT,4.0,,5850.0,5850.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8400,רחובות,REHOVOT,4.5,,,4639.0,boi_hedonic,,2025,,
-8400,רחובות,REHOVOT,5+,,,5874.0,boi_hedonic,,2025,,
-8400,רחובות,REHOVOT,5.0,7200.0,7200.0,7200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8400,Rehovot,REHOVOT,5+,,6203.7,6203.7,cbs_table49,2.0,2025,,
+8400,רחובות,REHOVOT,5.0,,7200.0,7200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 841,אלישמע,ELISHAMA,2.0,,,3130.0,boi_hedonic,,2025,,
 841,אלישמע,ELISHAMA,2.5,,,3386.0,boi_hedonic,,2025,,
 841,אלישמע,ELISHAMA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9689,12 +9689,12 @@
 850,אחיטוב,AHITUV,5.0,,,5018.0,boi_hedonic,,2025,,
 8500,רמלה,RAMLA,2.0,,,3130.0,boi_hedonic,,2025,,
 8500,רמלה,RAMLA,2.5,,,3386.0,boi_hedonic,,2025,,
-8500,רמלה,RAMLA,3.0,3500.0,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8500,רמלה,RAMLA,3.0,,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8500,רמלה,RAMLA,3.5,,,3963.0,boi_hedonic,,2025,,
-8500,רמלה,RAMLA,4.0,4500.0,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8500,רמלה,RAMLA,4.0,,4500.0,4500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8500,רמלה,RAMLA,4.5,,,4639.0,boi_hedonic,,2025,,
 8500,רמלה,RAMLA,5+,,,5874.0,boi_hedonic,,2025,,
-8500,רמלה,RAMLA,5.0,6425.0,6425.0,6425.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8500,רמלה,RAMLA,5.0,,6425.0,6425.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 851,ניצני עוז,NIZZANE OZ,2.0,,,3130.0,boi_hedonic,,2025,,
 851,ניצני עוז,NIZZANE OZ,2.5,,,3386.0,boi_hedonic,,2025,,
 851,ניצני עוז,NIZZANE OZ,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9767,14 +9767,14 @@
 86,גבע,GEVA,4.5,,,4639.0,boi_hedonic,,2025,,
 86,גבע,GEVA,5+,,,5874.0,boi_hedonic,,2025,,
 86,גבע,GEVA,5.0,,,5018.0,boi_hedonic,,2025,,
-8600,רמת גן,RAMAT GAN,2.0,,,4537.0,boi_hedonic,,2025,,
+8600,Ramat Gan,RAMAT GAN,2.0,,4121.1,4121.1,cbs_table49,2.0,2025,,
 8600,רמת גן,RAMAT GAN,2.5,,,4909.0,boi_hedonic,,2025,,
-8600,רמת גן,RAMAT GAN,3.0,5900.0,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8600,רמת גן,RAMAT GAN,3.0,,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8600,רמת גן,RAMAT GAN,3.5,,,5745.0,boi_hedonic,,2025,,
-8600,רמת גן,RAMAT GAN,4.0,7300.0,7300.0,7300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8600,רמת גן,RAMAT GAN,4.0,,7300.0,7300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8600,רמת גן,RAMAT GAN,4.5,,,6725.0,boi_hedonic,,2025,,
-8600,רמת גן,RAMAT GAN,5+,,,8515.0,boi_hedonic,,2025,,
-8600,רמת גן,RAMAT GAN,5.0,8650.0,8650.0,8650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8600,Ramat Gan,RAMAT GAN,5+,,8172.7,8172.7,cbs_table49,2.0,2025,,
+8600,רמת גן,RAMAT GAN,5.0,,8650.0,8650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 861,שדה אליעזר,SEDE ELI'EZER,2.0,,,3130.0,boi_hedonic,,2025,,
 861,שדה אליעזר,SEDE ELI'EZER,2.5,,,3386.0,boi_hedonic,,2025,,
 861,שדה אליעזר,SEDE ELI'EZER,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9841,12 +9841,12 @@
 870,גבעת השלושה,GIV'AT HASHELOSHA,5.0,,,5018.0,boi_hedonic,,2025,,
 8700,רעננה,RA'ANANA,2.0,,,3130.0,boi_hedonic,,2025,,
 8700,רעננה,RA'ANANA,2.5,,,3386.0,boi_hedonic,,2025,,
-8700,רעננה,RA'ANANA,3.0,6175.0,6175.0,6175.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8700,רעננה,RA'ANANA,3.0,,6175.0,6175.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8700,רעננה,RA'ANANA,3.5,,,3963.0,boi_hedonic,,2025,,
-8700,רעננה,RA'ANANA,4.0,7125.0,7125.0,7125.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8700,רעננה,RA'ANANA,4.0,,7125.0,7125.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 8700,רעננה,RA'ANANA,4.5,,,4639.0,boi_hedonic,,2025,,
 8700,רעננה,RA'ANANA,5+,,,5874.0,boi_hedonic,,2025,,
-8700,רעננה,RA'ANANA,5.0,8600.0,8600.0,8600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+8700,רעננה,RA'ANANA,5.0,,8600.0,8600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 871,עינת,ENAT,2.0,,,3130.0,boi_hedonic,,2025,,
 871,עינת,ENAT,2.5,,,3386.0,boi_hedonic,,2025,,
 871,עינת,ENAT,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -9873,12 +9873,12 @@
 873,שלווה,SHALWA,5.0,,,5018.0,boi_hedonic,,2025,,
 874,מגדל העמק,MIGDAL HAEMEQ,2.0,,,3130.0,boi_hedonic,,2025,,
 874,מגדל העמק,MIGDAL HAEMEQ,2.5,,,3386.0,boi_hedonic,,2025,,
-874,מגדל העמק,MIGDAL HAEMEQ,3.0,2300.0,2300.0,2300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+874,מגדל העמק,MIGDAL HAEMEQ,3.0,,2300.0,2300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 874,מגדל העמק,MIGDAL HAEMEQ,3.5,,,3963.0,boi_hedonic,,2025,,
-874,מגדל העמק,MIGDAL HAEMEQ,4.0,3500.0,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+874,מגדל העמק,MIGDAL HAEMEQ,4.0,,3500.0,3500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 874,מגדל העמק,MIGDAL HAEMEQ,4.5,,,4639.0,boi_hedonic,,2025,,
 874,מגדל העמק,MIGDAL HAEMEQ,5+,,,5874.0,boi_hedonic,,2025,,
-874,מגדל העמק,MIGDAL HAEMEQ,5.0,4450.0,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+874,מגדל העמק,MIGDAL HAEMEQ,5.0,,4450.0,4450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 875,כפר עבודה,KEFAR AVODA,2.0,,,3130.0,boi_hedonic,,2025,,
 875,כפר עבודה,KEFAR AVODA,2.5,,,3386.0,boi_hedonic,,2025,,
 875,כפר עבודה,KEFAR AVODA,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10007,22 +10007,22 @@
 90,חפצי-בה,HEFZI-BAH,4.5,,,4639.0,boi_hedonic,,2025,,
 90,חפצי-בה,HEFZI-BAH,5+,,,5874.0,boi_hedonic,,2025,,
 90,חפצי-בה,HEFZI-BAH,5.0,,,5018.0,boi_hedonic,,2025,,
-9000,באר שבע,BE'ER SHEVA,2.0,,,1980.0,boi_hedonic,,2025,,
+9000,Beer Sheva,BE'ER SHEVA,2.0,,2262.2,2262.2,cbs_table49,2.0,2025,,
 9000,באר שבע,BE'ER SHEVA,2.5,,,2142.0,boi_hedonic,,2025,,
-9000,באר שבע,BE'ER SHEVA,3.0,2575.0,2575.0,2575.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9000,באר שבע,BE'ER SHEVA,3.0,,2575.0,2575.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9000,באר שבע,BE'ER SHEVA,3.5,,,2507.0,boi_hedonic,,2025,,
-9000,באר שבע,BE'ER SHEVA,4.0,3450.0,3450.0,3450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9000,באר שבע,BE'ER SHEVA,4.0,,3450.0,3450.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9000,באר שבע,BE'ER SHEVA,4.5,,,2935.0,boi_hedonic,,2025,,
-9000,באר שבע,BE'ER SHEVA,5+,,,3716.0,boi_hedonic,,2025,,
-9000,באר שבע,BE'ER SHEVA,5.0,5124.0,5124.0,5124.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9000,Beer Sheva,BE'ER SHEVA,5+,,4575.2,4575.2,cbs_table49,2.0,2025,,
+9000,באר שבע,BE'ER SHEVA,5.0,,5124.0,5124.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9100,נהריה,NAHARIYYA,2.0,,,2269.0,boi_hedonic,,2025,,
 9100,נהריה,NAHARIYYA,2.5,,,2454.0,boi_hedonic,,2025,,
-9100,נהריה,NAHARIYYA,3.0,2950.0,2950.0,2950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9100,נהריה,NAHARIYYA,3.0,,2950.0,2950.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9100,נהריה,NAHARIYYA,3.5,,,2873.0,boi_hedonic,,2025,,
-9100,נהריה,NAHARIYYA,4.0,4200.0,4200.0,4200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9100,נהריה,NAHARIYYA,4.0,,4200.0,4200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9100,נהריה,NAHARIYYA,4.5,,,3362.0,boi_hedonic,,2025,,
 9100,נהריה,NAHARIYYA,5+,,,4258.0,boi_hedonic,,2025,,
-9100,נהריה,NAHARIYYA,5.0,5100.0,5100.0,5100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9100,נהריה,NAHARIYYA,5.0,,5100.0,5100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 913,שבלי - אום אל-גנם,SHIBLI,2.0,,,3130.0,boi_hedonic,,2025,,
 913,שבלי - אום אל-גנם,SHIBLI,2.5,,,3386.0,boi_hedonic,,2025,,
 913,שבלי - אום אל-גנם,SHIBLI,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10065,9 +10065,9 @@
 92,גיניגר,GINNEGAR,5.0,,,5018.0,boi_hedonic,,2025,,
 9200,בית שאן,BET SHE'AN,2.0,,,1519.0,boi_hedonic,,2025,,
 9200,בית שאן,BET SHE'AN,2.5,,,1643.0,boi_hedonic,,2025,,
-9200,בית שאן,BET SHE'AN,3.0,1975.0,1975.0,1975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9200,בית שאן,BET SHE'AN,3.0,,1975.0,1975.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9200,בית שאן,BET SHE'AN,3.5,,,1923.0,boi_hedonic,,2025,,
-9200,בית שאן,BET SHE'AN,4.0,2275.0,2275.0,2275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9200,בית שאן,BET SHE'AN,4.0,,2275.0,2275.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9200,בית שאן,BET SHE'AN,4.5,,,2251.0,boi_hedonic,,2025,,
 9200,בית שאן,BET SHE'AN,5+,,,2851.0,boi_hedonic,,2025,,
 9200,בית שאן,BET SHE'AN,5.0,,,2436.0,boi_hedonic,,2025,,
@@ -10097,12 +10097,12 @@
 926,נווה אבות,NEWE AVOT,5.0,,,5018.0,boi_hedonic,,2025,,
 9300,זכרון יעקב,ZIKHRON YA'AQOV,2.0,,,3130.0,boi_hedonic,,2025,,
 9300,זכרון יעקב,ZIKHRON YA'AQOV,2.5,,,3386.0,boi_hedonic,,2025,,
-9300,זכרון יעקב,ZIKHRON YA'AQOV,3.0,4875.0,4875.0,4875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9300,זכרון יעקב,ZIKHRON YA'AQOV,3.0,,4875.0,4875.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9300,זכרון יעקב,ZIKHRON YA'AQOV,3.5,,,3963.0,boi_hedonic,,2025,,
-9300,זכרון יעקב,ZIKHRON YA'AQOV,4.0,5600.0,5600.0,5600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9300,זכרון יעקב,ZIKHRON YA'AQOV,4.0,,5600.0,5600.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9300,זכרון יעקב,ZIKHRON YA'AQOV,4.5,,,4639.0,boi_hedonic,,2025,,
 9300,זכרון יעקב,ZIKHRON YA'AQOV,5+,,,5874.0,boi_hedonic,,2025,,
-9300,זכרון יעקב,ZIKHRON YA'AQOV,5.0,6525.0,6525.0,6525.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9300,זכרון יעקב,ZIKHRON YA'AQOV,5.0,,6525.0,6525.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 932,אבו עמרה (שבט),ABU AMRE,2.0,,,3130.0,boi_hedonic,,2025,,
 932,אבו עמרה (שבט),ABU AMRE,2.5,,,3386.0,boi_hedonic,,2025,,
 932,אבו עמרה (שבט),ABU AMRE,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10137,12 +10137,12 @@
 94,בלפוריה,BALFURIYYA,5.0,,,5018.0,boi_hedonic,,2025,,
 9400,יהוד-מונוסון,YEHUD-MONOSON,2.0,,,3130.0,boi_hedonic,,2025,,
 9400,יהוד-מונוסון,YEHUD-MONOSON,2.5,,,3386.0,boi_hedonic,,2025,,
-9400,יהוד-מונוסון,YEHUD-MONOSON,3.0,4650.0,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9400,יהוד-מונוסון,YEHUD-MONOSON,3.0,,4650.0,4650.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9400,יהוד-מונוסון,YEHUD-MONOSON,3.5,,,3963.0,boi_hedonic,,2025,,
-9400,יהוד-מונוסון,YEHUD-MONOSON,4.0,5900.0,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9400,יהוד-מונוסון,YEHUD-MONOSON,4.0,,5900.0,5900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9400,יהוד-מונוסון,YEHUD-MONOSON,4.5,,,4639.0,boi_hedonic,,2025,,
 9400,יהוד-מונוסון,YEHUD-MONOSON,5+,,,5874.0,boi_hedonic,,2025,,
-9400,יהוד-מונוסון,YEHUD-MONOSON,5.0,8075.0,8075.0,8075.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9400,יהוד-מונוסון,YEHUD-MONOSON,5.0,,8075.0,8075.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 942,סואעד (חמירה),SAWA'ID (HUMAYRA),2.0,,,3130.0,boi_hedonic,,2025,,
 942,סואעד (חמירה),SAWA'ID (HUMAYRA),2.5,,,3386.0,boi_hedonic,,2025,,
 942,סואעד (חמירה),SAWA'ID (HUMAYRA),3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10177,12 +10177,12 @@
 95,בית אלפא,BET ALFA,5.0,,,5018.0,boi_hedonic,,2025,,
 9500,קרית ביאליק,QIRYAT BIALIK,2.0,,,3130.0,boi_hedonic,,2025,,
 9500,קרית ביאליק,QIRYAT BIALIK,2.5,,,3386.0,boi_hedonic,,2025,,
-9500,קרית ביאליק,QIRYAT BIALIK,3.0,3200.0,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9500,קרית ביאליק,QIRYAT BIALIK,3.0,,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9500,קרית ביאליק,QIRYAT BIALIK,3.5,,,3963.0,boi_hedonic,,2025,,
-9500,קרית ביאליק,QIRYAT BIALIK,4.0,4000.0,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9500,קרית ביאליק,QIRYAT BIALIK,4.0,,4000.0,4000.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9500,קרית ביאליק,QIRYAT BIALIK,4.5,,,4639.0,boi_hedonic,,2025,,
 9500,קרית ביאליק,QIRYAT BIALIK,5+,,,5874.0,boi_hedonic,,2025,,
-9500,קרית ביאליק,QIRYAT BIALIK,5.0,4900.0,4900.0,4900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9500,קרית ביאליק,QIRYAT BIALIK,5.0,,4900.0,4900.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 956,הוזייל (שבט),HUZAYYEL,2.0,,,3130.0,boi_hedonic,,2025,,
 956,הוזייל (שבט),HUZAYYEL,2.5,,,3386.0,boi_hedonic,,2025,,
 956,הוזייל (שבט),HUZAYYEL,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10233,12 +10233,12 @@
 960,אסד (שבט),ASAD,5.0,,,5018.0,boi_hedonic,,2025,,
 9600,קרית ים,QIRYAT YAM,2.0,,,3130.0,boi_hedonic,,2025,,
 9600,קרית ים,QIRYAT YAM,2.5,,,3386.0,boi_hedonic,,2025,,
-9600,קרית ים,QIRYAT YAM,3.0,2700.0,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9600,קרית ים,QIRYAT YAM,3.0,,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9600,קרית ים,QIRYAT YAM,3.5,,,3963.0,boi_hedonic,,2025,,
-9600,קרית ים,QIRYAT YAM,4.0,4100.0,4100.0,4100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9600,קרית ים,QIRYAT YAM,4.0,,4100.0,4100.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9600,קרית ים,QIRYAT YAM,4.5,,,4639.0,boi_hedonic,,2025,,
 9600,קרית ים,QIRYAT YAM,5+,,,5874.0,boi_hedonic,,2025,,
-9600,קרית ים,QIRYAT YAM,5.0,5400.0,5400.0,5400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9600,קרית ים,QIRYAT YAM,5.0,,5400.0,5400.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 961,אבו רוקייק (שבט),ABU RUQAYYEQ,2.0,,,3130.0,boi_hedonic,,2025,,
 961,אבו רוקייק (שבט),ABU RUQAYYEQ,2.5,,,3386.0,boi_hedonic,,2025,,
 961,אבו רוקייק (שבט),ABU RUQAYYEQ,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10329,12 +10329,12 @@
 970,תראבין א-צאנע (שבט),TARABIN AS-SANI,5.0,,,5018.0,boi_hedonic,,2025,,
 9700,הוד השרון,HOD HASHARON,2.0,,,3130.0,boi_hedonic,,2025,,
 9700,הוד השרון,HOD HASHARON,2.5,,,3386.0,boi_hedonic,,2025,,
-9700,הוד השרון,HOD HASHARON,3.0,5200.0,5200.0,5200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9700,הוד השרון,HOD HASHARON,3.0,,5200.0,5200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9700,הוד השרון,HOD HASHARON,3.5,,,3963.0,boi_hedonic,,2025,,
-9700,הוד השרון,HOD HASHARON,4.0,6895.0,6895.0,6895.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9700,הוד השרון,HOD HASHARON,4.0,,6895.0,6895.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9700,הוד השרון,HOD HASHARON,4.5,,,4639.0,boi_hedonic,,2025,,
 9700,הוד השרון,HOD HASHARON,5+,,,5874.0,boi_hedonic,,2025,,
-9700,הוד השרון,HOD HASHARON,5.0,8500.0,8500.0,8500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9700,הוד השרון,HOD HASHARON,5.0,,8500.0,8500.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 972,קוואעין (שבט),QAWA'IN,2.0,,,3130.0,boi_hedonic,,2025,,
 972,קוואעין (שבט),QAWA'IN,2.5,,,3386.0,boi_hedonic,,2025,,
 972,קוואעין (שבט),QAWA'IN,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10377,7 +10377,7 @@
 98,כפר מלל,KEFAR MALAL,5.0,,,5018.0,boi_hedonic,,2025,,
 9800,בנימינה-גבעת עדה,BINYAMINA,2.0,,,3130.0,boi_hedonic,,2025,,
 9800,בנימינה-גבעת עדה,BINYAMINA,2.5,,,3386.0,boi_hedonic,,2025,,
-9800,בנימינה-גבעת עדה,BINYAMINA,3.0,3550.0,3550.0,3550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+9800,בנימינה-גבעת עדה,BINYAMINA,3.0,,3550.0,3550.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 9800,בנימינה-גבעת עדה,BINYAMINA,3.5,,,3963.0,boi_hedonic,,2025,,
 9800,בנימינה-גבעת עדה,BINYAMINA,4.0,,,4287.0,boi_hedonic,,2025,,
 9800,בנימינה-גבעת עדה,BINYAMINA,4.5,,,4639.0,boi_hedonic,,2025,,
@@ -10401,12 +10401,12 @@
 989,סואעד (כמאנה) (שבט),SAWA'ID (KAMANE),5.0,,,5018.0,boi_hedonic,,2025,,
 99,מצפה רמון,MIZPE RAMON,2.0,,,3130.0,boi_hedonic,,2025,,
 99,מצפה רמון,MIZPE RAMON,2.5,,,3386.0,boi_hedonic,,2025,,
-99,מצפה רמון,MIZPE RAMON,3.0,2700.0,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+99,מצפה רמון,MIZPE RAMON,3.0,,2700.0,2700.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 99,מצפה רמון,MIZPE RAMON,3.5,,,3963.0,boi_hedonic,,2025,,
-99,מצפה רמון,MIZPE RAMON,4.0,3200.0,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+99,מצפה רמון,MIZPE RAMON,4.0,,3200.0,3200.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 99,מצפה רמון,MIZPE RAMON,4.5,,,4639.0,boi_hedonic,,2025,,
 99,מצפה רמון,MIZPE RAMON,5+,,,5874.0,boi_hedonic,,2025,,
-99,מצפה רמון,MIZPE RAMON,5.0,4300.0,4300.0,4300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
+99,מצפה רמון,MIZPE RAMON,5.0,,4300.0,4300.0,nadlan.gov.il,2.0,2025,,nadlan settlement rent page JSON
 990,ראס עלי,RAS ALI,2.0,,,3130.0,boi_hedonic,,2025,,
 990,ראס עלי,RAS ALI,2.5,,,3386.0,boi_hedonic,,2025,,
 990,ראס עלי,RAS ALI,3.0,,,3663.0,boi_hedonic,,2025,,
@@ -10447,6 +10447,10 @@
 998,ביר אל-מכסור,BIR EL-MAKSUR,4.5,,,4639.0,boi_hedonic,,2025,,
 998,ביר אל-מכסור,BIR EL-MAKSUR,5+,,,5874.0,boi_hedonic,,2025,,
 998,ביר אל-מכסור,BIR EL-MAKSUR,5.0,,,5018.0,boi_hedonic,,2025,,
+DIST_CENTER,center District,center District,2.0,,3352.9,3352.9,cbs_table49,2.0,2025,,
+DIST_CENTER,center District,center District,3.0,,4231.2,4231.2,cbs_table49,2.0,2025,,
+DIST_CENTER,center District,center District,4.0,,5398.6,5398.6,cbs_table49,2.0,2025,,
+DIST_CENTER,center District,center District,5+,,7108.5,7108.5,cbs_table49,2.0,2025,,
 DIST_HAIFA,Haifa District,Haifa District,2.0,,2442.6,2442.6,cbs_table49,2.0,2025,,
 DIST_HAIFA,Haifa District,Haifa District,3.0,,3089.3,3089.3,cbs_table49,2.0,2025,,
 DIST_HAIFA,Haifa District,Haifa District,4.0,,3927.8,3927.8,cbs_table49,2.0,2025,,
@@ -10467,77 +10471,3 @@ DIST_TA,Tel Aviv District,Tel Aviv District,2.0,,4717.8,4717.8,cbs_table49,2.0,2
 DIST_TA,Tel Aviv District,Tel Aviv District,3.0,,5752.0,5752.0,cbs_table49,2.0,2025,,
 DIST_TA,Tel Aviv District,Tel Aviv District,4.0,,7016.2,7016.2,cbs_table49,2.0,2025,,
 DIST_TA,Tel Aviv District,Tel Aviv District,5+,,9121.2,9121.2,cbs_table49,2.0,2025,,
-UNKNOWN_Ashdod,Ashdod,Ashdod,2.0,,3036.7,3036.7,cbs_table49,2.0,2025,,
-UNKNOWN_Ashdod,Ashdod,Ashdod,3.0,,3830.3,3830.3,cbs_table49,2.0,2025,,
-UNKNOWN_Ashdod,Ashdod,Ashdod,4.0,,4779.5,4779.5,cbs_table49,2.0,2025,,
-UNKNOWN_Ashdod,Ashdod,Ashdod,5+,,6025.0,6025.0,cbs_table49,2.0,2025,,
-UNKNOWN_Ashkelon,Ashkelon,Ashkelon,2.0,,2627.8,2627.8,cbs_table49,2.0,2025,,
-UNKNOWN_Ashkelon,Ashkelon,Ashkelon,3.0,,3185.7,3185.7,cbs_table49,2.0,2025,,
-UNKNOWN_Ashkelon,Ashkelon,Ashkelon,4.0,,3959.7,3959.7,cbs_table49,2.0,2025,,
-UNKNOWN_Ashkelon,Ashkelon,Ashkelon,5+,,4675.4,4675.4,cbs_table49,2.0,2025,,
-UNKNOWN_Bat Yam,Bat Yam,Bat Yam,2.0,,3494.3,3494.3,cbs_table49,2.0,2025,,
-UNKNOWN_Bat Yam,Bat Yam,Bat Yam,3.0,,4017.2,4017.2,cbs_table49,2.0,2025,,
-UNKNOWN_Bat Yam,Bat Yam,Bat Yam,4.0,,5230.7,5230.7,cbs_table49,2.0,2025,,
-UNKNOWN_Bat Yam,Bat Yam,Bat Yam,5+,,6750.0,6750.0,cbs_table49,2.0,2025,,
-UNKNOWN_Beer Sheva,Beer Sheva,Beer Sheva,2.0,,2262.2,2262.2,cbs_table49,2.0,2025,,
-UNKNOWN_Beer Sheva,Beer Sheva,Beer Sheva,3.0,,2714.6,2714.6,cbs_table49,2.0,2025,,
-UNKNOWN_Beer Sheva,Beer Sheva,Beer Sheva,4.0,,3326.0,3326.0,cbs_table49,2.0,2025,,
-UNKNOWN_Beer Sheva,Beer Sheva,Beer Sheva,5+,,4575.2,4575.2,cbs_table49,2.0,2025,,
-UNKNOWN_Bet Shemesh,Bet Shemesh,Bet Shemesh,3.0,,3888.7,3888.7,cbs_table49,2.0,2025,,
-UNKNOWN_Bet Shemesh,Bet Shemesh,Bet Shemesh,4.0,,4505.3,4505.3,cbs_table49,2.0,2025,,
-UNKNOWN_Bet Shemesh,Bet Shemesh,Bet Shemesh,5+,,5972.2,5972.2,cbs_table49,2.0,2025,,
-UNKNOWN_Bnei Brak,Bnei Brak,Bnei Brak,2.0,,3205.5,3205.5,cbs_table49,2.0,2025,,
-UNKNOWN_Bnei Brak,Bnei Brak,Bnei Brak,3.0,,4032.1,4032.1,cbs_table49,2.0,2025,,
-UNKNOWN_Bnei Brak,Bnei Brak,Bnei Brak,4.0,,5023.2,5023.2,cbs_table49,2.0,2025,,
-UNKNOWN_Bnei Brak,Bnei Brak,Bnei Brak,5+,,6129.7,6129.7,cbs_table49,2.0,2025,,
-UNKNOWN_Hadera,Hadera,Hadera,2.0,,2647.9,2647.9,cbs_table49,2.0,2025,,
-UNKNOWN_Hadera,Hadera,Hadera,3.0,,3299.5,3299.5,cbs_table49,2.0,2025,,
-UNKNOWN_Hadera,Hadera,Hadera,4.0,,4211.8,4211.8,cbs_table49,2.0,2025,,
-UNKNOWN_Hadera,Hadera,Hadera,5+,,5024.8,5024.8,cbs_table49,2.0,2025,,
-UNKNOWN_Haifa,Haifa,Haifa,2.0,,2427.9,2427.9,cbs_table49,2.0,2025,,
-UNKNOWN_Haifa,Haifa,Haifa,3.0,,3048.8,3048.8,cbs_table49,2.0,2025,,
-UNKNOWN_Haifa,Haifa,Haifa,4.0,,3902.0,3902.0,cbs_table49,2.0,2025,,
-UNKNOWN_Haifa,Haifa,Haifa,5+,,5301.4,5301.4,cbs_table49,2.0,2025,,
-UNKNOWN_Herzlliya,Herzlliya,Herzlliya,2.0,,4586.3,4586.3,cbs_table49,2.0,2025,,
-UNKNOWN_Herzlliya,Herzlliya,Herzlliya,3.0,,5331.9,5331.9,cbs_table49,2.0,2025,,
-UNKNOWN_Herzlliya,Herzlliya,Herzlliya,4.0,,6856.6,6856.6,cbs_table49,2.0,2025,,
-UNKNOWN_Herzlliya,Herzlliya,Herzlliya,5+,,8890.5,8890.5,cbs_table49,2.0,2025,,
-UNKNOWN_Holon,Holon,Holon,2.0,,3532.9,3532.9,cbs_table49,2.0,2025,,
-UNKNOWN_Holon,Holon,Holon,3.0,,4183.2,4183.2,cbs_table49,2.0,2025,,
-UNKNOWN_Holon,Holon,Holon,4.0,,5314.8,5314.8,cbs_table49,2.0,2025,,
-UNKNOWN_Holon,Holon,Holon,5+,,6838.3,6838.3,cbs_table49,2.0,2025,,
-UNKNOWN_Jerusalem,Jerusalem,Jerusalem,2.0,,3776.8,3776.8,cbs_table49,2.0,2025,,
-UNKNOWN_Jerusalem,Jerusalem,Jerusalem,3.0,,4687.1,4687.1,cbs_table49,2.0,2025,,
-UNKNOWN_Jerusalem,Jerusalem,Jerusalem,4.0,,5941.1,5941.1,cbs_table49,2.0,2025,,
-UNKNOWN_Jerusalem,Jerusalem,Jerusalem,5+,,7574.5,7574.5,cbs_table49,2.0,2025,,
-UNKNOWN_Kfar Saba,Kfar Saba,Kfar Saba,3.0,,4590.8,4590.8,cbs_table49,2.0,2025,,
-UNKNOWN_Kfar Saba,Kfar Saba,Kfar Saba,4.0,,5850.3,5850.3,cbs_table49,2.0,2025,,
-UNKNOWN_Kfar Saba,Kfar Saba,Kfar Saba,5+,,7277.2,7277.2,cbs_table49,2.0,2025,,
-UNKNOWN_Netanya,Netanya,Netanya,2.0,,3097.2,3097.2,cbs_table49,2.0,2025,,
-UNKNOWN_Netanya,Netanya,Netanya,3.0,,3950.7,3950.7,cbs_table49,2.0,2025,,
-UNKNOWN_Netanya,Netanya,Netanya,4.0,,5119.8,5119.8,cbs_table49,2.0,2025,,
-UNKNOWN_Netanya,Netanya,Netanya,5+,,6222.7,6222.7,cbs_table49,2.0,2025,,
-UNKNOWN_Petah Tiqwa,Petah Tiqwa,Petah Tiqwa,2.0,,3360.0,3360.0,cbs_table49,2.0,2025,,
-UNKNOWN_Petah Tiqwa,Petah Tiqwa,Petah Tiqwa,3.0,,4071.0,4071.0,cbs_table49,2.0,2025,,
-UNKNOWN_Petah Tiqwa,Petah Tiqwa,Petah Tiqwa,4.0,,5116.7,5116.7,cbs_table49,2.0,2025,,
-UNKNOWN_Petah Tiqwa,Petah Tiqwa,Petah Tiqwa,5+,,6815.0,6815.0,cbs_table49,2.0,2025,,
-UNKNOWN_Ramat Gan,Ramat Gan,Ramat Gan,2.0,,4121.1,4121.1,cbs_table49,2.0,2025,,
-UNKNOWN_Ramat Gan,Ramat Gan,Ramat Gan,3.0,,5304.8,5304.8,cbs_table49,2.0,2025,,
-UNKNOWN_Ramat Gan,Ramat Gan,Ramat Gan,4.0,,6558.8,6558.8,cbs_table49,2.0,2025,,
-UNKNOWN_Ramat Gan,Ramat Gan,Ramat Gan,5+,,8172.7,8172.7,cbs_table49,2.0,2025,,
-UNKNOWN_Rehovot,Rehovot,Rehovot,2.0,,3108.3,3108.3,cbs_table49,2.0,2025,,
-UNKNOWN_Rehovot,Rehovot,Rehovot,3.0,,3964.2,3964.2,cbs_table49,2.0,2025,,
-UNKNOWN_Rehovot,Rehovot,Rehovot,4.0,,4880.0,4880.0,cbs_table49,2.0,2025,,
-UNKNOWN_Rehovot,Rehovot,Rehovot,5+,,6203.7,6203.7,cbs_table49,2.0,2025,,
-UNKNOWN_Rishon Lezion,Rishon Lezion,Rishon Lezion,2.0,,3586.6,3586.6,cbs_table49,2.0,2025,,
-UNKNOWN_Rishon Lezion,Rishon Lezion,Rishon Lezion,3.0,,4473.4,4473.4,cbs_table49,2.0,2025,,
-UNKNOWN_Rishon Lezion,Rishon Lezion,Rishon Lezion,4.0,,5397.1,5397.1,cbs_table49,2.0,2025,,
-UNKNOWN_Rishon Lezion,Rishon Lezion,Rishon Lezion,5+,,7057.0,7057.0,cbs_table49,2.0,2025,,
-UNKNOWN_Tel Aviv,Tel Aviv,Tel Aviv,2.0,,5363.9,5363.9,cbs_table49,2.0,2025,,
-UNKNOWN_Tel Aviv,Tel Aviv,Tel Aviv,3.0,,6976.3,6976.3,cbs_table49,2.0,2025,,
-UNKNOWN_Tel Aviv,Tel Aviv,Tel Aviv,4.0,,8671.3,8671.3,cbs_table49,2.0,2025,,
-UNKNOWN_Tel Aviv,Tel Aviv,Tel Aviv,5+,,10953.0,10953.0,cbs_table49,2.0,2025,,
-UNKNOWN_center District,center District,center District,2.0,,3352.9,3352.9,cbs_table49,2.0,2025,,
-UNKNOWN_center District,center District,center District,3.0,,4231.2,4231.2,cbs_table49,2.0,2025,,
-UNKNOWN_center District,center District,center District,4.0,,5398.6,5398.6,cbs_table49,2.0,2025,,
-UNKNOWN_center District,center District,center District,5+,,7108.5,7108.5,cbs_table49,2.0,2025,,
