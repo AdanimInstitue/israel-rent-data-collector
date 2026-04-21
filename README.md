@@ -53,6 +53,9 @@ pip install -e ".[dev]"
 
 Requires Python 3.11+.
 This installs the Click CLI as `rent-collector` (and the legacy alias `rent-collect`).
+Each CLI run also writes git-ignored artifacts under `var/runs/<timestamp>/` by default,
+including `stdout.log`, `stderr.log`, and `run.json`. The latest run is pointed to by
+`var/runs/latest.json` and, when supported, `var/runs/latest/`.
 
 ## Usage
 
@@ -78,6 +81,9 @@ rent-collector --validate
 
 # Optionally print a 2022 facility-level reference baseline for context
 rent-collector --validate --reference-total-2022 131000000
+
+# Optional explicit artifact directory
+rent-collector --run-dir var/runs/manual-test --validate
 ```
 
 ## Project structure

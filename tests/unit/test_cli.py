@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import runpy
+from pathlib import Path
 
 import pandas as pd
 from click.testing import CliRunner
@@ -53,6 +55,27 @@ def test_source_all_maps_to_default_all_sources(monkeypatch, tmp_path) -> None:
 
     assert result.exit_code == 0
     assert captured["sources"] is None
+
+
+def test_cli_writes_run_artifacts(monkeypatch, tmp_path) -> None:
+    monkeypatch.setenv("RENT_COLLECTOR_RUNS_DIR", str(tmp_path / "runs"))
+    monkeypatch.setattr(
+        "rent_collector.pipeline.run_pipeline",
+        lambda **_: pd.DataFrame([{"rent_nis": 1, "source": "nadlan.gov.il"}]),
+    )
+
+    result = CliRunner().invoke(main, ["--output", str(tmp_path / "out.csv")])
+
+    assert result.exit_code == 0
+
+    latest = json.loads((tmp_path / "runs" / "latest.json").read_text(encoding="utf-8"))
+    run_dir = Path(latest["latest_run_dir"])
+    run_record = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+
+    assert run_record["status"] == "success"
+    assert run_record["exit_code"] == 0
+    assert Path(run_record["stdout_log"]).exists()
+    assert Path(run_record["stderr_log"]).exists()
 
 
 def test_full_command_exits_nonzero_when_validation_fails(monkeypatch, tmp_path) -> None:
