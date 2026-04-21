@@ -1,7 +1,7 @@
 # Codex Handoff — Update v2
 
-**Date:** 2026-04-21  
-**Supersedes:** `CODEX_HANDOFF.md`  
+**Date:** 2026-04-21
+**Supersedes:** `CODEX_HANDOFF.md`
 **What changed:** A second repo (`israel-rent-data`) has been added for publishing outputs. The original 7-step task list is preserved below with minor clarifications; Step 8 (publishing) is new.
 
 Read the original `CODEX_HANDOFF.md` if you haven't already. This file extends it — don't skip the original.

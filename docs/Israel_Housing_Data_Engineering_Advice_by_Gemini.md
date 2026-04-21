@@ -4,7 +4,7 @@
 ### 1. Endpoint Discovery (Undocumented Proxy APIs)
 While official documentation for a REST API is lacking, the following "hidden" infrastructure is used by government front-ends:
 * **Proxy Endpoint:** `proxy-nadlan.taxes.gov.il`
-* **Data Payload:** Research identifies that `nadlan.gov.il` trend maps fetch JSON objects via XHR. 
+* **Data Payload:** Research identifies that `nadlan.gov.il` trend maps fetch JSON objects via XHR.
 * **Agent Task:** Configure the agent to intercept/mimic these requests to bypass PDF/HTML extraction for median rent and room-count breakdowns.
 
 ### 2. High-Resolution Mapping (Statistical Areas)

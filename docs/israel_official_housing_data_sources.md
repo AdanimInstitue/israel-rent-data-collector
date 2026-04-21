@@ -482,4 +482,3 @@ If another agent has to act quickly, the most efficient first move is:
 3. treat **CBS Table 4.9** as the best official validation source for **average rents by room group**,
 4. use **data.gov.il housing datasets** only as supplementary context,
 5. assume that **no official nationwide open source for live listing counts** has yet been identified.
-
