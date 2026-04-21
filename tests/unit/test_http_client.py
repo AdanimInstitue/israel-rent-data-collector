@@ -57,3 +57,15 @@ def test_rate_limited_session_get_post_and_helpers(monkeypatch) -> None:
     with session as same_session:
         assert same_session is session
     assert closed["value"] is True
+
+
+def test_rate_limited_session_post_can_skip_raise_for_status(monkeypatch) -> None:
+    session = RateLimitedSession(delay=0.0, timeout=5.0, user_agent="test-agent")
+    response = _Response()
+
+    monkeypatch.setattr(session._session, "post", lambda *_args, **_kwargs: response)
+
+    returned = session.post("https://example.com/post", data={"x": 1}, raise_for_status=False)
+
+    assert returned is response
+    assert response.status_checked is False

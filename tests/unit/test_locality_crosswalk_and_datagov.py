@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import csv
 
+import pytest
+
 from rent_collector.collectors.data_gov_il import (
     DataGovILCollector,
     ckan_datastore_search,
@@ -55,6 +57,32 @@ def test_fetch_from_datagov_populates_district_and_source(monkeypatch) -> None:
     assert localities[1].district_he == "המרכז"
 
 
+def test_fetch_from_datagov_skips_invalid_and_unsuccessful_rows(monkeypatch) -> None:
+    monkeypatch.setattr(
+        "rent_collector.utils.http_client.get_client", lambda: _Client([{"success": False}])
+    )
+    with pytest.raises(ValueError, match="success=false"):
+        lc._fetch_from_datagov()
+
+    malformed_payload = {
+        "success": True,
+        "result": {
+            "records": [
+                {"שם_ישוב": "Missing code"},
+                {"סמל_ישוב": "7000", "שם_ישוב": "Bad population", "סה_כ": "oops"},
+                {"סמל_ישוב": "9000", "שם_ישוב": "באר שבע"},
+            ]
+        },
+    }
+    monkeypatch.setattr(
+        "rent_collector.utils.http_client.get_client", lambda: _Client([malformed_payload])
+    )
+
+    localities = lc._fetch_from_datagov()
+
+    assert [loc.code for loc in localities] == ["9000"]
+
+
 def test_load_seed_csv_and_normalized_lookup(monkeypatch, tmp_path) -> None:
     seed_path = tmp_path / "seed.csv"
     with open(seed_path, "w", encoding="utf-8", newline="") as f:
@@ -92,9 +120,26 @@ def test_load_seed_csv_and_normalized_lookup(monkeypatch, tmp_path) -> None:
     assert crosswalk.all_codes() == ["5000"]
 
 
+def test_load_seed_csv_skips_malformed_rows(monkeypatch, tmp_path) -> None:
+    seed_path = tmp_path / "seed.csv"
+    seed_path.write_text(
+        "locality_code,locality_name_he,locality_name_en,district_he,population_approx\n"
+        "bad,שם,Name,תל אביב,100\n"
+        "5000,תל אביב - יפו,TEL AVIV - YAFO,תל אביב,460000\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(lc, "SEED_LOCALITIES_CSV", seed_path)
+
+    localities = lc._load_seed_csv()
+
+    assert [loc.code for loc in localities] == ["5000"]
+
+
 def test_crosswalk_load_falls_back_to_seed(monkeypatch) -> None:
     sentinel = LocalityCrosswalk([])
-    monkeypatch.setattr(lc, "_fetch_from_datagov", lambda: (_ for _ in ()).throw(RuntimeError("offline")))
+    monkeypatch.setattr(
+        lc, "_fetch_from_datagov", lambda: (_ for _ in ()).throw(RuntimeError("offline"))
+    )
     monkeypatch.setattr(lc, "_load_seed_csv", lambda: sentinel.all_localities())
 
     crosswalk = LocalityCrosswalk.load()
@@ -109,7 +154,9 @@ def test_ckan_helpers_and_collector(monkeypatch) -> None:
     ]
     package_payload = {
         "success": True,
-        "result": {"results": [{"title": "Rent", "organization": {"name": "cbs"}, "resources": []}, "bad"]},
+        "result": {
+            "results": [{"title": "Rent", "organization": {"name": "cbs"}, "resources": []}, "bad"]
+        },
     }
     org_payload = {
         "success": True,
@@ -124,7 +171,9 @@ def test_ckan_helpers_and_collector(monkeypatch) -> None:
     monkeypatch.setattr(
         "rent_collector.collectors.data_gov_il.get_client", lambda: _Client([package_payload])
     )
-    assert ckan_package_search("rent") == [{"title": "Rent", "organization": {"name": "cbs"}, "resources": []}]
+    assert ckan_package_search("rent") == [
+        {"title": "Rent", "organization": {"name": "cbs"}, "resources": []}
+    ]
 
     monkeypatch.setattr(
         "rent_collector.collectors.data_gov_il.get_client", lambda: _Client([org_payload])
@@ -132,8 +181,20 @@ def test_ckan_helpers_and_collector(monkeypatch) -> None:
     assert ckan_organization_datasets("cbs") == [{"title": "Pkg"}]
 
     collector = DataGovILCollector()
-    monkeypatch.setattr("rent_collector.collectors.data_gov_il.ckan_package_search", lambda *_args, **_kwargs: [{"title": "Rent", "organization": {"name": "cbs"}, "resources": []}])
-    monkeypatch.setattr("rent_collector.collectors.data_gov_il.ckan_datastore_search", lambda *_args, **_kwargs: [{"סמל_ישוב": "5000"}])
+    monkeypatch.setattr(
+        "rent_collector.collectors.data_gov_il.ckan_package_search",
+        lambda *_args, **_kwargs: [
+            {
+                "title": "Rent",
+                "organization": {"name": "cbs"},
+                "resources": [{"format": "CSV", "name": "dataset", "url": "https://example.com"}],
+            }
+        ],
+    )
+    monkeypatch.setattr(
+        "rent_collector.collectors.data_gov_il.ckan_datastore_search",
+        lambda *_args, **_kwargs: [{"סמל_ישוב": "5000"}],
+    )
     assert list(collector.collect()) == []
     assert collector.discover_datasets("rent")[0]["title"] == "Rent"
     assert collector.probe()["ok"] is True

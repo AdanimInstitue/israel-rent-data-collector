@@ -43,7 +43,9 @@ def test_boi_dry_run_placeholder_and_failures(monkeypatch) -> None:
     assert list(dry_run.collect()) == []
 
     monkeypatch.setattr(mod, "get_crosswalk", make_crosswalk)
-    monkeypatch.setattr(collector, "predict", lambda *_args, **_kwargs: (_ for _ in ()).throw(ValueError("bad")))
+    monkeypatch.setattr(
+        collector, "predict", lambda *_args, **_kwargs: (_ for _ in ()).throw(ValueError("bad"))
+    )
     assert list(collector.collect()) == []
 
     class _FailingClient:
@@ -53,7 +55,9 @@ def test_boi_dry_run_placeholder_and_failures(monkeypatch) -> None:
     monkeypatch.setattr("rent_collector.utils.http_client.get_client", lambda: _FailingClient())
     assert BoIHedonicCollector.download_paper() is None
 
-    monkeypatch.setattr(collector, "predict", lambda *_args, **_kwargs: (_ for _ in ()).throw(RuntimeError("boom")))
+    monkeypatch.setattr(
+        collector, "predict", lambda *_args, **_kwargs: (_ for _ in ()).throw(RuntimeError("boom"))
+    )
     assert collector.probe()["ok"] is False
 
     assert _mean_city_effect(BoIHedonicCoefficients(intercept=1.0, beta_rooms=0.1)) == -0.2

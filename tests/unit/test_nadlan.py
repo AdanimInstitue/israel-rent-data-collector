@@ -109,7 +109,17 @@ def test_nadlan_helpers_and_parsers() -> None:
 
 
 def test_nadlan_collector_discovery_collect_and_probe(monkeypatch) -> None:
-    payload = {"trends": {"rooms": [{"numRooms": 3, "summary": {"lastYearAvgPrice": 7999}, "graphData": []}]}}
+    payload = {
+        "trends": {
+            "rooms": [
+                {
+                    "numRooms": 3,
+                    "summary": {"lastYearAvgPrice": 7999},
+                    "graphData": [{"year": 2025, "month": 2, "settlementPrice": 7900}],
+                }
+            ]
+        }
+    }
     client = _Client([_Resp(200, payload), _Resp(200, payload), _Resp(200, payload)])
     monkeypatch.setattr("rent_collector.utils.http_client.get_client", lambda: client)
     monkeypatch.setattr(mod, "get_crosswalk", make_crosswalk)
@@ -121,6 +131,8 @@ def test_nadlan_collector_discovery_collect_and_probe(monkeypatch) -> None:
 
     assert endpoint is not None
     assert rows[0].source == DataSource.NADLAN
+    assert rows[0].year == 2025
+    assert rows[0].quarter == 2
     assert probe["ok"] is True
 
 
@@ -139,7 +151,9 @@ def test_nadlan_branch_paths(monkeypatch) -> None:
     monkeypatch.setattr(mod, "get_crosswalk", make_crosswalk)
     assert list(collector.collect()) == []
 
-    monkeypatch.setattr(mod, "get_client", lambda: _ErrorClient(exc=mod.requests.RequestException("boom")))
+    monkeypatch.setattr(
+        mod, "get_client", lambda: _ErrorClient(exc=mod.requests.RequestException("boom"))
+    )
     assert collector.discover_endpoint() is None
 
     collector = NadlanCollector(locality_codes=["5000"])
@@ -156,10 +170,14 @@ def test_nadlan_branch_paths(monkeypatch) -> None:
 
     html = """
     <html><body>
-    <script id="__NEXT_DATA__">{\"props\":{\"pageProps\":{\"rentData\":{\"rentByRooms\":{\"3\":{\"median\":7000}}}}}}</script>
+    <script id="__NEXT_DATA__">
+    {"props":{"pageProps":{"rentData":{"rentByRooms":{"3":{"median":7000}}}}}}
+    </script>
     </body></html>
     """
-    monkeypatch.setattr(mod, "get_client", lambda: _Client([type("Resp", (), {"status_code": 200, "text": html})()]))
+    monkeypatch.setattr(
+        mod, "get_client", lambda: _Client([type("Resp", (), {"status_code": 200, "text": html})()])
+    )
     assert list(collector._fetch_via_html("5000", "תל אביב - יפו", "Tel Aviv - Yafo"))
 
     html = """
@@ -167,13 +185,17 @@ def test_nadlan_branch_paths(monkeypatch) -> None:
     <script>window.__DATA__ = {\"rentByRooms\":{\"4\":{\"avg\":8500}}};</script>
     </body></html>
     """
-    monkeypatch.setattr(mod, "get_client", lambda: _Client([type("Resp", (), {"status_code": 200, "text": html})()]))
+    monkeypatch.setattr(
+        mod, "get_client", lambda: _Client([type("Resp", (), {"status_code": 200, "text": html})()])
+    )
     assert list(collector._fetch_via_html("5000", "תל אביב - יפו", "Tel Aviv - Yafo"))
 
     monkeypatch.setattr(mod, "get_client", lambda: _ErrorClient(exc=RuntimeError("offline")))
     assert list(collector._fetch_via_html("5000", "תל אביב - יפו", "Tel Aviv - Yafo")) == []
 
-    monkeypatch.setattr(mod, "get_client", lambda: _Client([type("Resp", (), {"status_code": 404, "text": ""})()]))
+    monkeypatch.setattr(
+        mod, "get_client", lambda: _Client([type("Resp", (), {"status_code": 404, "text": ""})()])
+    )
     assert list(collector._fetch_via_html("5000", "תל אביב - יפו", "Tel Aviv - Yafo")) == []
 
     assert list(_parse_response([{"rooms": "x"}], "5000", "תל אביב", "TA")) == []
@@ -183,9 +205,72 @@ def test_nadlan_branch_paths(monkeypatch) -> None:
 
     assert list(_parse_nextjs_blob({}, "5000", "תל אביב", "TA")) == []
     assert _item_to_observation([], "5000", "תל אביב", "TA", 2025, 1) is None
-    assert _item_to_observation({"rooms": "bad", "avg": 1}, "5000", "תל אביב", "TA", 2025, 1) is None
+    assert (
+        _item_to_observation({"rooms": "bad", "avg": 1}, "5000", "תל אביב", "TA", 2025, 1) is None
+    )
     assert _item_to_observation({"rooms": "3"}, "5000", "תל אביב", "TA", 2025, 1) is None
     assert mod._parse_room_group("חדר 1") == RoomGroup.R1_0
     assert mod._parse_room_group("bad") is None
     assert _extract_price({"avg": "bad"}, ["avg"]) is None
     assert _latest_graph_point([{"year": 2025, "month": 1}, "x"]) is None
+
+
+def test_nadlan_additional_branch_coverage(monkeypatch, caplog) -> None:
+    monkeypatch.setattr(mod, "get_crosswalk", make_crosswalk)
+
+    payload = {
+        "trends": {
+            "rooms": [
+                "bad",
+                {"numRooms": "bad", "summary": {"lastYearAvgPrice": 100}},
+                {"numRooms": 4, "summary": {}, "graphData": [{"year": 2025, "month": 6}]},
+                {
+                    "numRooms": 4,
+                    "summary": {},
+                    "graphData": [{"year": 2025, "month": 6, "settlementPrice": 8500}],
+                },
+            ]
+        }
+    }
+    parsed = list(_parse_response(payload, "5000", "תל אביב", "TA"))
+    assert len(parsed) == 1
+    assert parsed[0].avg_rent_nis == 8500
+    assert parsed[0].quarter == 2
+
+    assert _build_params("5000", "/NadlanAPI/LegacySettlement") == {
+        "settlementCode": "5000",
+        "fromDate": "2024-01-01",
+        "toDate": "2025-12-31",
+    }
+    assert _looks_like_rent_data({"note": "rent average price data " * 3}) is True
+    assert _latest_graph_point(
+        [
+            {"year": 2025, "month": 1, "settlementPrice": 7000},
+            {"year": 2025, "month": 3, "settlementPrice": 7500},
+        ]
+    ) == {"year": 2025, "month": 3, "settlementPrice": 7500}
+
+    collector = NadlanCollector(locality_codes=["9999", "5000"])
+    collector._active_endpoint = "/api/getRentsBySettlement"
+    monkeypatch.setattr(
+        collector,
+        "_fetch_locality",
+        lambda code, *_args: (
+            (_ for _ in ()).throw(RuntimeError("boom")) if code == "5000" else iter(())
+        ),
+    )
+    assert list(collector.collect()) == []
+
+    assert any("Unknown locality code" in record.message for record in caplog.records)
+    assert any("Failed to fetch locality 5000" in record.message for record in caplog.records)
+
+    room_rows = list(
+        _parse_response(
+            {"rooms": {"x": [], "3": {"median": None, "avg": None}, "4": {"avg": 8000}}},
+            "5000",
+            "תל אביב",
+            "TA",
+        )
+    )
+    assert len(room_rows) == 1
+    assert room_rows[0].room_group == RoomGroup.R4_0

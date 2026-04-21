@@ -21,6 +21,7 @@ def test_room_group_from_float_rounds_and_caps() -> None:
     assert RoomGroup.from_float(2.24) == RoomGroup.R2_0
     assert RoomGroup.from_float(2.26) == RoomGroup.R2_5
     assert RoomGroup.from_float(7.0) == RoomGroup.R5_PLUS
+    assert RoomGroup.from_float(0.5) == RoomGroup.R5_PLUS
     assert RoomGroup.from_float(float("nan")) == RoomGroup.R5_PLUS
 
 
@@ -45,7 +46,9 @@ def test_rent_observation_prefers_median_then_average() -> None:
 
 
 def test_rent_observation_requires_median_or_average() -> None:
-    with pytest.raises(ValueError, match="At least one of median_rent_nis or avg_rent_nis must be set"):
+    with pytest.raises(
+        ValueError, match="At least one of median_rent_nis or avg_rent_nis must be set"
+    ):
         RentObservation(
             locality_code="5000",
             locality_name_he="תל אביב - יפו",
