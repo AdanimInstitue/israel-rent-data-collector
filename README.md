@@ -52,27 +52,32 @@ pip install -e ".[dev]"
 ```
 
 Requires Python 3.11+.
+This installs the Click CLI as `rent-collector` (and the legacy alias `rent-collect`).
 
 ## Usage
 
 ```bash
 # Full pipeline (all sources)
+rent-collector
+
+# Legacy alias / direct script entrypoint
+rent-collect
 python scripts/collect.py
 
 # Single source
-python scripts/collect.py --source nadlan
-python scripts/collect.py --source cbs-api
-python scripts/collect.py --source cbs-table49
-python scripts/collect.py --source boi-hedonic
+rent-collector --source nadlan
+rent-collector --source cbs-api
+rent-collector --source cbs-table49
+rent-collector --source boi-hedonic
 
 # Dry run (probe endpoints, don't save)
-python scripts/collect.py --dry-run
+rent-collector --dry-run
 
 # Validate output shape and sanity bounds
-python scripts/collect.py --validate
+rent-collector --validate
 
 # Optionally print a 2022 facility-level reference baseline for context
-python scripts/collect.py --validate --reference-total-2022 131000000
+rent-collector --validate --reference-total-2022 131000000
 ```
 
 ## Project structure

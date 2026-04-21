@@ -1,5 +1,5 @@
 """
-CLI entry point: `rent-collect` (or `python scripts/collect.py`).
+CLI entry point: `rent-collector`, `rent-collect`, or `python scripts/collect.py`.
 """
 
 from __future__ import annotations
