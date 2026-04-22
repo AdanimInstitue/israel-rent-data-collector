@@ -106,8 +106,14 @@ def test_module_main_invokes_click_entrypoint(monkeypatch) -> None:
 @pytest.mark.parametrize(
     ("args", "flag"),
     [
+        (["--dry-run", "sources", "list"], "--dry-run"),
         (["--probe", "sources", "list"], "--probe"),
+        (["--scan-catalog", "sources", "list"], "--scan-catalog"),
         (["--source", "nadlan", "sources", "list"], "--source"),
+        (["--validate", "sources", "list"], "--validate"),
+        (["--expected-total-2022", "1", "sources", "list"], "--expected-total-2022"),
+        (["--output", "custom.csv", "sources", "list"], "--output"),
+        (["--run-dir", "runs/manual", "sources", "list"], "--run-dir"),
         (["--verbose", "sources", "list"], "--verbose"),
     ],
 )
