@@ -172,7 +172,4 @@ def test_build_file_artifact_hashes_large_files_in_chunks(tmp_path: Path) -> Non
     assert artifact.relative_path == "artifact.csv"
     assert artifact.bytes == 10000
     assert artifact.rows == 1
-    assert (
-        artifact.sha256
-        == "27dd1f61b867b6a0f6e9d8a41c43231de52107e53ae424de8f847b821db4b711"
-    )
+    assert artifact.sha256 == "27dd1f61b867b6a0f6e9d8a41c43231de52107e53ae424de8f847b821db4b711"
