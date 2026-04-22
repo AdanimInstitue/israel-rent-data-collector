@@ -55,20 +55,23 @@ def write_source_inventory_csv(path: Path) -> None:
 
 
 def build_file_artifact(root_dir: Path, path: Path, *, rows: int | None = None) -> FileArtifact:
-    hasher = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(8192), b""):
-            hasher.update(chunk)
+    resolved_root = root_dir.resolve()
+    resolved_path = path.resolve()
     try:
-        relative_path = path.relative_to(root_dir).as_posix()
+        relative_path = resolved_path.relative_to(resolved_root).as_posix()
     except ValueError as exc:
         raise ValueError(
             f"Artifact path '{path}' is outside the root directory '{root_dir}'."
         ) from exc
+
+    hasher = hashlib.sha256()
+    with resolved_path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(8192), b""):
+            hasher.update(chunk)
     return FileArtifact(
         relative_path=relative_path,
         sha256=hasher.hexdigest(),
-        bytes=path.stat().st_size,
+        bytes=resolved_path.stat().st_size,
         rows=rows,
     )
 
