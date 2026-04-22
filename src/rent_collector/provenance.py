@@ -3,7 +3,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -59,8 +59,14 @@ def build_file_artifact(root_dir: Path, path: Path, *, rows: int | None = None) 
     with path.open("rb") as handle:
         for chunk in iter(lambda: handle.read(8192), b""):
             hasher.update(chunk)
+    try:
+        relative_path = path.relative_to(root_dir).as_posix()
+    except ValueError as exc:
+        raise ValueError(
+            f"Artifact path '{path}' is outside the root directory '{root_dir}'."
+        ) from exc
     return FileArtifact(
-        relative_path=path.relative_to(root_dir).as_posix(),
+        relative_path=relative_path,
         sha256=hasher.hexdigest(),
         bytes=path.stat().st_size,
         rows=rows,
@@ -78,11 +84,13 @@ def write_manifest(
     files: list[dict[str, object]] = []
     for artifact_path in artifact_paths:
         files.append(
-            build_file_artifact(
-                root_dir,
-                artifact_path,
-                rows=row_counts.get(artifact_path.name),
-            ).__dict__
+            asdict(
+                build_file_artifact(
+                    root_dir,
+                    artifact_path,
+                    rows=row_counts.get(artifact_path.name),
+                )
+            )
         )
     manifest: dict[str, object] = {
         "dataset_name": "israel-nadlan-data-public-bundle",

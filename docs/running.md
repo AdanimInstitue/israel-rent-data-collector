@@ -1,4 +1,4 @@
-# Running The Collector
+# Running the Collector
 
 ## Local Probe
 

@@ -64,8 +64,8 @@ def validate_public_bundle(
     if not isinstance(manifest, dict):
         return ["manifest.json must contain a top-level object"]
 
-    files = manifest.get("files", [])
-    if not isinstance(files, list):
+    files = manifest.get("files")
+    if files is None or not isinstance(files, list):
         return ["manifest.json field 'files' must be a list"]
     for file_entry in files:
         if not isinstance(file_entry, dict) or "relative_path" not in file_entry:

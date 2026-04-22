@@ -42,6 +42,14 @@ def test_validate_public_bundle_requires_files_list(tmp_path: Path) -> None:
     assert validate_public_bundle(bundle_dir) == ["manifest.json field 'files' must be a list"]
 
 
+def test_validate_public_bundle_requires_files_field(tmp_path: Path) -> None:
+    bundle_dir = tmp_path / "custom_bundle"
+    bundle_dir.mkdir()
+    (bundle_dir / "manifest.json").write_text(json.dumps({}), encoding="utf-8")
+
+    assert validate_public_bundle(bundle_dir) == ["manifest.json field 'files' must be a list"]
+
+
 def test_write_manifest_uses_relative_paths(tmp_path: Path) -> None:
     root_dir = tmp_path
     bundle_dir = tmp_path / "data" / "public_bundle"
@@ -210,3 +218,15 @@ def test_build_file_artifact_hashes_large_files_in_chunks(tmp_path: Path) -> Non
     assert artifact.bytes == 10000
     assert artifact.rows == 1
     assert artifact.sha256 == "27dd1f61b867b6a0f6e9d8a41c43231de52107e53ae424de8f847b821db4b711"
+
+
+def test_build_file_artifact_rejects_paths_outside_root(tmp_path: Path) -> None:
+    outside = tmp_path.parent / "outside.csv"
+    outside.write_text("col\n1\n", encoding="utf-8")
+
+    try:
+        build_file_artifact(tmp_path, outside, rows=1)
+    except ValueError as exc:
+        assert "outside the root directory" in str(exc)
+    else:
+        raise AssertionError("expected ValueError for artifact outside root")
