@@ -37,10 +37,18 @@ def test_latest_column_extract_clean_and_resolve(monkeypatch) -> None:
     extracted = _extract_table49_entities(df, value_col=3, year=2025, quarter=1)
     assert extracted["avg_rent_nis"].tolist() == [5400.0, 7000.0]
     assert _clean_table49_label("Petah Tiqwa - 7900") == "Petah Tiqwa"
-    assert _resolve_table49_location("Tel Aviv - 5000") == ("5000", "Tel Aviv - Yafo")
-    assert _resolve_table49_location("Tel Aviv") == ("5000", "Tel Aviv - Yafo")
-    assert _resolve_table49_location("Beer Sheva") == ("9000", "Beer Sheva")
-    assert _resolve_table49_location("South District") == ("DIST_SOUTH", "South District")
+    assert _resolve_table49_location("Tel Aviv - 5000") == (
+        "5000",
+        "תל אביב - יפו",
+        "Tel Aviv - Yafo",
+    )
+    assert _resolve_table49_location("Tel Aviv") == ("5000", "תל אביב - יפו", "Tel Aviv - Yafo")
+    assert _resolve_table49_location("Beer Sheva") == ("9000", "באר שבע", "Beer Sheva")
+    assert _resolve_table49_location("South District") == (
+        "DIST_SOUTH",
+        "מחוז הדרום",
+        "South District",
+    )
 
 
 def test_collector_download_parse_collect_and_probe(monkeypatch) -> None:
@@ -96,6 +104,7 @@ def test_collector_download_parse_collect_and_probe(monkeypatch) -> None:
     )
     rows = list(collector.collect())
     assert rows[0].avg_rent_nis == 7999.0
+    assert rows[0].locality_name_he == "תל אביב - יפו"
 
     class _Page:
         def extract_table(self):
@@ -165,7 +174,11 @@ def test_cbs_table49_branch_paths(monkeypatch) -> None:
         _latest_price_column(
             pd.DataFrame([[None], [None], [None], [None], [None], [None], [None], [None]])
         )
-    assert _resolve_table49_location("Unknown City") == ("UNKNOWN_Unknown City", "Unknown City")
+    assert _resolve_table49_location("Unknown City") == (
+        "UNKNOWN_Unknown City",
+        "Unknown City",
+        "Unknown City",
+    )
 
 
 def test_cbs_table49_parser_and_lookup_branches(monkeypatch) -> None:
@@ -217,8 +230,16 @@ def test_cbs_table49_parser_and_lookup_branches(monkeypatch) -> None:
     assert _latest_price_column(df) == (1, 2024, 4)
     extracted = _extract_table49_entities(df, value_col=1, year=2024, quarter=4)
     assert extracted["city"].tolist() == ["Tel Aviv"]
-    assert _resolve_table49_location("תל אביב - יפו - 9999") == ("5000", "Tel Aviv - Yafo")
-    assert _resolve_table49_location("center District") == ("DIST_CENTER", "center District")
+    assert _resolve_table49_location("תל אביב - יפו - 9999") == (
+        "5000",
+        "תל אביב - יפו",
+        "Tel Aviv - Yafo",
+    )
+    assert _resolve_table49_location("center District") == (
+        "DIST_CENTER",
+        "מחוז המרכז",
+        "center District",
+    )
 
 
 def test_cbs_table49_collect_skips_blank_city_rows_and_latest_column_branching(monkeypatch) -> None:
@@ -252,6 +273,7 @@ def test_cbs_table49_collect_skips_blank_city_rows_and_latest_column_branching(m
 
     assert len(rows) == 1
     assert rows[0].avg_rent_nis == 8100.0
+    assert rows[0].locality_name_he == "תל אביב - יפו"
 
     df = pd.DataFrame(
         [

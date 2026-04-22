@@ -24,7 +24,7 @@ repos:
         entry: mypy src
         language: system
         pass_filenames: false
-        stages: [pre-push]
+        stages: [pre-commit, pre-push]
       - id: unit-tests
         name: unit-tests
         entry: pytest -m "not integration"

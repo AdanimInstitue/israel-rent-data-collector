@@ -9,6 +9,7 @@ from rent_collector.collectors.base import BaseCollector
 from rent_collector.collectors.cbs_table49 import _extract_table49_entities
 from rent_collector.models import DataSource, Locality, RentObservation, RoomGroup
 from rent_collector.pipeline import (
+    DEFAULT_SOURCES,
     ValidationFailedError,
     _merge_observations,
     _print_summary,
@@ -55,7 +56,8 @@ def test_merge_observations_prefers_higher_priority_source() -> None:
     merged = _merge_observations(observations)
 
     assert len(merged) == 1
-    assert merged.iloc[0]["source"] == DataSource.NADLAN
+    assert merged.iloc[0]["source"] == DataSource.NADLAN.value
+    assert merged.iloc[0]["room_group"] == RoomGroup.R3_0.value
     assert merged.iloc[0]["rent_nis"] == 7999
 
 
@@ -231,44 +233,35 @@ def test_run_pipeline_handles_unknown_sources_and_failures(monkeypatch, tmp_path
 def test_run_pipeline_validate_and_dry_run(monkeypatch, tmp_path: Path) -> None:
     monkeypatch.setattr("rent_collector.pipeline.get_crosswalk", make_crosswalk)
 
-    observation = RentObservation(
-        locality_code="5000",
-        locality_name_he="תל אביב - יפו",
-        locality_name_en="Tel Aviv - Yafo",
-        room_group=RoomGroup.R3_0,
-        median_rent_nis=7999,
-        source=DataSource.NADLAN,
-        year=2025,
-        quarter=1,
-    )
-
     class _Collector(BaseCollector):
-        def __init__(self, items):
-            super().__init__()
-            self._items = items
-
         def collect(self):
-            return iter(self._items)
+            raise AssertionError("dry-run should not call collect()")
+
+        def probe(self):
+            return {"ok": True, "source": self.__class__.__name__}
 
     monkeypatch.setattr(
-        "rent_collector.pipeline.NadlanCollector", lambda dry_run=False: _Collector([observation])
+        "rent_collector.pipeline.NadlanCollector", lambda dry_run=False: _Collector(dry_run=dry_run)
     )
     monkeypatch.setattr(
-        "rent_collector.pipeline.CBSTable49Collector", lambda dry_run=False: _Collector([])
+        "rent_collector.pipeline.CBSTable49Collector",
+        lambda dry_run=False: _Collector(dry_run=dry_run),
     )
     monkeypatch.setattr(
         "rent_collector.pipeline.CBSApiCollector",
-        lambda dry_run=False, scan_catalog=False: _Collector([]),
+        lambda dry_run=False, scan_catalog=False: _Collector(dry_run=dry_run),
     )
     monkeypatch.setattr(
-        "rent_collector.pipeline.BoIHedonicCollector", lambda dry_run=False: _Collector([])
+        "rent_collector.pipeline.BoIHedonicCollector",
+        lambda dry_run=False: _Collector(dry_run=dry_run),
     )
     monkeypatch.setattr(
-        "rent_collector.pipeline.DataGovILCollector", lambda dry_run=False: _Collector([])
+        "rent_collector.pipeline.DataGovILCollector",
+        lambda dry_run=False: _Collector(dry_run=dry_run),
     )
 
     df = run_pipeline(
-        sources=["nadlan"],
+        sources=None,
         dry_run=True,
         validate=True,
         expected_total_2022=131_000_000,
@@ -276,8 +269,9 @@ def test_run_pipeline_validate_and_dry_run(monkeypatch, tmp_path: Path) -> None:
         crosswalk_path=tmp_path / "crosswalk.csv",
     )
 
-    assert len(df) == 1
+    assert df.empty
     assert not (tmp_path / "out.csv").exists()
+    assert not (tmp_path / "crosswalk.csv").exists()
 
 
 def test_run_pipeline_creates_output_parent_only_when_writing(monkeypatch, tmp_path: Path) -> None:
@@ -478,3 +472,7 @@ def test_probe_all_aggregates_statuses(monkeypatch) -> None:
 
     assert results["nadlan"]["ok"] is True
     assert results["cbs-api"]["ok"] is False
+
+
+def test_default_sources_include_data_gov_il() -> None:
+    assert "data-gov-il" in DEFAULT_SOURCES

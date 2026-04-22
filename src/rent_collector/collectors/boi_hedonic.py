@@ -111,14 +111,6 @@ _PLACEHOLDER_COEFFICIENTS = BoIHedonicCoefficients(
 # Update after CBS Table 4.9 data is fetched.
 TEL_AVIV_3ROOM_REFERENCE_NIS: float = 7200.0  # approximate 2025 figure
 
-# Year of the BoI paper's reference
-PAPER_REFERENCE_YEAR: int = 2015
-
-# National rent inflation factor from 2015 to 2025 (approx).
-# Real rent in Israel roughly doubled 2008–2015, and continued to rise.
-# Use CBS rent price index to compute this precisely once you have the data.
-RENT_INFLATION_2015_TO_2025: float = 1.70  # ~70% cumulative rise; calibrate with CBS
-
 
 class BoIHedonicCollector(BaseCollector):
     """
@@ -154,20 +146,15 @@ class BoIHedonicCollector(BaseCollector):
         rooms = _room_group_to_float(room_group)
         city_effect = self._coef.city_effects.get(locality_code, _mean_city_effect(self._coef))
 
-        log_rent_2015 = self._coef.intercept + self._coef.beta_rooms * rooms + city_effect
-        rent_2015 = math.exp(log_rent_2015)
+        log_rent_baseline = self._coef.intercept + self._coef.beta_rooms * rooms + city_effect
+        rent_baseline = math.exp(log_rent_baseline)
 
         # Calibrate absolute level: adjust so TA 3-room matches reference
         ta_3room_log = self._coef.intercept + self._coef.beta_rooms * 3.0  # TA effect = 0
-        ta_3room_2015 = math.exp(ta_3room_log)
-        calibration_factor = (
-            TEL_AVIV_3ROOM_REFERENCE_NIS / RENT_INFLATION_2015_TO_2025
-        ) / ta_3room_2015
+        ta_3room_baseline = math.exp(ta_3room_log)
+        calibration_factor = TEL_AVIV_3ROOM_REFERENCE_NIS / ta_3room_baseline
 
-        rent_2015_calibrated = rent_2015 * calibration_factor
-        rent_2025 = rent_2015_calibrated * RENT_INFLATION_2015_TO_2025
-
-        return round(rent_2025, 0)
+        return round(rent_baseline * calibration_factor, 0)
 
     def collect(self) -> Iterator[RentObservation]:
         if COEFFICIENTS_ARE_PLACEHOLDER:

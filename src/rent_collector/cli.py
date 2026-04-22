@@ -9,6 +9,7 @@ import logging
 import os
 import subprocess
 import sys
+from collections.abc import Iterator
 from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import UTC, datetime
@@ -127,7 +128,7 @@ def _write_run_record(record: _RunRecord) -> None:
 
 
 @contextmanager
-def _capture_run_streams(run_dir: Path):
+def _capture_run_streams(run_dir: Path) -> Iterator[None]:
     stdout_path = run_dir / "stdout.log"
     stderr_path = run_dir / "stderr.log"
     original_stdout = sys.stdout

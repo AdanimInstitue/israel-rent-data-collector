@@ -11,7 +11,6 @@ Wraps `requests` with:
 from __future__ import annotations
 
 import time
-from collections import defaultdict
 from typing import Any
 
 import requests
@@ -19,7 +18,7 @@ from requests import Response, Session
 from rich.console import Console
 from tenacity import (
     retry,
-    retry_if_exception_type,
+    retry_if_exception,
     stop_after_attempt,
     wait_exponential,
 )
@@ -34,10 +33,24 @@ from rent_collector.config import (
 console = Console(stderr=True)
 
 
+def _is_retryable_error(exc: BaseException) -> bool:
+    if isinstance(exc, requests.Timeout | requests.ConnectionError):
+        return True
+    if isinstance(exc, requests.HTTPError):
+        response = exc.response
+        return response is not None and response.status_code >= 500
+    return False
+
+
 def _maybe_raise_retryable_status(resp: Response) -> None:
     """Raise for HTTP 5xx so tenacity can retry transient server-side failures."""
     if 500 <= resp.status_code < 600:
-        resp.raise_for_status()
+        try:
+            resp.raise_for_status()
+        except requests.HTTPError as exc:
+            if exc.response is None:
+                exc.response = resp
+            raise
 
 
 class RateLimitedSession:
@@ -54,7 +67,7 @@ class RateLimitedSession:
     ) -> None:
         self._delay = delay
         self._timeout = timeout
-        self._last_request_time: dict[str, float] = defaultdict(float)
+        self._last_request_time: dict[str, float] = {}
         self._session = Session()
         self._session.headers.update(
             {
@@ -66,16 +79,16 @@ class RateLimitedSession:
 
     def _throttle(self, host: str) -> None:
         """Sleep if needed to respect the per-host rate limit."""
-        elapsed = time.monotonic() - self._last_request_time[host]
-        if elapsed < self._delay:
-            sleep_for = self._delay - elapsed
-            time.sleep(sleep_for)
+        now = time.monotonic()
+        last_request_time = self._last_request_time.get(host)
+        if last_request_time is not None:
+            elapsed = now - last_request_time
+            if elapsed < self._delay:
+                time.sleep(self._delay - elapsed)
         self._last_request_time[host] = time.monotonic()
 
     @retry(
-        retry=retry_if_exception_type(
-            (requests.Timeout, requests.ConnectionError, requests.HTTPError)
-        ),
+        retry=retry_if_exception(_is_retryable_error),
         stop=stop_after_attempt(MAX_RETRIES),
         wait=wait_exponential(multiplier=1, min=2, max=30),
         reraise=True,
@@ -105,9 +118,7 @@ class RateLimitedSession:
         return resp
 
     @retry(
-        retry=retry_if_exception_type(
-            (requests.Timeout, requests.ConnectionError, requests.HTTPError)
-        ),
+        retry=retry_if_exception(_is_retryable_error),
         stop=stop_after_attempt(MAX_RETRIES),
         wait=wait_exponential(multiplier=1, min=2, max=30),
         reraise=True,

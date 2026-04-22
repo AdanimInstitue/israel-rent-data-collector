@@ -35,6 +35,8 @@ from rent_collector.utils.locality_crosswalk import LocalityCrosswalk, get_cross
 logger = logging.getLogger(__name__)
 console = Console()
 
+DEFAULT_SOURCES = ["nadlan", "cbs-table49", "cbs-api", "boi-hedonic", "data-gov-il"]
+
 # Source priority for deduplication (lower index = higher priority)
 SOURCE_PRIORITY: list[DataSource] = [
     DataSource.NADLAN,
@@ -65,13 +67,13 @@ def run_pipeline(
     Args:
         sources: Which collectors to run. None = all. Allowed values:
                  "nadlan", "cbs-api", "cbs-table49", "boi-hedonic", "data-gov-il"
-        dry_run: Probe endpoints but don't save output.
+        dry_run: Probe each selected collector and skip writes.
         validate: After collection, check output shape and sanity bounds.
         expected_total_2022: Optional 2022 reference baseline (NIS), retained
                              for operator context only and not enforced.
         scan_catalog: Pass to CBSApiCollector to print all CBS series.
     """
-    all_sources = sources or ["nadlan", "cbs-table49", "cbs-api", "boi-hedonic"]
+    all_sources = sources or DEFAULT_SOURCES
     console.rule("[bold blue]Israel Rent Data Collector[/bold blue]")
 
     # ------------------------------------------------------------------
@@ -105,6 +107,15 @@ def run_pipeline(
             continue
 
         console.rule(f"[dim]{source_name}[/dim]")
+        if dry_run:
+            try:
+                probe_result = collector.probe()
+                status = "[green]OK[/green]" if probe_result.get("ok") else "[yellow]FAIL[/yellow]"
+                console.log(f"  {status} probe: {probe_result}")
+            except Exception as exc:
+                logger.error("%s probe failed: %s", source_name, exc, exc_info=True)
+                console.log(f"  [red]{source_name} probe FAILED: {exc}[/red]")
+            continue
         try:
             obs_list = list(collector.collect())
             all_observations.extend(obs_list)
@@ -112,6 +123,10 @@ def run_pipeline(
         except Exception as exc:
             logger.error("%s collector failed: %s", source_name, exc, exc_info=True)
             console.log(f"  [red]{source_name} FAILED: {exc}[/red]")
+
+    if dry_run:
+        console.log("[dim][dry-run] Probe completed. No output files were written.[/dim]")
+        return pd.DataFrame()
 
     if not all_observations:
         console.log(
@@ -179,12 +194,12 @@ def _merge_observations(observations: list[RentObservation]) -> pd.DataFrame:
     Convert observations to a DataFrame, deduplicate by (locality_code, room_group),
     preferring higher-priority sources.
     """
-    rows = [obs.model_dump() for obs in observations]
+    rows = [obs.model_dump(mode="json") for obs in observations]
     df = pd.DataFrame(rows)
 
     # Add priority column for sorting (lower = better)
-    priority_map = {src: i for i, src in enumerate(SOURCE_PRIORITY)}
-    df["_priority"] = df["source"].map(lambda s: priority_map.get(DataSource(s), 99))
+    priority_map = {src.value: i for i, src in enumerate(SOURCE_PRIORITY)}
+    df["_priority"] = df["source"].map(lambda s: priority_map.get(str(s), 99))
     df["_sort_year"] = pd.to_numeric(df["year"], errors="coerce").fillna(-1).astype(int)
     df["_sort_quarter"] = pd.to_numeric(df["quarter"], errors="coerce").fillna(-1).astype(int)
     df["_sort_rent"] = pd.to_numeric(df["rent_nis"], errors="coerce").fillna(-1.0)

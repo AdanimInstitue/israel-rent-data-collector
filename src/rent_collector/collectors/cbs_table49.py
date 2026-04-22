@@ -82,6 +82,15 @@ _TABLE49_LOCATION_ALIASES: dict[str, str] = {
     "tel aviv": "5000",
 }
 
+_TABLE49_DISTRICT_LABELS: dict[str, tuple[str, str]] = {
+    "jerusalem district": ("DIST_JER", "מחוז ירושלים"),
+    "north district": ("DIST_NORTH", "מחוז הצפון"),
+    "haifa district": ("DIST_HAIFA", "מחוז חיפה"),
+    "center district": ("DIST_CENTER", "מחוז המרכז"),
+    "tel aviv district": ("DIST_TA", "מחוז תל אביב"),
+    "south district": ("DIST_SOUTH", "מחוז הדרום"),
+}
+
 
 class CBSTable49Collector(BaseCollector):
     """Download and parse CBS Table 4.9 from the monthly CPI publication."""
@@ -198,12 +207,12 @@ class CBSTable49Collector(BaseCollector):
             if not city_label:
                 continue
 
-            code, name_en = _resolve_table49_location(city_label)
+            code, name_he, name_en = _resolve_table49_location(city_label)
 
             avg_rent = float(row["avg_rent_nis"])
             yield RentObservation(
                 locality_code=code,
-                locality_name_he=city_label,
+                locality_name_he=name_he,
                 locality_name_en=name_en,
                 room_group=RoomGroup(row["room_group"]),
                 avg_rent_nis=avg_rent,
@@ -308,39 +317,33 @@ def _clean_table49_label(label: str) -> str:
     return label
 
 
-def _resolve_table49_location(city_label: str) -> tuple[str, str]:
+def _resolve_table49_location(city_label: str) -> tuple[str, str, str]:
     crosswalk = get_crosswalk()
 
     code_match = re.search(r"(\d{2,4})$", city_label)
     if code_match:
         loc = crosswalk.by_code(code_match.group(1))
         if loc:
-            return loc.code, loc.name_en
+            return loc.code, loc.name_he, loc.name_en
 
     cleaned = _clean_table49_label(city_label)
     loc = crosswalk.by_name(cleaned)
     if loc:
-        return loc.code, loc.name_en
+        return loc.code, loc.name_he, loc.name_en
     loc = crosswalk.by_name_en(cleaned)
     if loc:
-        return loc.code, loc.name_en
+        return loc.code, loc.name_he, loc.name_en
 
-    alias_code = _TABLE49_LOCATION_ALIASES.get(cleaned.lower())
+    normalized = cleaned.lower()
+    alias_code = _TABLE49_LOCATION_ALIASES.get(normalized)
     if alias_code:
         loc = crosswalk.by_code(alias_code)
         if loc:
-            return loc.code, loc.name_en
+            return loc.code, loc.name_he, loc.name_en
 
-    district_map = {
-        "jerusalem district": "DIST_JER",
-        "north district": "DIST_NORTH",
-        "haifa district": "DIST_HAIFA",
-        "center district": "DIST_CENTER",
-        "tel aviv district": "DIST_TA",
-        "south district": "DIST_SOUTH",
-    }
-    district_key = cleaned.lower()
-    if district_key in district_map:
-        return district_map[district_key], cleaned
+    district = _TABLE49_DISTRICT_LABELS.get(normalized)
+    if district:
+        district_code, district_name_he = district
+        return district_code, district_name_he, cleaned
 
-    return f"UNKNOWN_{cleaned}", cleaned
+    return f"UNKNOWN_{cleaned}", cleaned, cleaned

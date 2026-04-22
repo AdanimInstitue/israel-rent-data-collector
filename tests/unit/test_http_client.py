@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from itertools import count
 
+from requests import HTTPError
+
 from rent_collector.utils.http_client import RateLimitedSession
 
 
@@ -84,9 +86,9 @@ def test_rate_limited_session_retries_http_5xx_even_when_raise_for_status_is_fal
         def raise_for_status(self) -> None:
             self.status_checked = True
             if self.status_code >= 500:
-                from requests import HTTPError
-
-                raise HTTPError("server error")
+                error = HTTPError("server error")
+                error.response = self
+                raise error
 
     responses = [
         _RetryResponse(status_code=502),
@@ -105,6 +107,36 @@ def test_rate_limited_session_retries_http_5xx_even_when_raise_for_status_is_fal
     assert attempts["count"] == 2
 
 
+def test_rate_limited_session_does_not_retry_http_4xx(monkeypatch) -> None:
+    session = RateLimitedSession(delay=0.0, timeout=5.0, user_agent="test-agent")
+    attempts = {"count": 0}
+
+    class _ClientErrorResponse(_Response):
+        def raise_for_status(self) -> None:
+            self.status_checked = True
+            if self.status_code >= 400:
+                error = HTTPError("client error")
+                error.response = self
+                raise error
+
+    response = _ClientErrorResponse(status_code=404)
+
+    def fake_get(*_args, **_kwargs):
+        attempts["count"] += 1
+        return response
+
+    monkeypatch.setattr(session._session, "get", fake_get)
+
+    try:
+        session.get("https://example.com/missing")
+    except HTTPError as exc:
+        assert exc.response is response
+    else:
+        raise AssertionError("Expected HTTPError for 404 response")
+
+    assert attempts["count"] == 1
+
+
 def test_rate_limited_session_throttle_sleeps_when_requests_are_too_close(monkeypatch) -> None:
     session = RateLimitedSession(delay=1.0, timeout=5.0, user_agent="test-agent")
     sleeps: list[float] = []
@@ -112,6 +144,7 @@ def test_rate_limited_session_throttle_sleeps_when_requests_are_too_close(monkey
 
     monkeypatch.setattr("time.monotonic", lambda: next(monotonic_values))
     monkeypatch.setattr("time.sleep", sleeps.append)
+    session._last_request_time["example.com"] = 0.0
 
     session._throttle("example.com")
 
