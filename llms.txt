@@ -2,24 +2,34 @@
 
 Public-safe collector for Israeli rent benchmark data.
 
-## Scope
+## Core Tree
 
-- Named public sources only.
-- Public bundle generation with provenance metadata.
-- Public-safe tests, fixtures, and documentation.
+```text
+src/rent_collector/
+  cli.py
+  config.py
+  models.py
+  pipeline.py
+  provenance.py
+  public_bundle.py
+  source_registry.py
+  collectors/
+  utils/
+configs/
+  pipelines/public_release.yaml
+  sources/*.yaml
+docs/
+tests/
+```
 
-## Core Commands
+## Key Pointers
 
-- `indc --probe`
-- `indc --validate`
-- `indc sources list`
-- `indc build-public-bundle`
-- `indc validate-public-bundle`
-- `indc write-manifest`
-
-## Public Outputs
-
-- `data/public_bundle/rent_benchmarks.csv`
-- `data/public_bundle/locality_crosswalk.csv`
-- `data/public_bundle/source_inventory.csv`
-- `data/public_bundle/manifest.json`
+- CLI entrypoints: `src/rent_collector/cli.py`
+- Source registry: `src/rent_collector/source_registry.py`
+- Bundle manifests and hashes: `src/rent_collector/provenance.py`
+- Public bundle assembly: `src/rent_collector/public_bundle.py`
+- Runtime config: `src/rent_collector/config.py`
+- Source configs: `configs/sources/`
+- Release pipeline config: `configs/pipelines/public_release.yaml`
+- Public docs: `docs/`
+- Tests: `tests/unit/`, `tests/integration/`
