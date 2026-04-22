@@ -18,6 +18,30 @@ def test_validate_public_bundle_detects_missing_manifest(tmp_path: Path) -> None
     assert validate_public_bundle(tmp_path) == ["manifest.json is missing"]
 
 
+def test_validate_public_bundle_reports_invalid_manifest_json(tmp_path: Path) -> None:
+    bundle_dir = tmp_path / "custom_bundle"
+    bundle_dir.mkdir()
+    (bundle_dir / "manifest.json").write_text("{", encoding="utf-8")
+
+    assert validate_public_bundle(bundle_dir) == ["manifest.json is not valid JSON"]
+
+
+def test_validate_public_bundle_requires_object_manifest(tmp_path: Path) -> None:
+    bundle_dir = tmp_path / "custom_bundle"
+    bundle_dir.mkdir()
+    (bundle_dir / "manifest.json").write_text("[]", encoding="utf-8")
+
+    assert validate_public_bundle(bundle_dir) == ["manifest.json must contain a top-level object"]
+
+
+def test_validate_public_bundle_requires_files_list(tmp_path: Path) -> None:
+    bundle_dir = tmp_path / "custom_bundle"
+    bundle_dir.mkdir()
+    (bundle_dir / "manifest.json").write_text(json.dumps({"files": {}}), encoding="utf-8")
+
+    assert validate_public_bundle(bundle_dir) == ["manifest.json field 'files' must be a list"]
+
+
 def test_write_manifest_uses_relative_paths(tmp_path: Path) -> None:
     root_dir = tmp_path
     bundle_dir = tmp_path / "data" / "public_bundle"
@@ -161,6 +185,19 @@ def test_validate_public_bundle_reports_missing_source_inventory(tmp_path: Path)
     errors = validate_public_bundle(bundle_dir, root_dir=tmp_path)
 
     assert errors == ["source_inventory.csv is missing"]
+
+
+def test_validate_public_bundle_reports_missing_relative_path_key(tmp_path: Path) -> None:
+    bundle_dir = tmp_path / "custom_bundle"
+    bundle_dir.mkdir()
+    (bundle_dir / "source_inventory.csv").write_text("col\n1\n", encoding="utf-8")
+    (bundle_dir / "rent_benchmarks.csv").write_text("col\n1\n", encoding="utf-8")
+    (bundle_dir / "locality_crosswalk.csv").write_text("col\n1\n", encoding="utf-8")
+    (bundle_dir / "manifest.json").write_text(json.dumps({"files": [{}]}), encoding="utf-8")
+
+    assert validate_public_bundle(bundle_dir, root_dir=tmp_path) == [
+        "manifest.json contains a file entry without relative_path"
+    ]
 
 
 def test_build_file_artifact_hashes_large_files_in_chunks(tmp_path: Path) -> None:

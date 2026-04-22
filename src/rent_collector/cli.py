@@ -186,7 +186,6 @@ def _subcommand_conflicting_options(
     scan_catalog: bool,
     validate: bool,
     expected_total_2022: float | None,
-    output: str,
     run_dir: Path | None,
     verbose: bool,
 ) -> list[str]:
@@ -283,7 +282,6 @@ def main(
             scan_catalog=scan_catalog,
             validate=validate,
             expected_total_2022=expected_total_2022,
-            output=output,
             run_dir=run_dir,
             verbose=verbose,
         )

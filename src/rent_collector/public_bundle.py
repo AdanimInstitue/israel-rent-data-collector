@@ -57,9 +57,20 @@ def validate_public_bundle(
     if not manifest_path.exists():
         return ["manifest.json is missing"]
 
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return ["manifest.json is not valid JSON"]
+    if not isinstance(manifest, dict):
+        return ["manifest.json must contain a top-level object"]
+
     files = manifest.get("files", [])
+    if not isinstance(files, list):
+        return ["manifest.json field 'files' must be a list"]
     for file_entry in files:
+        if not isinstance(file_entry, dict) or "relative_path" not in file_entry:
+            errors.append("manifest.json contains a file entry without relative_path")
+            continue
         relative_path = str(file_entry["relative_path"])
         relative_path_obj = Path(relative_path)
         if relative_path_obj.is_absolute():
