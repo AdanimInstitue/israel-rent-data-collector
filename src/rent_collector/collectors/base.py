@@ -1,5 +1,5 @@
 """
-Abstract base class for all rent collectors.
+Abstract base class for public-safe reference-data collectors.
 """
 
 from __future__ import annotations
@@ -8,18 +8,11 @@ import logging
 from abc import ABC, abstractmethod
 from collections.abc import Iterator
 
-from rent_collector.models import RentObservation
-
 logger = logging.getLogger(__name__)
 
 
 class BaseCollector(ABC):
-    """
-    Every collector yields `RentObservation` instances.
-
-    Implement `collect()` to yield observations one at a time; the pipeline
-    will materialise them into a DataFrame.
-    """
+    """Base interface for collectors that probe or stream public-safe records."""
 
     name: str = "base"
 
@@ -28,20 +21,21 @@ class BaseCollector(ABC):
         self.logger = logging.getLogger(f"rent_collector.{self.name}")
 
     @abstractmethod
-    def collect(self) -> Iterator[RentObservation]:
-        """Yield rent observations from this source."""
+    def collect(self) -> Iterator[object]:
+        """Yield source-native records."""
         ...
 
     def probe(self) -> dict[str, object]:
         """
         Check connectivity and return a status dict.
 
-        Default implementation: call collect(), take the first observation,
-        and report success.  Override for faster probing.
+        Default implementation: call collect(), take the first returned item,
+        and report success. Override for faster probing.
         """
         try:
             first = next(iter(self.collect()))
-            return {"ok": True, "sample": first.model_dump()}
+            sample = first.model_dump() if hasattr(first, "model_dump") else first
+            return {"ok": True, "sample": sample}
         except StopIteration:
             return {"ok": True, "sample": None, "note": "no data returned"}
         except Exception as exc:

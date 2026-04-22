@@ -1,5 +1,5 @@
 """
-CLI entry point for the public collector.
+CLI entry point for the public-safe reference-data collector.
 """
 
 from __future__ import annotations
@@ -21,16 +21,12 @@ from rich.console import Console
 from rich.logging import RichHandler
 
 from rent_collector import __version__
-from rent_collector.config import (
-    LOCALITY_CROSSWALK_CSV,
-    RENT_BENCHMARKS_CSV,
-    ROOT_DIR,
-    RUN_ARTIFACTS_DIR,
-)
+from rent_collector.config import LOCALITY_CROSSWALK_CSV, ROOT_DIR, RUN_ARTIFACTS_DIR
 from rent_collector.pipeline import ValidationFailedError
 from rent_collector.provenance import write_manifest, write_source_inventory_csv
 from rent_collector.public_bundle import (
     PUBLIC_BUNDLE_DIR,
+    PUBLIC_LOCALITY_CROSSWALK_CSV,
     PUBLIC_MANIFEST_JSON,
     PUBLIC_SOURCE_INVENTORY_CSV,
     build_public_bundle,
@@ -41,10 +37,6 @@ from rent_collector.source_registry import list_sources
 console = Console()
 
 _SOURCE_PIPELINE_KEYS = {
-    "nadlan_gov_il": "nadlan",
-    "cbs_api": "cbs-api",
-    "cbs_table49": "cbs-table49",
-    "boi_hedonic": "boi-hedonic",
     "data_gov_il_locality_registry": "data-gov-il",
 }
 
@@ -55,7 +47,6 @@ class _RunRecord:
     started_at: datetime
     command: list[str]
     output_path: Path
-    crosswalk_path: Path
     exit_code: int | None = None
     error: str | None = None
 
@@ -140,7 +131,6 @@ def _write_run_record(record: _RunRecord) -> None:
         "stdout_log": str(record.run_dir / "stdout.log"),
         "stderr_log": str(record.run_dir / "stderr.log"),
         "output_csv": str(record.output_path),
-        "crosswalk_csv": str(record.crosswalk_path),
     }
     (record.run_dir / "run.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
@@ -183,9 +173,7 @@ def _subcommand_conflicting_options(
     source: tuple[str, ...],
     dry_run: bool,
     probe: bool,
-    scan_catalog: bool,
     validate: bool,
-    expected_total_2022: float | None,
     run_dir: Path | None,
     verbose: bool,
 ) -> list[str]:
@@ -196,12 +184,8 @@ def _subcommand_conflicting_options(
         conflicts.append("--dry-run")
     if probe:
         conflicts.append("--probe")
-    if scan_catalog:
-        conflicts.append("--scan-catalog")
     if validate:
         conflicts.append("--validate")
-    if expected_total_2022 is not None:
-        conflicts.append("--reference-total-2022/--expected-total-2022")
     if ctx.get_parameter_source("output") is click.core.ParameterSource.COMMANDLINE:
         conflicts.append("--output")
     if ctx.get_parameter_source("run_dir") is click.core.ParameterSource.COMMANDLINE:
@@ -215,40 +199,17 @@ def _subcommand_conflicting_options(
 @click.option(
     "--source",
     multiple=True,
-    type=click.Choice(
-        ["all", "nadlan", "cbs-api", "cbs-table49", "boi-hedonic", "data-gov-il"],
-        case_sensitive=False,
-    ),
+    type=click.Choice(["all", "data-gov-il"], case_sensitive=False),
     default=[],
     help="Sources to collect from. Repeat to specify multiple. Use 'all' or omit for all.",
 )
-@click.option("--dry-run", is_flag=True, help="Probe endpoints but don't save output.")
-@click.option("--probe", is_flag=True, help="Probe all endpoints and exit.")
-@click.option(
-    "--scan-catalog",
-    is_flag=True,
-    help="(CBS API) Scan and print all rent-related series in the CBS catalog.",
-)
-@click.option(
-    "--validate",
-    is_flag=True,
-    help="After collection, validate output shape and sanity bounds.",
-)
-@click.option(
-    "--reference-total-2022",
-    "--expected-total-2022",
-    "expected_total_2022",
-    type=float,
-    default=None,
-    help=(
-        "Optional 2022 facility-level reference baseline (NIS) shown during validation "
-        "for context only; not enforced as a pass/fail gate."
-    ),
-)
+@click.option("--dry-run", is_flag=True, help="Probe endpoints but do not save output.")
+@click.option("--probe", is_flag=True, help="Probe all selected endpoints and exit.")
+@click.option("--validate", is_flag=True, help="Validate the generated crosswalk.")
 @click.option(
     "--output",
     type=click.Path(),
-    default=str(RENT_BENCHMARKS_CSV),
+    default=str(LOCALITY_CROSSWALK_CSV),
     show_default=True,
     help="Output CSV path.",
 )
@@ -265,23 +226,19 @@ def main(
     source: tuple[str, ...],
     dry_run: bool,
     probe: bool,
-    scan_catalog: bool,
     validate: bool,
-    expected_total_2022: float | None,
     output: str,
     run_dir: Path | None,
     verbose: bool,
 ) -> None:
-    """Collect and package public-safe Israeli rent benchmarks."""
+    """Collect and package public-safe Israeli locality reference data."""
     if ctx.invoked_subcommand is not None:
         conflicts = _subcommand_conflicting_options(
             ctx,
             source=source,
             dry_run=dry_run,
             probe=probe,
-            scan_catalog=scan_catalog,
             validate=validate,
-            expected_total_2022=expected_total_2022,
             run_dir=run_dir,
             verbose=verbose,
         )
@@ -293,16 +250,14 @@ def main(
         return
 
     output_path = Path(output)
-    crosswalk_path = LOCALITY_CROSSWALK_CSV
     actual_run_dir = run_dir or _allocate_run_dir(_default_runs_dir())
     if run_dir is not None:
         actual_run_dir.mkdir(parents=True, exist_ok=True)
     record = _RunRecord(
         run_dir=actual_run_dir,
         started_at=datetime.now(UTC),
-        command=["rent-collector", *sys.argv[1:]],
+        command=["indc", *sys.argv[1:]],
         output_path=output_path,
-        crosswalk_path=crosswalk_path,
     )
 
     try:
@@ -315,25 +270,21 @@ def main(
             if probe:
                 from rent_collector.pipeline import probe_all
 
-                results = probe_all()
-                ok_count = sum(1 for r in results.values() if r.get("ok"))
+                results = probe_all(list(source) if source else None)
+                ok_count = sum(1 for result in results.values() if result.get("ok"))
                 console.print(f"\n{ok_count}/{len(results)} sources reachable.")
                 record.exit_code = 0 if ok_count > 0 else 1
                 raise click.exceptions.Exit(record.exit_code)
 
             from rent_collector.pipeline import run_pipeline
 
-            sources_list = list(source) if source else None  # None = all
-            if sources_list and "all" in sources_list:
-                sources_list = None
+            sources_list = list(source) if source else None
 
             try:
-                df = run_pipeline(
+                run_pipeline(
                     sources=sources_list,
                     dry_run=dry_run,
                     validate=validate,
-                    expected_total_2022=expected_total_2022,
-                    scan_catalog=scan_catalog,
                     output_path=output_path,
                 )
             except ValidationFailedError as exc:
@@ -341,14 +292,8 @@ def main(
                 record.exit_code = 1
                 raise click.ClickException(str(exc)) from exc
 
-            if df.empty and not dry_run:
-                console.print("[red]No data collected.[/red]")
-                record.exit_code = 1
-                raise click.exceptions.Exit(1)
-
             record.exit_code = 0
-    except click.ClickException as exc:
-        record.error = record.error or str(exc)
+    except click.ClickException:
         record.exit_code = record.exit_code if record.exit_code is not None else 1
         raise
     except click.exceptions.Exit as exc:
@@ -401,11 +346,21 @@ def write_manifest_command() -> None:
     manifest = write_manifest(
         root_dir=ROOT_DIR,
         output_path=PUBLIC_MANIFEST_JSON,
-        artifact_paths=[PUBLIC_SOURCE_INVENTORY_CSV],
-        row_counts={"source_inventory.csv": len(list_sources())},
+        artifact_paths=[PUBLIC_LOCALITY_CROSSWALK_CSV, PUBLIC_SOURCE_INVENTORY_CSV],
+        row_counts={
+            "locality_crosswalk.csv": _csv_row_count(PUBLIC_LOCALITY_CROSSWALK_CSV),
+            "source_inventory.csv": len(list_sources()),
+        },
         collector_version=__version__,
     )
     console.print(json.dumps(manifest, indent=2, ensure_ascii=False))
+
+
+def _csv_row_count(path: Path) -> int:
+    if not path.exists():
+        return 0
+    with path.open(encoding="utf-8", newline="") as handle:
+        return max(sum(1 for _ in handle) - 1, 0)
 
 
 if __name__ == "__main__":

@@ -1,17 +1,17 @@
-# Provenance Design
+# Provenance
 
-The public collector emits a manifest for each bundle. The manifest records:
+The public bundle is written under `data/public_bundle/` and includes:
 
-- source inventory limited to public-safe sources
-- build timestamp
-- collector version
-- bundle file paths relative to the repository
-- file hashes, sizes, and row counts
-- source summary and provenance references safe for public publication
+- `locality_crosswalk.csv`
+- `source_inventory.csv`
+- `manifest.json`
 
-The public bundle intentionally avoids:
+`manifest.json` records only bundle-relative paths and rejects absolute or escaping paths during validation.
 
-- absolute workstation paths
-- sibling-repository references
-- secret names
-- internal batch identifiers
+`source_inventory.csv` is generated from `src/rent_collector/source_registry.py` and records:
+
+- source identity
+- access method
+- public status
+- attribution requirements
+- redistribution note

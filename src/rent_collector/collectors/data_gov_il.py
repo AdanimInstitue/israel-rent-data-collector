@@ -20,7 +20,6 @@ from rich.console import Console
 
 from rent_collector.collectors.base import BaseCollector
 from rent_collector.config import DATAGOV_API_BASE
-from rent_collector.models import RentObservation
 from rent_collector.utils.http_client import get_client
 
 logger = logging.getLogger(__name__)
@@ -134,24 +133,19 @@ def ckan_organization_datasets(org_id: str) -> list[dict[str, Any]]:
 
 class DataGovILCollector(BaseCollector):
     """
-    Supplementary collector that searches data.gov.il for rent / housing datasets
-    and emits observations where possible.
+    Public-safe collector for the data.gov.il locality registry and related
+    dataset discovery.
 
-    Primarily useful for:
-      - Discovering new datasets as they are published
-      - Fetching CBS rent data published as open datasets (if available)
-      - Fetching welfare / housing context data
-
-    This collector does NOT currently yield RentObservation instances directly
-    (the CBS and nadlan data is fetched via dedicated collectors).  Its
-    `collect()` method returns an empty iterator; use `discover_datasets()`
-    for discovery.
+    The milestone-1 public collector uses this source only for geography and
+    reference metadata. ``collect()`` therefore returns an empty iterator and
+    the higher-level pipeline writes the locality crosswalk derived from the
+    live registry or the bundled seed fallback.
     """
 
     name = "data_gov_il"
 
-    def collect(self) -> Iterator[RentObservation]:
-        """No direct observations — data.gov.il is used for locality crosswalk only."""
+    def collect(self) -> Iterator[object]:
+        """No direct row stream; the pipeline materializes the crosswalk."""
         return iter([])
 
     def discover_datasets(self, query: str = "שכר דירה") -> list[dict[str, Any]]:
