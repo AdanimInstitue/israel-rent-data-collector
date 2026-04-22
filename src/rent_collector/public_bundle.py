@@ -3,8 +3,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pandas as pd
-
 from rent_collector import __version__
 from rent_collector.config import ROOT_DIR
 from rent_collector.pipeline import run_pipeline
@@ -91,5 +89,5 @@ def validate_public_bundle(
 
 
 def _csv_row_count(path: Path) -> int:
-    df = pd.read_csv(path)
-    return len(df.index)
+    with path.open(encoding="utf-8", newline="") as handle:
+        return max(sum(1 for _ in handle) - 1, 0)

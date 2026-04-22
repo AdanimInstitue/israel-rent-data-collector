@@ -10,6 +10,7 @@ from click.testing import CliRunner
 
 from rent_collector import __version__
 from rent_collector.cli import main
+from rent_collector.config import RENT_BENCHMARKS_CSV
 
 
 def test_probe_command_returns_success(monkeypatch) -> None:
@@ -129,6 +130,14 @@ def test_sources_list_command_prints_registry() -> None:
 
     assert result.exit_code == 0
     assert "nadlan_gov_il" in result.output
+    assert "collector=nadlan" in result.output
+
+
+def test_subcommands_reject_explicit_default_output_value() -> None:
+    result = CliRunner().invoke(main, ["--output", str(RENT_BENCHMARKS_CSV), "sources", "list"])
+
+    assert result.exit_code != 0
+    assert "--output" in result.output
 
 
 def test_build_public_bundle_subcommand_writes_manifest(monkeypatch) -> None:

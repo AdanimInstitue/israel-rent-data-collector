@@ -30,13 +30,23 @@ from rent_collector.config import (
 from rent_collector.pipeline import ValidationFailedError
 from rent_collector.provenance import write_manifest, write_source_inventory_csv
 from rent_collector.public_bundle import (
+    PUBLIC_BUNDLE_DIR,
     PUBLIC_MANIFEST_JSON,
+    PUBLIC_SOURCE_INVENTORY_CSV,
     build_public_bundle,
     validate_public_bundle,
 )
 from rent_collector.source_registry import list_sources
 
 console = Console()
+
+_SOURCE_PIPELINE_KEYS = {
+    "nadlan_gov_il": "nadlan",
+    "cbs_api": "cbs-api",
+    "cbs_table49": "cbs-table49",
+    "boi_hedonic": "boi-hedonic",
+    "data_gov_il_locality_registry": "data-gov-il",
+}
 
 
 @dataclass
@@ -168,6 +178,7 @@ def _setup_logging(verbose: bool) -> None:
 
 
 def _subcommand_conflicting_options(
+    ctx: click.Context,
     *,
     source: tuple[str, ...],
     dry_run: bool,
@@ -192,9 +203,9 @@ def _subcommand_conflicting_options(
         conflicts.append("--validate")
     if expected_total_2022 is not None:
         conflicts.append("--expected-total-2022")
-    if output != str(RENT_BENCHMARKS_CSV):
+    if ctx.get_parameter_source("output") is click.core.ParameterSource.COMMANDLINE:
         conflicts.append("--output")
-    if run_dir is not None:
+    if ctx.get_parameter_source("run_dir") is click.core.ParameterSource.COMMANDLINE:
         conflicts.append("--run-dir")
     if verbose:
         conflicts.append("--verbose")
@@ -265,6 +276,7 @@ def main(
     """Collect and package public-safe Israeli rent benchmarks."""
     if ctx.invoked_subcommand is not None:
         conflicts = _subcommand_conflicting_options(
+            ctx,
             source=source,
             dry_run=dry_run,
             probe=probe,
@@ -361,8 +373,10 @@ def sources_group() -> None:
 @sources_group.command("list")
 def list_sources_command() -> None:
     for source in list_sources():
+        pipeline_key = _SOURCE_PIPELINE_KEYS.get(source.source_id, "n/a")
         console.print(
-            f"{source.source_id}\t{source.status}\t{source.display_name}\t{source.homepage_url}"
+            f"{source.source_id}\tcollector={pipeline_key}\t{source.status}\t"
+            f"{source.display_name}\t{source.homepage_url}"
         )
 
 
@@ -384,13 +398,12 @@ def validate_public_bundle_command() -> None:
 
 @main.command("write-manifest")
 def write_manifest_command() -> None:
-    bundle_dir = ROOT_DIR / "data" / "public_bundle"
-    bundle_dir.mkdir(parents=True, exist_ok=True)
-    write_source_inventory_csv(bundle_dir / "source_inventory.csv")
+    PUBLIC_BUNDLE_DIR.mkdir(parents=True, exist_ok=True)
+    write_source_inventory_csv(PUBLIC_SOURCE_INVENTORY_CSV)
     manifest = write_manifest(
         root_dir=ROOT_DIR,
-        output_path=bundle_dir / "manifest.json",
-        artifact_paths=[bundle_dir / "source_inventory.csv"],
+        output_path=PUBLIC_MANIFEST_JSON,
+        artifact_paths=[PUBLIC_SOURCE_INVENTORY_CSV],
         row_counts={"source_inventory.csv": len(list_sources())},
         collector_version=__version__,
     )
