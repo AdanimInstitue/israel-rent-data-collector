@@ -166,6 +166,15 @@ def test_validate_public_bundle_subcommand_handles_success_and_failure(monkeypat
 
 def test_write_manifest_subcommand_uses_package_version(monkeypatch, tmp_path) -> None:
     monkeypatch.setattr("rent_collector.cli.ROOT_DIR", tmp_path)
+    monkeypatch.setattr("rent_collector.cli.PUBLIC_BUNDLE_DIR", tmp_path / "bundle")
+    monkeypatch.setattr(
+        "rent_collector.cli.PUBLIC_SOURCE_INVENTORY_CSV",
+        tmp_path / "bundle" / "source_inventory.csv",
+    )
+    monkeypatch.setattr(
+        "rent_collector.cli.PUBLIC_MANIFEST_JSON",
+        tmp_path / "bundle" / "manifest.json",
+    )
     monkeypatch.setattr(
         "rent_collector.cli.write_source_inventory_csv",
         lambda path: path.write_text("ok\n", encoding="utf-8"),
@@ -183,6 +192,8 @@ def test_write_manifest_subcommand_uses_package_version(monkeypatch, tmp_path) -
 
     assert result.exit_code == 0
     assert captured["collector_version"] == __version__
+    assert captured["output_path"] == tmp_path / "bundle" / "manifest.json"
+    assert captured["artifact_paths"] == [tmp_path / "bundle" / "source_inventory.csv"]
 
 
 def test_full_command_records_unexpected_exceptions(monkeypatch, tmp_path) -> None:

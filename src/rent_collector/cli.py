@@ -201,7 +201,7 @@ def _subcommand_conflicting_options(
     if validate:
         conflicts.append("--validate")
     if expected_total_2022 is not None:
-        conflicts.append("--expected-total-2022")
+        conflicts.append("--reference-total-2022/--expected-total-2022")
     if ctx.get_parameter_source("output") is click.core.ParameterSource.COMMANDLINE:
         conflicts.append("--output")
     if ctx.get_parameter_source("run_dir") is click.core.ParameterSource.COMMANDLINE:
