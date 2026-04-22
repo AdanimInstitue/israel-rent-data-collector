@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=20480"]
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.13
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: mypy src
+        language: system
+        pass_filenames: false
+        stages: [pre-commit, pre-push]
+      - id: unit-tests
+        name: unit-tests
+        entry: pytest -m "not integration"
+        language: system
+        pass_filenames: false
+        stages: [pre-push]
+      - id: integration-tests
+        name: integration-tests
+        entry: pytest -m integration
+        language: system
+        pass_filenames: false
+        stages: [pre-push]

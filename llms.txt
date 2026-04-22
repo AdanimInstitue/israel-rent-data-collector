@@ -1,0 +1,72 @@
+# llms.txt
+
+Repository: `israel-rent-data-collector`
+Purpose: collect official Israeli rent benchmarks, validate them, and publish CSV outputs.
+
+## Core Tree
+```text
+src/
+  rent_collector/
+    cli.py
+    config.py
+    models.py
+    pipeline.py
+    collectors/
+      base.py
+      nadlan.py
+      cbs_table49.py
+      cbs_api.py
+      boi_hedonic.py
+      data_gov_il.py
+    utils/
+      http_client.py
+      locality_crosswalk.py
+scripts/
+  collect.py
+data/
+  locality_codes_seed.csv
+  output/
+docs/
+  00_project_overview.md
+  01_system_architecture.md
+  02_output_datasets_schema.md
+  03_implementation_plan.md
+  CODEX_HANDOFF.md
+  CODEX_HANDOFF_UPDATE.md
+  sources.md
+```
+
+## Entry Points
+- CLI wrapper: `scripts/collect.py`
+- Python CLI entry: `src/rent_collector/cli.py`
+- Pipeline entry: `src/rent_collector/pipeline.py`
+
+## Critical Schemas
+- Output record model: `src/rent_collector/models.py` (`RentObservation`)
+- Locality schema: `src/rent_collector/models.py` (`Locality`)
+- Hedonic coefficients schema: `src/rent_collector/models.py` (`BoIHedonicCoefficients`)
+- Output column reference: `docs/02_output_datasets_schema.md`
+
+## Internal APIs
+- Collector contract: `src/rent_collector/collectors/base.py`
+- nadlan fetch/parse: `src/rent_collector/collectors/nadlan.py`
+- CBS Table 4.9 download/parse: `src/rent_collector/collectors/cbs_table49.py`
+- CBS API catalog/series handling: `src/rent_collector/collectors/cbs_api.py`
+- BoI fallback model: `src/rent_collector/collectors/boi_hedonic.py`
+- Crosswalk builder: `src/rent_collector/utils/locality_crosswalk.py`
+- Shared HTTP client: `src/rent_collector/utils/http_client.py`
+
+## Configuration
+- Runtime paths, endpoints, and source toggles: `src/rent_collector/config.py`
+- Packaging and dev tooling: `pyproject.toml`
+
+## Data Outputs
+- Main benchmark CSV: `data/output/rent_benchmarks.csv`
+- Locality crosswalk CSV: `data/output/locality_crosswalk.csv`
+- Publication destination after validated runs: `../israel-rent-data/`
+
+## Deep Context
+- Project purpose: `docs/00_project_overview.md`
+- Architecture details: `docs/01_system_architecture.md`
+- Implementation checklist: `docs/03_implementation_plan.md`
+- Source inventory: `docs/sources.md`
