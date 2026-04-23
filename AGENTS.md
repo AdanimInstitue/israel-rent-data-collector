@@ -23,6 +23,13 @@
 - Do not reference private repositories, private workflows, sibling paths, or hidden enrichment in tracked public files.
 - Do not add acquisition guidance for sources with unclear reuse posture.
 - Keep source-rights wording conservative and source-specific.
+- Keep `pr-agent-context` on floating `@v4` in workflow `uses:` lines.
+- Do not pin `pr-agent-context` to a commit SHA or point release such as `v4.0.19`; floating `v4` is intentional and must stay that way.
+
+## Workflow Guardrails
+
+- `pr-agent-context` must remain floating major `v4` in both CI and refresh workflows.
+- Treat any exact-version or SHA pin for `pr-agent-context` as a regression unless a tracked decision explicitly overrides this.
 
 ## Architecture Boundaries
 
