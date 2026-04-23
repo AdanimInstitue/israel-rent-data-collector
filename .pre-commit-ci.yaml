@@ -1,0 +1,8 @@
+ci:
+  autofix_prs: true
+  autoupdate_schedule: quarterly
+skip:
+  - check-added-large-files
+  - mypy
+  - unit-tests
+  - integration-tests

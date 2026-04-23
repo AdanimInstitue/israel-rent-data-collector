@@ -1,0 +1,36 @@
+# israel-nadlan-data-collector
+
+Public-safe collector for Israeli locality reference data.
+
+## Core layout
+
+src/rent_collector/
+  cli.py
+  pipeline.py
+  public_bundle.py
+  provenance.py
+  source_registry.py
+  collectors/data_gov_il.py
+  utils/locality_crosswalk.py
+  utils/http_client.py
+configs/
+  pipelines/public_release.yaml
+  sources/data_gov_il_locality_registry.yaml
+data/
+  locality_codes_seed.csv
+docs/
+tests/
+
+## Active docs
+
+- `README.md`: public repo scope and operator usage.
+- `docs/source_policy.md`: public-safe source posture and allowed handling.
+- `docs/output_model.md`: bundle artifact contract.
+- `docs/provenance.md`: manifest and source inventory model.
+- `docs/running.md`: CLI and validation flow.
+
+## Boundaries
+
+- Do not add Category-2 to Category-5 source handling here.
+- Do not reference private repositories or internal-only workflows.
+- Keep generated bundle artifacts under `data/public_bundle/`; do not track ad hoc output snapshots.

@@ -1,0 +1,5 @@
+bundle_dir: data/public_bundle
+manifest_path: data/public_bundle/manifest.json
+source_inventory_path: data/public_bundle/source_inventory.csv
+default_sources:
+  - data-gov-il
