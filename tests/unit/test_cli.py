@@ -4,8 +4,8 @@ import json
 import runpy
 from pathlib import Path
 
-import pandas as pd
 import click
+import pandas as pd
 from click.testing import CliRunner
 
 from rent_collector import __version__
