@@ -10,6 +10,7 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
+import click
 import pandas as pd
 from rich.console import Console
 from rich.table import Table
@@ -103,7 +104,17 @@ def _normalize_sources(sources: list[str] | None) -> list[str]:
     for source in unknown_sources:
         console.log(f"[yellow]Unknown source: {source!r}. Skipping.[/yellow]")
     selected = [source for source in normalized if source in DEFAULT_SOURCES]
-    return selected or list(DEFAULT_SOURCES)
+    if not selected:
+        raise click.UsageError(
+            "No valid sources selected. Supported sources: " + ", ".join(DEFAULT_SOURCES)
+        )
+    return selected
+
+
+def _locality_sort_key(row: dict[str, str | int | None]) -> tuple[str, str]:
+    code = str(row["locality_code"]).strip()
+    normalized_code = code.zfill(4) if code.isdigit() else code
+    return normalized_code, str(row["locality_name_he"])
 
 
 def _crosswalk_dataframe(crosswalk: LocalityCrosswalk) -> pd.DataFrame:
@@ -120,7 +131,7 @@ def _crosswalk_dataframe(crosswalk: LocalityCrosswalk) -> pd.DataFrame:
             }
             for locality in crosswalk.all_localities()
         ],
-        key=lambda row: (int(str(row["locality_code"])), str(row["locality_name_he"])),
+        key=_locality_sort_key,
     )
     return pd.DataFrame(rows, columns=REQUIRED_COLUMNS)
 
@@ -137,6 +148,17 @@ def _validate_crosswalk(df: pd.DataFrame) -> None:
 
     if df["locality_code"].isna().any():
         raise ValidationFailedError("Crosswalk contains blank locality_code values.")
+
+    code_series = df["locality_code"].astype(str).str.strip()
+    if (code_series == "").any():
+        raise ValidationFailedError("Crosswalk contains blank locality_code values.")
+
+    invalid_codes = code_series[~code_series.str.fullmatch(r"\d+")]
+    if not invalid_codes.empty:
+        examples = ", ".join(sorted(invalid_codes.unique())[:10])
+        raise ValidationFailedError(
+            "Crosswalk contains non-numeric locality_code values: " + examples
+        )
 
     if df["locality_code"].duplicated().any():
         duplicates = sorted(df.loc[df["locality_code"].duplicated(), "locality_code"].unique())

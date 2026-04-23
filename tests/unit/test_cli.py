@@ -30,7 +30,7 @@ def test_dry_run_empty_does_not_exit_nonzero(monkeypatch, tmp_path) -> None:
     assert result.exit_code == 0
 
 
-def test_source_all_maps_to_default_all_sources(monkeypatch, tmp_path) -> None:
+def test_source_all_is_forwarded_verbatim_to_pipeline(monkeypatch, tmp_path) -> None:
     captured: dict[str, object] = {}
 
     def _run_pipeline(**kwargs):
@@ -54,7 +54,10 @@ def test_cli_writes_run_artifacts(monkeypatch, tmp_path) -> None:
     latest = json.loads((tmp_path / "runs" / "latest.json").read_text(encoding="utf-8"))
     run_dir = Path(latest["latest_run_dir"])
     run_record = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    assert run_record["exit_code"] == 0
     assert run_record["status"] == "success"
+    assert Path(run_record["stdout_log"]).exists()
+    assert Path(run_record["stderr_log"]).exists()
 
 
 def test_full_command_exits_nonzero_when_validation_fails(monkeypatch, tmp_path) -> None:
@@ -110,6 +113,7 @@ def test_validate_public_bundle_subcommand_handles_success_and_failure(monkeypat
     monkeypatch.setattr("rent_collector.cli.validate_public_bundle", lambda: [])
     success = CliRunner().invoke(main, ["validate-public-bundle"])
     assert success.exit_code == 0
+    assert "validation passed" in success.output.lower()
 
     monkeypatch.setattr("rent_collector.cli.validate_public_bundle", lambda: ["boom"])
     failure = CliRunner().invoke(main, ["validate-public-bundle"])
@@ -149,6 +153,11 @@ def test_write_manifest_subcommand_uses_package_version(monkeypatch, tmp_path) -
     result = CliRunner().invoke(main, ["write-manifest"])
     assert result.exit_code == 0
     assert captured["collector_version"] == __version__
+    assert captured["output_path"] == tmp_path / "bundle" / "manifest.json"
+    assert captured["artifact_paths"] == [
+        tmp_path / "bundle" / "locality_crosswalk.csv",
+        tmp_path / "bundle" / "source_inventory.csv",
+    ]
 
 
 def test_full_command_records_unexpected_exceptions(monkeypatch, tmp_path) -> None:

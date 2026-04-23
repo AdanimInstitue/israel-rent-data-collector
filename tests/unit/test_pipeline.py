@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import click
 import pandas as pd
 import pytest
 
@@ -110,14 +111,30 @@ def test_crosswalk_dataframe_preserves_expected_columns() -> None:
     ]
 
 
-def test_normalize_sources_handles_none_all_unknown_and_valid(caplog) -> None:
+def test_crosswalk_dataframe_sorts_non_numeric_codes_without_crashing() -> None:
+    crosswalk = LocalityCrosswalk(
+        [
+            Locality(code="5000", name_he="תל אביב - יפו", district_he="תל אביב"),
+            Locality(code="ABC", name_he="בדיקה", district_he="מרכז"),
+        ]
+    )
+
+    df = _crosswalk_dataframe(crosswalk)
+
+    assert list(df["locality_code"]) == ["5000", "ABC"]
+
+
+def test_normalize_sources_handles_none_all_valid_mixed_and_unknown() -> None:
     assert _normalize_sources(None) == ["data-gov-il"]
     assert _normalize_sources(["all"]) == ["data-gov-il"]
     assert _normalize_sources(["data-gov-il"]) == ["data-gov-il"]
-    assert _normalize_sources(["unknown"]) == ["data-gov-il"]
+    assert _normalize_sources(["data-gov-il", "unknown"]) == ["data-gov-il"]
+
+    with pytest.raises(click.UsageError, match="No valid sources selected"):
+        _normalize_sources(["unknown"])
 
 
-def test_validate_crosswalk_rejects_empty_and_blank_codes() -> None:
+def test_validate_crosswalk_rejects_empty_blank_and_non_numeric_codes() -> None:
     with pytest.raises(ValidationFailedError, match="Crosswalk is empty"):
         _validate_crosswalk(
             pd.DataFrame(
@@ -129,6 +146,23 @@ def test_validate_crosswalk_rejects_empty_and_blank_codes() -> None:
                     "district_en",
                     "population_approx",
                     "source",
+                ]
+            )
+        )
+
+    with pytest.raises(ValidationFailedError, match="non-numeric locality_code"):
+        _validate_crosswalk(
+            pd.DataFrame(
+                [
+                    {
+                        "locality_code": "ABC",
+                        "locality_name_he": "תל אביב - יפו",
+                        "locality_name_en": "",
+                        "district_he": "תל אביב",
+                        "district_en": "Tel Aviv",
+                        "population_approx": None,
+                        "source": "data.gov.il",
+                    }
                 ]
             )
         )
