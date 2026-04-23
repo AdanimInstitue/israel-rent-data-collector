@@ -1,21 +1,27 @@
-# Running the Collector
+# Running
 
-## Local Probe
+## Probe
 
 ```bash
 indc --probe
 ```
 
-## Build The Public Bundle
+## Build the locality crosswalk
+
+```bash
+indc --validate
+```
+
+## Build the public bundle
 
 ```bash
 indc build-public-bundle
 ```
 
-## Validate Bundle Artifacts
+## Validate the bundle
 
 ```bash
 indc validate-public-bundle
 ```
 
-The collector writes run artifacts under `var/runs/` and bundle outputs under `data/public_bundle/`.
+`pr-agent-context` must stay on floating `v4` in both workflow `uses:` refs and `tool_ref`. Do not replace either with a SHA or exact `v4.x.y` tag.

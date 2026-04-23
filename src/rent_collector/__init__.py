@@ -1,11 +1,8 @@
 """
-rent_collector — official Israeli rental-price benchmark collector.
+Public-safe Israeli locality reference collector.
 
-Fetches rent data from:
-  - nadlan.gov.il  (primary: median rent by locality + room group)
-  - CBS REST API   (secondary: average rent by city + room group)
-  - CBS Table 4.9  (validation: average rent PDF/Excel)
-  - BoI hedonic    (fallback model for localities with no data)
+This package intentionally limits itself to Category-1 public-safe reference
+data collection, starting with the data.gov.il / CBS locality registry.
 """
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"

@@ -9,39 +9,27 @@ from rent_collector.pipeline import run_pipeline
 from rent_collector.provenance import write_manifest, write_source_inventory_csv
 
 PUBLIC_BUNDLE_DIR = ROOT_DIR / "data" / "public_bundle"
-PUBLIC_RENT_BENCHMARKS_CSV = PUBLIC_BUNDLE_DIR / "rent_benchmarks.csv"
 PUBLIC_LOCALITY_CROSSWALK_CSV = PUBLIC_BUNDLE_DIR / "locality_crosswalk.csv"
 PUBLIC_SOURCE_INVENTORY_CSV = PUBLIC_BUNDLE_DIR / "source_inventory.csv"
 PUBLIC_MANIFEST_JSON = PUBLIC_BUNDLE_DIR / "manifest.json"
 
 
-def build_public_bundle(
-    *,
-    sources: list[str] | None = None,
-    validate: bool = True,
-) -> dict[str, object]:
+def build_public_bundle(*, validate: bool = True) -> dict[str, object]:
     PUBLIC_BUNDLE_DIR.mkdir(parents=True, exist_ok=True)
     df = run_pipeline(
-        sources=sources,
         dry_run=False,
         validate=validate,
-        output_path=PUBLIC_RENT_BENCHMARKS_CSV,
-        crosswalk_path=PUBLIC_LOCALITY_CROSSWALK_CSV,
+        output_path=PUBLIC_LOCALITY_CROSSWALK_CSV,
     )
     write_source_inventory_csv(PUBLIC_SOURCE_INVENTORY_CSV)
     row_counts = {
-        PUBLIC_RENT_BENCHMARKS_CSV.name: len(df.index),
-        PUBLIC_LOCALITY_CROSSWALK_CSV.name: _csv_row_count(PUBLIC_LOCALITY_CROSSWALK_CSV),
+        PUBLIC_LOCALITY_CROSSWALK_CSV.name: len(df.index),
         PUBLIC_SOURCE_INVENTORY_CSV.name: _csv_row_count(PUBLIC_SOURCE_INVENTORY_CSV),
     }
     return write_manifest(
         root_dir=ROOT_DIR,
         output_path=PUBLIC_MANIFEST_JSON,
-        artifact_paths=[
-            PUBLIC_RENT_BENCHMARKS_CSV,
-            PUBLIC_LOCALITY_CROSSWALK_CSV,
-            PUBLIC_SOURCE_INVENTORY_CSV,
-        ],
+        artifact_paths=[PUBLIC_LOCALITY_CROSSWALK_CSV, PUBLIC_SOURCE_INVENTORY_CSV],
         row_counts=row_counts,
         collector_version=__version__,
     )
@@ -92,8 +80,6 @@ def validate_public_bundle(
 
     if not (bundle_dir / "source_inventory.csv").exists():
         errors.append("source_inventory.csv is missing")
-    if not (bundle_dir / "rent_benchmarks.csv").exists():
-        errors.append("rent_benchmarks.csv is missing")
     if not (bundle_dir / "locality_crosswalk.csv").exists():
         errors.append("locality_crosswalk.csv is missing")
     return errors

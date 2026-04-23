@@ -2,9 +2,16 @@ from __future__ import annotations
 
 from itertools import count
 
+import requests
 from requests import HTTPError
 
-from rent_collector.utils.http_client import RateLimitedSession
+from rent_collector.utils import http_client
+from rent_collector.utils.http_client import (
+    RateLimitedSession,
+    _is_retryable_error,
+    _maybe_raise_retryable_status,
+    get_client,
+)
 
 
 class _Response:
@@ -149,3 +156,42 @@ def test_rate_limited_session_throttle_sleeps_when_requests_are_too_close(monkey
     session._throttle("example.com")
 
     assert sleeps == [0.8]
+
+
+def test_retryability_helpers_cover_timeout_http_error_and_generic_cases() -> None:
+    timeout = requests.Timeout("slow")
+    generic = RuntimeError("boom")
+    server_error = HTTPError("server")
+    server_error.response = _Response(status_code=503)
+    response_less_error = HTTPError("response missing")
+
+    assert _is_retryable_error(timeout) is True
+    assert _is_retryable_error(server_error) is True
+    assert _is_retryable_error(response_less_error) is False
+    assert _is_retryable_error(generic) is False
+
+
+def test_maybe_raise_retryable_status_attaches_response_when_missing() -> None:
+    class _ServerErrorResponse(_Response):
+        def raise_for_status(self) -> None:
+            raise HTTPError("server error")
+
+    response = _ServerErrorResponse(status_code=502)
+
+    try:
+        _maybe_raise_retryable_status(response)
+    except HTTPError as exc:
+        assert exc.response is response
+    else:
+        raise AssertionError("Expected HTTPError for retryable 5xx status")
+
+
+def test_get_client_returns_singleton() -> None:
+    http_client._default_client = None
+    first = get_client()
+    second = get_client()
+    try:
+        assert first is second
+    finally:
+        first.close()
+        http_client._default_client = None

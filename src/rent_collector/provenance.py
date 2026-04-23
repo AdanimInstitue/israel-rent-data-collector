@@ -96,7 +96,7 @@ def write_manifest(
             )
         )
     manifest: dict[str, object] = {
-        "dataset_name": "israel-nadlan-data-public-bundle",
+        "dataset_name": "israel-nadlan-data-public-reference-bundle",
         "collector_version": collector_version,
         "generated_at": datetime.now(UTC).isoformat(),
         "schema_version": "1.0.0",

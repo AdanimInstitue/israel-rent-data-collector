@@ -5,18 +5,17 @@ import pytest
 from rent_collector.source_registry import get_source, list_sources
 
 
-def test_list_sources_is_public_safe_and_non_empty() -> None:
+def test_source_registry_contains_only_public_safe_locality_registry() -> None:
     sources = list_sources()
-    assert sources
-    assert all(source.source_class == "public_safe" for source in sources)
-
-
-def test_get_source_returns_named_descriptor() -> None:
-    source = get_source("cbs_table49")
-    assert source.display_name.startswith("CBS Table 4.9")
-    assert source.as_dict()["status"] == "active"
+    assert [source.source_id for source in sources] == ["data_gov_il_locality_registry"]
+    assert sources[0].source_class == "public_safe"
 
 
 def test_get_source_raises_for_unknown_source() -> None:
     with pytest.raises(KeyError):
-        get_source("missing")
+        get_source("unknown_source")
+
+
+def test_get_source_returns_registry_entry() -> None:
+    source = get_source("data_gov_il_locality_registry")
+    assert source.display_name == "data.gov.il / CBS locality registry"

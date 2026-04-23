@@ -10,6 +10,7 @@ from rent_collector.collectors.data_gov_il import (
     ckan_organization_datasets,
     ckan_package_search,
 )
+from rent_collector.models import Locality
 from rent_collector.utils import locality_crosswalk as lc
 from rent_collector.utils.locality_crosswalk import LocalityCrosswalk
 
@@ -119,6 +120,7 @@ def test_load_seed_csv_and_normalized_lookup(monkeypatch, tmp_path) -> None:
     assert crosswalk.by_code_padded("") is None
     assert crosswalk.by_name(" תל אביב-יפו ") is not None
     assert crosswalk.by_name_en("tel aviv - yafo") is not None
+    assert crosswalk.by_code("05000") is not None
     assert len(crosswalk) == 1
     assert crosswalk.all_codes() == ["5000"]
 
@@ -148,6 +150,19 @@ def test_crosswalk_load_falls_back_to_seed(monkeypatch) -> None:
     crosswalk = LocalityCrosswalk.load()
 
     assert len(crosswalk) == 0
+
+
+def test_crosswalk_load_prefers_live_datagov_results(monkeypatch) -> None:
+    monkeypatch.setattr(
+        lc,
+        "_fetch_from_datagov",
+        lambda: [Locality(code="5000", name_he="תל אביב - יפו", district_he="תל אביב")],
+    )
+
+    crosswalk = LocalityCrosswalk.load()
+
+    assert len(crosswalk) == 1
+    assert crosswalk.by_code("5000") is not None
 
 
 def test_ckan_helpers_and_collector(monkeypatch) -> None:
@@ -243,3 +258,18 @@ def test_crosswalk_and_datagov_error_branches(monkeypatch, tmp_path) -> None:
     assert lc._district_name_he({"שם_מחוז": "תל אביב"}) == "תל אביב"
     assert lc._district_name_he({"סמל_נפה": "bad"}) == ""
     assert lc._district_name_en("לא קיים") == ""
+
+
+def test_get_crosswalk_uses_cached_loader(monkeypatch) -> None:
+    lc.get_crosswalk.cache_clear()
+    sentinel = LocalityCrosswalk(
+        [Locality(code="5000", name_he="תל אביב - יפו", district_he="תל אביב")]
+    )
+    monkeypatch.setattr(lc.LocalityCrosswalk, "load", classmethod(lambda cls: sentinel))
+
+    first = lc.get_crosswalk()
+    second = lc.get_crosswalk()
+
+    assert first is sentinel
+    assert second is sentinel
+    lc.get_crosswalk.cache_clear()
